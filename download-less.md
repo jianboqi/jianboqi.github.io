@@ -15,9 +15,9 @@ If you have problems under Windows,please refer to [problems under windows](http
 <br>
 
 ##### 2019-4-10 (`version 1.8.8`):
-**Windows**: <a href="https://github.com/jianboqi/lessrt/releases/download/LESS-1.8.8/LESS-1.8.8-win64.exe" onClick="ga('send', 'event', { eventCategory: 'LESSDownloadv1.8', eventAction: 'directdownload', eventLabel: 'LESSWin64bitv1.8.8'});">LESS-1.8.8-win64</a>. 
+**Windows**: <a href="https://github.com/jianboqi/lessrt/releases/download/LESS-1.8.8/LESS-1.8.8-win64.exe" onClick="ga('send', 'event', 'LESSDownload','V1.8.8','Win64');">LESS-1.8.8-win64</a>. 
 
-**Linux**: <a href="https://github.com/jianboqi/lessrt/releases/download/LESS-1.8.8/LESS-1.8.8-Ubuntu16.04.zip" onClick="ga('send', 'event', { eventCategory: 'LESSDownloadv1.8', eventAction: 'directdownload', eventLabel: 'LESSWin64bitv1.8.8'});">LESS-1.8.8-Ubuntu16.04</a>. 
+**Linux**: <a href="https://github.com/jianboqi/lessrt/releases/download/LESS-1.8.8/LESS-1.8.8-Ubuntu16.04.zip" onClick="ga('send', 'event', 'LESSDownload','V1.8.8','Ubuntu16.04');">LESS-1.8.8-Ubuntu16.04</a>. 
 
 * Update the calculation of four components, when the number of bands is larger than or equal to 5, the output four-component image will contain 5 bands, the first one is the type i.e., 1-illuminated soil, 2- illuminated object, 3-shaded soil, 4-shaded object. The others are proportions of each component.
 * The LAI module now can output vertical profile of LAI
