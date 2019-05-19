@@ -1,0 +1,9 @@
+
+- title: Docs
+  docs:
+  - documentation
+  - installation
+
+- title: Examples
+  docs:
+  - home

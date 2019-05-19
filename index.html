@@ -1,0 +1,58 @@
+---
+layout: default
+published: true
+---
+
+<div class="header-container jumbotron">
+    <div class="container">
+        <h1>LESS</h1>
+        <p>A ray-tracing based 3D radiative transfer model, which is mainly designed for radiometric simulation over heteregeneous 3D scenes. It can simulate large-scale (e.g. > 1 km) satellite images and solar radiation over rugged terrain…</p>
+        <p><a class="btn btn-primary btn-lg" href="{{ "/download-less/" | prepend: site.baseurl }}" role="button">Download Now</a></p>
+    </div>
+</div>
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="header-light regular-pad">What is LESS ?</h2>
+            <blockquote>
+              <p>LESS is a ray-tracing based 3D radiative transfer model, which can simulate remote sensing data and images over large-scale and realistic 3D scenes. LESS employs a weighted forward photon tracing (FPT) method to simulate multispectral bidirectional reflectance factor (BRF) or flux-related data (e.g., downwelling radiation) and a backward path tracing (BPT) method to generate sensor images (e.g., fisheye images) or large-scale (e.g. 1 km2) spectral images. The BPT also has been extended to simulate thermal infrared radiation by using an on-the-fly computation of the sunlit and shaded scene components. It also provides a user-friendly graphic user interface (GUI) and a set of tools to help construct the landscape and set parameters. The accuracy of LESS is evaluated with other models as well as field measurements in terms of directional BRFs and pixel-wise simulated image comparisons, which shows very good agreement. LESS can work on both single computer and computing clusters. LESS is developed with Java, Python and C++. </p>
+            </blockquote>
+        </div>
+        <div class="col-md-6 text-center" style="margin-top: 55px;">
+            <img src="img/jekyll-dark.png" alt="" class="img-responsive">
+        </div>
+    </div>
+
+    <hr>
+
+  <div class="row">
+        <div class="col-sm-4">
+            <div style="text-align:center";width:100%; height:100%;margin-left: auto;margin-right: auto;">
+               <img src="http://lessrt.org/img/content/screenshot300.png"/>
+            </div>
+            <h4 class="text-center">User Friendly Interface</h4>
+            <p>LESS provides an easy-to-use GUI, which manages all the input parameters, performs batch processings and visualizes 3D scenes before acutal computation. It also provides some functionalities to help construct
+                3D scenes (e.g., Ground filtering, Individual tree detection...).
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <div style="text-align:center";width:100%; height:100%;margin-left: auto;margin-right: auto;">
+               <img src="http://lessrt.org/img/content/fpar.jpg"/>
+            </div>
+            <h4 class="text-center">Multi-purpose Simulations</h4>
+            <p>LESS works on both forward photon tracing mode and backward path tracing mode. It can simulate downwelling and upwelling radiation, vertical profile of fPAR, large-scale spectral iamges and fish-eye images with different projections... </p>
+        </div>
+        <div class="col-sm-4">
+            <div style="text-align:center";width:100%; height:100%;margin-left: auto;margin-right: auto;">
+               <img src="http://lessrt.org/img/content/spectralImg.jpg"/>
+            </div>
+            <h4 class="text-center">High Performance</h4>
+            <p>LESS uses the state-of-art ray-tracing techniques based on a a open-source renderer <a target="_blank" href="https://www.mitsuba-renderer.org/">Mitsuba</a>. LESS can simulate large-scale (e.g., > 1 km) satellite images over explicit 3D scenes. It can work with single computer as well as computing clusters... </p>
+        </div>
+    </div>
+
+
+</div>
