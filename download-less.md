@@ -14,6 +14,11 @@ If you have problems under Windows,please refer to [problems under windows](http
 <br>
 <br>
 
+##### 2020-7-3 (`version 1.9.0`):
+**Windows**: <a href="https://github.com/jianboqi/lessrt/releases/download/LESS-1.9.0/LESS-1.9.0-win64.exe" onClick="ga('send', 'event', 'LESSDownload','V1.9.0','Win64');">LESS-1.9.0-win64</a>. (网盘下载：<a target="_blank" href="https://jimbohome.synology.me:5001/d/f/562776447041709851" onClick="ga('send', 'event', 'LESSDownload','V1.9.0','Win64');">LESS-1.9.0-win64</a>)
+
+**Linux**: <a href="https://github.com/jianboqi/lessrt/releases/download/LESS-1.9.0/LESS-1.9.0-Ubuntu16.04.zip" onClick="ga('send', 'event', 'LESSDownload','V1.9.0','Ubuntu16.04');">LESS-1.9.0-Ubuntu16.04</a>. 
+
 ##### 2019-4-10 (`version 1.8.8`):
 **Windows**: <a href="https://github.com/jianboqi/lessrt/releases/download/LESS-1.8.8/LESS-1.8.8-win64.exe" onClick="ga('send', 'event', 'LESSDownload','V1.8.8','Win64');">LESS-1.8.8-win64</a>. (百度网盘下载：<a target="_blank" href="https://pan.baidu.com/s/15i7BpX9p1WfsPMGxzxwLBg" onClick="ga('send', 'event', 'LESSDownload','V1.8.8','Win64');">LESS-1.8.8-win64</a>)
 
