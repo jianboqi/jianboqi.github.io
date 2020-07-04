@@ -21,8 +21,8 @@ If you have problems under Windows,please refer to [problems under windows](http
 
 * An updated GUI based Batch Tool to support more parameters.
 * a complete new Python SDK, which enables users to control almost every parameters (including scene objects) for batch processing.
-* A new simple tree crown tool to help creating tree crowns by inputing paramters, such as leaf angle distribution.
-* Some bugs reported by users has been fixed
+* A new simple tree crown tool to create tree crowns by inputing paramters, such as leaf angle distribution.
+* Some bugs reported by users have been fixed (many thanks for their support).
 * A new LiDAR simulator tool (Extensions->Lidar Simulator) has been released (Contribution from Mr. Yaotao Luo).
 
 ##### 2019-4-10 (`version 1.8.8`):
