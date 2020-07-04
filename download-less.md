@@ -21,8 +21,8 @@ If you have problems under Windows,please refer to [problems under windows](http
 
 * An updated Batch tool to support more parameters
 * A new simple tree crown tool to help creating tree crowns by inputing paramters, such as leaf angle distribution.
-* Some bugs has been fixed reported by users
-* A new LiDAR simulator tool (Extensions->Lidar Simulator) has been released.
+* Some bugs reported by users has been fixed
+* A new LiDAR simulator tool (Extensions->Lidar Simulator) has been released (Contribution from Mr. Yaotao Luo).
 
 ##### 2019-4-10 (`version 1.8.8`):
 **Windows**: <a href="https://github.com/jianboqi/lessrt/releases/download/LESS-1.8.8/LESS-1.8.8-win64.exe" onClick="ga('send', 'event', 'LESSDownload','V1.8.8','Win64');">LESS-1.8.8-win64</a>. (百度网盘下载：<a target="_blank" href="https://pan.baidu.com/s/15i7BpX9p1WfsPMGxzxwLBg" onClick="ga('send', 'event', 'LESSDownload','V1.8.8','Win64');">LESS-1.8.8-win64</a>)
