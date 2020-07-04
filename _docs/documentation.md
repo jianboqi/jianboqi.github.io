@@ -13,6 +13,8 @@ There are two documents that help you to be familiar with LESS
 ### LESS User Manual
 [LESS User Manual (V1.8.8).pdf](http://lessrt.org/Attachments/LESS_User_Manual_1.8.8.pdf)
 
+[中文版教程(V1.9.0).pdf](http://lessrt.org/Attachments/三维辐射传输模型LESS原理与实践简明教程.pdf)
+
 ### LESS Example Document
 
 [LESS Example Document (V1.8.8).pdf](http://lessrt.org/Attachments/LESS_Example_Document_V1.8.8.pdf)
