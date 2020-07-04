@@ -19,7 +19,8 @@ If you have problems under Windows,please refer to [problems under windows](http
 
 **Linux**: <a href="https://github.com/jianboqi/lessrt/releases/download/LESS-1.9.0/LESS-1.9.0-Ubuntu16.04.zip" onClick="ga('send', 'event', 'LESSDownload','V1.9.0','Ubuntu16.04');">LESS-1.9.0-Ubuntu16.04</a>. 
 
-* An updated Batch tool to support more parameters
+* An updated GUI based Batch Tool to support more parameters.
+* a complete new Python SDK, which enables users to control almost every parameters (including scene objects) for batch processing.
 * A new simple tree crown tool to help creating tree crowns by inputing paramters, such as leaf angle distribution.
 * Some bugs reported by users has been fixed
 * A new LiDAR simulator tool (Extensions->Lidar Simulator) has been released (Contribution from Mr. Yaotao Luo).
