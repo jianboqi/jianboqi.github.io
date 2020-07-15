@@ -10,8 +10,11 @@ sectionid: page_publications
 
 
 ### Publications that have used LESS
+
+* Yan, G., Chu, Q., Tong, Y., Mu, X., Qi, J., Zhou, Y., Liu, Y., Wang, T., Xie, D., Zhang, W. and Yan, K., 2020. [An Operational Method for Validating the Downward Shortwave Radiation Over Rugged Terrains](https://ieeexplore.ieee.org/abstract/document/9102394). IEEE Transactions on Geoscience and Remote Sensing.
+
+* Chen, S., Liu, L., Zhang, X., Liu, X., Chen, X., Qian, X., Xu, Y., Xie, D., 2019. [Retrieval of the Fraction of Radiation Absorbed by Photosynthetic Components (FAPARgreen) for Forest using a Triple-Source Leaf-Wood-Soil Layer Approach](https://www.mdpi.com/2072-4292/11/21/2471). Remote Sensing 11, 2471. https://doi.org/10.3390/rs11212471
+
 * Li, L., Mu, X., Macfarlane, C., Song, W., Chen, J., Yan, K. and Yan, G., 2018. [A half-Gaussian fitting method for estimating fractional vegetation cover of corn crops using unmanned aerial vehicle images](https://www.researchgate.net/publication/326827159_A_half-Gaussian_fitting_method_for_estimating_fractional_vegetation_cover_of_corn_crops_using_unmanned_aerial_vehicle_images). Agricultural and Forest Meteorology, 262, pp.379-390.
 
 * Jiao, Z.-H., Ren, H., Mu, X., Zhao, J., Wang, T., Dong, J., n.d. [Evaluation of Four Sky View Factor Algorithms using Digital Surface and Elevation Model Data](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018EA000475?af=R). Earth and Space Science. https://doi.org/10.1029/2018EA000475
-
-* Chen, S., Liu, L., Zhang, X., Liu, X., Chen, X., Qian, X., Xu, Y., Xie, D., 2019. [Retrieval of the Fraction of Radiation Absorbed by Photosynthetic Components (FAPARgreen) for Forest using a Triple-Source Leaf-Wood-Soil Layer Approach](https://www.mdpi.com/2072-4292/11/21/2471). Remote Sensing 11, 2471. https://doi.org/10.3390/rs11212471
