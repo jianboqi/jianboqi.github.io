@@ -14,6 +14,11 @@ If you have problems under Windows,please refer to [problems under windows](http
 <br>
 <br>
 
+##### 2021-2-24 (`version 1.9.0`):
+**Windows**: <a href="https://pan.baidu.com/s/1eZs4I4Ev7WtIo-KX7DACfQ" onClick="ga('send', 'event', 'LESSDownload','V1.9.0','Win64');">LESS-1.9.9-win64</a>.(提取码/Code:rz6m)
+
+* This release is mainly for fixing some bugs reported by users.
+
 ##### 2020-7-4 (`version 1.9.0`):
 **Windows**: <a href="https://github.com/jianboqi/lessrt/releases/download/LESS-1.9.0/LESS-1.9.0-win64.exe" onClick="ga('send', 'event', 'LESSDownload','V1.9.0','Win64');">LESS-1.9.0-win64</a>. (网盘下载：<a target="_blank" href="https://jimbohome.synology.me:5001/d/f/562776447041709851" onClick="ga('send', 'event', 'LESSDownload','V1.9.0','Win64');">LESS-1.9.0-win64</a>)
 
