@@ -17,6 +17,8 @@ sectionid: page_publications
 
 * Pu, J., Yan, K., Zhou, G., Lei, Y., Zhu, Y., Guo, D., Li, H., Xu, L., Knyazikhin, Y., Myneni, R.B., 2020. [Evaluation of the MODIS LAI/FPAR Algorithm Based on 3D-RTM Simulations: A Case Study of Grassland. Remote Sensing 12, 3391](https://www.mdpi.com/2072-4292/12/20/3391). https://doi.org/10.3390/rs12203391
 
+* Li, X., Huang, H., Shabanov, N.V. and Yan, K., [Extending Stochastic Radiative Transfer Theory to Simulate BRF Over Forests Containing Trees with Heterogeneous Damaged Foliage](https://www.sciencedirect.com/science/article/abs/pii/S0034425720304107). In IGARSS 2020-2020 IEEE International Geoscience and Remote Sensing Symposium (pp. 4614-4617). IEEE.
+
 * Yan, G., Chu, Q., Tong, Y., Mu, X., Qi, J., Zhou, Y., Liu, Y., Wang, T., Xie, D., Zhang, W. and Yan, K., 2020. [An Operational Method for Validating the Downward Shortwave Radiation Over Rugged Terrains](https://ieeexplore.ieee.org/abstract/document/9102394). IEEE Transactions on Geoscience and Remote Sensing.
 
 * Chen, S., Liu, L., Zhang, X., Liu, X., Chen, X., Qian, X., Xu, Y., Xie, D., 2019. [Retrieval of the Fraction of Radiation Absorbed by Photosynthetic Components (FAPARgreen) for Forest using a Triple-Source Leaf-Wood-Soil Layer Approach](https://www.mdpi.com/2072-4292/11/21/2471). Remote Sensing 11, 2471. https://doi.org/10.3390/rs11212471
