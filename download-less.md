@@ -14,6 +14,9 @@ If you have problems under Windows,please refer to [problems under windows](http
 <br>
 <br>
 
+##### 2021-7-19 (`version 1.9.9.3`):
+**Windows**: <a href="https://pan.baidu.com/s/1jiapCQb1_dtHa2-tS09vvg" onClick="ga('send', 'event', 'LESSDownload','V1.9.0','Win64');">LESS-1.9.9.3-win64</a>.(提取码/Code: m3m7)
+
 ##### 2021-2-24 (`version 1.9.9`):
 **Windows**: <a href="https://pan.baidu.com/s/1mWF7x5pinoRM6yzwVbGLAw" onClick="ga('send', 'event', 'LESSDownload','V1.9.0','Win64');">LESS-1.9.9-win64</a>.(提取码/Code: 1b9w)
 
