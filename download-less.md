@@ -14,6 +14,12 @@ If you have problems under Windows,please refer to [problems under windows](http
 <br>
 <br>
 
+##### 2021-7-19 (`version 1.9.9-2021-11-04`):
+**Windows**:<a href="https://drive.google.com/file/d/1haKP1wJxvjWoTprFN5_aQb8BL9e31gpS/view?usp=sharing" onClick="ga('send', 'event', 'LESSDownload','V1.9.9-2021-11-04','Win64');">LESS-1.9.9-2021-11-04-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1goWIvzZ3AuuYnZ5KLaL-YA" onClick="ga('send', 'event', 'LESSDownload','V1.9.9-2021-11-04','Win64');">LESS-1.9.9-2021-11-04-win64</a>. 提取码/Code: kpi9)
+
+* This release mainly optimizes the Lidar module.
+* It is a preparation for the next version 2.0.
+
 ##### 2021-7-19 (`version 1.9.9.3`):
 **Windows**:<a href="https://drive.google.com/file/d/1Z98bgQAj-_52hwlO7Vze7U9nDTwrTSXv/view?usp=sharing" onClick="ga('send', 'event', 'LESSDownload','V1.9.9.3','Win64');">LESS-1.9.9.3-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1jiapCQb1_dtHa2-tS09vvg" onClick="ga('send', 'event', 'LESSDownload','V1.9.0','Win64');">LESS-1.9.9.3-win64</a>. 提取码/Code: m3m7)
 
