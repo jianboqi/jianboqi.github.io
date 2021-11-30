@@ -16,8 +16,7 @@ If you have problems under Windows,please refer to [problems under windows](http
 ##### 2021-11-25 (`version 1.9.9-2021-11-25`):
 **Windows**:<a href="" onClick="ga('send', 'event', 'LESSDownload','V1.9.9-2021-11-25','Win64');">LESS-1.9.9-2021-11-25-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1MTv2BCGgDNlWzlBUhq_SFA" onClick="ga('send', 'event', 'LESSDownload','V1.9.9-2021-11-25','Win64');">LESS-1.9.9-2021-11-25-win64</a>. 提取码/Code: ka4y)
 
-* This release contains the feature to simulate multispectral/hyperspectral Lidar waveforms and pointcloud.
-* The GUI of LiDAR module has been optimzied to visually illustrate the parameters.
+* This release mainly optimize the LiDAR simulation module, especially the intensity simulation.
 
 
 ##### 2021-11-04 (`version 1.9.9-2021-11-04`):
