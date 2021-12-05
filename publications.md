@@ -21,6 +21,8 @@ sectionid: page_publications
 
 * Li, W., Mu, X., 2021. [Using fractal dimension to correct clumping effect in leaf area index measurement by digital cover photography](https://doi.org/10.1016/j.agrformet.2021.108695). Agricultural and Forest Meteorology. 311, 108695. 
 
+* Chu, Q., Yan, G., Qi, J., Mu, X., Li, L., Tong, Y., Zhou, Y., Liu, Y., Xie, D., Wild, M., 2021. [Quantitative Analysis of Terrain Reflected Solar Radiation in Snow-Covered Mountains: A Case Study in Southeastern Tibetan Plateau](https://doi.org/10.1029/2020JD034294). Journal of Geophysical Research: Atmospheres 126, e2020JD034294. 
+
 * Yan, K., Zhang, Y., Tong, Y., Zeng, Y., Pu, J., Gao, S., Li, L., Mu, X., Yan, G., Rautiainen, M., Knyazikhin, Y., Myneni, R.B., 2021. [Modeling the radiation regime of a discontinuous canopy based on the stochastic radiative transport theory: Modification, evaluation and validation](https://www.sciencedirect.com/science/article/abs/pii/S003442572100448X). Remote Sensing of Environment. 267, 112728.
 
 * Cao, B., Qi, J., Chen, E., Xiao, Q., Liu, Q., Li, Z., 2021. [Fine scale optical remote sensing experiment of mixed stand over complex terrain (FOREST) in the Genhe Reserve Area: objective, observation and a case study](https://www.tandfonline.com/doi/abs/10.1080/17538947.2021.1968047). International Journal of Digital Earth 14, 1411–1432. https://doi.org/10.1080/17538947.2021.1968047
@@ -32,6 +34,8 @@ sectionid: page_publications
 * Yan K , Gao S , Chi H , et al. [Evaluation of the Vegetation-Index-Based Dimidiate Pixel Model for Fractional Vegetation Cover Estimation](https://www.researchgate.net/publication/348640566_Evaluation_of_the_Vegetation-Index-Based_Dimidiate_Pixel_Model_for_Fractional_Vegetation_Cover_Estimation). IEEE Transactions on Geoscience and Remote Sensing, 2021, PP(99):1-14.
 
 * Ma, Y., He, T., Li, A., Li, S., 2021. [Evaluation and Intercomparison of Topographic Correction Methods Based on Landsat Images and Simulated Data](https://doi.org/10.3390/rs13204120). Remote Sensing 13, 4120. 
+
+* 许月, 谢东辉, 漆建波, 阎广建, 穆西晗, 张吴明, 20210526. [基于计算机模拟模型LESS的落叶松林木质元素影响分析](http://www.jors.cn/jrs/ch/reader/view_abstract.aspx?file_no=202105009&flag=1). 遥感学报 25, 1138–1151. 
 
 ###### 2020
 
