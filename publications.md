@@ -46,5 +46,5 @@ sectionid: page_publications
 
 * Jiao, Z.-H., Ren, H., Mu, X., Zhao, J., Wang, T., Dong, J., n.d. [Evaluation of Four Sky View Factor Algorithms using Digital Surface and Elevation Model Data](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018EA000475?af=R). Earth and Space Science. https://doi.org/10.1029/2018EA000475
 
-##### 2018
+###### 2018
 * Li, L., Mu, X., Macfarlane, C., Song, W., Chen, J., Yan, K. and Yan, G., 2018. [A half-Gaussian fitting method for estimating fractional vegetation cover of corn crops using unmanned aerial vehicle images](https://www.researchgate.net/publication/326827159_A_half-Gaussian_fitting_method_for_estimating_fractional_vegetation_cover_of_corn_crops_using_unmanned_aerial_vehicle_images). Agricultural and Forest Meteorology, 262, pp.379-390.
