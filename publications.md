@@ -8,6 +8,8 @@ sectionid: page_publications
 
 * Qi, J., Xie, D., Guo, D. and Yan, G., 2017. <a href="https://www.researchgate.net/publication/320392804_A_Large-Scale_Emulation_System_for_Realistic_Three-Dimensional_3-D_Forest_Simulation">A Large-Scale Emulation System for Realistic Three-Dimensional (3-D) Forest Simulation </a>. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 10(11), pp.4834-4843.
 
+* 漆建波, 谢东辉, 许月, 阎广建, 2019. [三维辐射传输模型LESS原理及其应用](http://www.rsta.ac.cn/CN/10.11873/j.issn.1004-0323.2019.5.0914). 遥感技术与应用.
+
 
 ### Publications that have used LESS
 
