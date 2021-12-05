@@ -11,11 +11,11 @@ sectionid: page_publications
 
 ### Publications that have used LESS
 
-##### 2022
+###### 2022
 
 * Bian, Z., Wu, S., Roujean, J.-L., Cao, B., Li, H., Yin, G., Du, Y., Xiao, Q., Liu, Q., 2022. [A TIR forest reflectance and transmittance (FRT) model for directional temperatures with structural and thermal stratification](https://www.sciencedirect.com/science/article/abs/pii/S0034425721004697). Remote Sens. Environ. 268, 112749. 
 
-##### 2021
+###### 2021
 
 * Li, W., Mu, X., 2021. [Using fractal dimension to correct clumping effect in leaf area index measurement by digital cover photography](https://doi.org/10.1016/j.agrformet.2021.108695). Agricultural and Forest Meteorology. 311, 108695. 
 
@@ -31,8 +31,7 @@ sectionid: page_publications
 
 * Ma, Y., He, T., Li, A., Li, S., 2021. [Evaluation and Intercomparison of Topographic Correction Methods Based on Landsat Images and Simulated Data](https://doi.org/10.3390/rs13204120). Remote Sensing 13, 4120. 
 
-##### 2020
-***
+###### 2020
 
 * Pu, J., Yan, K., Zhou, G., Lei, Y., Zhu, Y., Guo, D., Li, H., Xu, L., Knyazikhin, Y., Myneni, R.B., 2020. [Evaluation of the MODIS LAI/FPAR Algorithm Based on 3D-RTM Simulations: A Case Study of Grassland. Remote Sensing 12, 3391](https://www.mdpi.com/2072-4292/12/20/3391). https://doi.org/10.3390/rs12203391
 
@@ -40,7 +39,7 @@ sectionid: page_publications
 
 * Yan, G., Chu, Q., Tong, Y., Mu, X., Qi, J., Zhou, Y., Liu, Y., Wang, T., Xie, D., Zhang, W. and Yan, K., 2020. [An Operational Method for Validating the Downward Shortwave Radiation Over Rugged Terrains](https://ieeexplore.ieee.org/abstract/document/9102394). IEEE Transactions on Geoscience and Remote Sensing.
 
-##### 2019
+###### 2019
 * Chen, S., Liu, L., Zhang, X., Liu, X., Chen, X., Qian, X., Xu, Y., Xie, D., 2019. [Retrieval of the Fraction of Radiation Absorbed by Photosynthetic Components (FAPARgreen) for Forest using a Triple-Source Leaf-Wood-Soil Layer Approach](https://www.mdpi.com/2072-4292/11/21/2471). Remote Sensing 11, 2471. https://doi.org/10.3390/rs11212471
 
 * Jiao, Z.-H., Ren, H., Mu, X., Zhao, J., Wang, T., Dong, J., n.d. [Evaluation of Four Sky View Factor Algorithms using Digital Surface and Elevation Model Data](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018EA000475?af=R). Earth and Space Science. https://doi.org/10.1029/2018EA000475
