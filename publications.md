@@ -11,23 +11,27 @@ sectionid: page_publications
 
 ### Publications that have used LESS
 
-## 2022
+#### 2022
 
 * Bian, Z., Wu, S., Roujean, J.-L., Cao, B., Li, H., Yin, G., Du, Y., Xiao, Q., Liu, Q., 2022. [A TIR forest reflectance and transmittance (FRT) model for directional temperatures with structural and thermal stratification](https://www.sciencedirect.com/science/article/abs/pii/S0034425721004697). Remote Sens. Environ. 268, 112749. 
 
-## 2021
+#### 2021
 
+* Li, W., Mu, X., 2021. [Using fractal dimension to correct clumping effect in leaf area index measurement by digital cover photography](https://doi.org/10.1016/j.agrformet.2021.108695). Agricultural and Forest Meteorology. 311, 108695. 
 
+* Yan, K., Zhang, Y., Tong, Y., Zeng, Y., Pu, J., Gao, S., Li, L., Mu, X., Yan, G., Rautiainen, M., Knyazikhin, Y., Myneni, R.B., 2021. [Modeling the radiation regime of a discontinuous canopy based on the stochastic radiative transport theory: Modification, evaluation and validation](https://www.sciencedirect.com/science/article/abs/pii/S003442572100448X). Remote Sensing of Environment. 267, 112728.
 
-* Yan, K., Zhang, Y., Tong, Y., Zeng, Y., Pu, J., Gao, S., Li, L., Mu, X., Yan, G., Rautiainen, M., Knyazikhin, Y., Myneni, R.B., 2021. [Modeling the radiation regime of a discontinuous canopy based on the stochastic radiative transport theory: Modification, evaluation and validation](https://www.sciencedirect.com/science/article/abs/pii/S003442572100448X). Remote Sens. Environ. 267, 112728.
-
-* Cao, B., Qi, J., Chen, E., Xiao, Q., Liu, Q., Li, Z., 2021. [Fine scale optical remote sensing experiment of mixed stand over complex terrain (FOREST) in the Genhe Reserve Area: objective, observation and a case study](https://www.tandfonline.com/doi/abs/10.1080/17538947.2021.1968047). Int. J. Digit. Earth 14, 1411–1432. https://doi.org/10.1080/17538947.2021.1968047
+* Cao, B., Qi, J., Chen, E., Xiao, Q., Liu, Q., Li, Z., 2021. [Fine scale optical remote sensing experiment of mixed stand over complex terrain (FOREST) in the Genhe Reserve Area: objective, observation and a case study](https://www.tandfonline.com/doi/abs/10.1080/17538947.2021.1968047). International Journal of Digital Earth 14, 1411–1432. https://doi.org/10.1080/17538947.2021.1968047
 
 * Bian, Z., Roujean, J.L., Cao, B., Du, Y., Li, H., Gamet, P., Fang, J., Xiao, Q. and Liu, Q., 2021. [Modeling the directional anisotropy of fine-scale TIR emissions over tree and crop canopies based on UAV measurements](https://www.sciencedirect.com/science/article/abs/pii/S003442572030523X). Remote Sensing of Environment, 252, p.112150.
 
+* Chi, H., Yan, K., Yang, K., Du, S., Li, H., Qi, J., Zhou, W., 2021. [Evaluation of Topographic Correction Models Based on 3-D Radiative Transfer Simulation]( https://doi.org/10.1109/LGRS.2021.3110907). IEEE Geoscience and Remote Sensing Letters 1–5.
+
 * Yan K , Gao S , Chi H , et al. [Evaluation of the Vegetation-Index-Based Dimidiate Pixel Model for Fractional Vegetation Cover Estimation](https://www.researchgate.net/publication/348640566_Evaluation_of_the_Vegetation-Index-Based_Dimidiate_Pixel_Model_for_Fractional_Vegetation_Cover_Estimation). IEEE Transactions on Geoscience and Remote Sensing, 2021, PP(99):1-14.
 
-##2020
+* Ma, Y., He, T., Li, A., Li, S., 2021. [Evaluation and Intercomparison of Topographic Correction Methods Based on Landsat Images and Simulated Data](https://doi.org/10.3390/rs13204120). Remote Sensing 13, 4120. 
+
+#### 2020
 
 * Pu, J., Yan, K., Zhou, G., Lei, Y., Zhu, Y., Guo, D., Li, H., Xu, L., Knyazikhin, Y., Myneni, R.B., 2020. [Evaluation of the MODIS LAI/FPAR Algorithm Based on 3D-RTM Simulations: A Case Study of Grassland. Remote Sensing 12, 3391](https://www.mdpi.com/2072-4292/12/20/3391). https://doi.org/10.3390/rs12203391
 
@@ -35,10 +39,10 @@ sectionid: page_publications
 
 * Yan, G., Chu, Q., Tong, Y., Mu, X., Qi, J., Zhou, Y., Liu, Y., Wang, T., Xie, D., Zhang, W. and Yan, K., 2020. [An Operational Method for Validating the Downward Shortwave Radiation Over Rugged Terrains](https://ieeexplore.ieee.org/abstract/document/9102394). IEEE Transactions on Geoscience and Remote Sensing.
 
-## 2019
+#### 2019
 * Chen, S., Liu, L., Zhang, X., Liu, X., Chen, X., Qian, X., Xu, Y., Xie, D., 2019. [Retrieval of the Fraction of Radiation Absorbed by Photosynthetic Components (FAPARgreen) for Forest using a Triple-Source Leaf-Wood-Soil Layer Approach](https://www.mdpi.com/2072-4292/11/21/2471). Remote Sensing 11, 2471. https://doi.org/10.3390/rs11212471
 
 * Jiao, Z.-H., Ren, H., Mu, X., Zhao, J., Wang, T., Dong, J., n.d. [Evaluation of Four Sky View Factor Algorithms using Digital Surface and Elevation Model Data](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018EA000475?af=R). Earth and Space Science. https://doi.org/10.1029/2018EA000475
 
-## 2018
+#### 2018
 * Li, L., Mu, X., Macfarlane, C., Song, W., Chen, J., Yan, K. and Yan, G., 2018. [A half-Gaussian fitting method for estimating fractional vegetation cover of corn crops using unmanned aerial vehicle images](https://www.researchgate.net/publication/326827159_A_half-Gaussian_fitting_method_for_estimating_fractional_vegetation_cover_of_corn_crops_using_unmanned_aerial_vehicle_images). Agricultural and Forest Meteorology, 262, pp.379-390.
