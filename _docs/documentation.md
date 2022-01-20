@@ -13,7 +13,9 @@ There are two documents that help you to be familiar with LESS
 ### LESS User Manual
 [LESS User Manual (V1.8.8).pdf](http://lessrt.org/Attachments/LESS_User_Manual_1.8.8.pdf)
 
-[中文版教程(V1.9.0).pdf](http://lessrt.org/Attachments/三维辐射传输模型LESS原理与实践简明教程.pdf)  （网盘下载：[中文版教程(V1.9.0).pdf](https://jimbohome.synology.me:5001/d/f/563018992850085667)）
+### 中文教程
+
+链接: https://pan.baidu.com/s/12RTYrw9Ef8H1mE2rBIijKw 提取码: nihu
 
 ### LESS Example Document
 
