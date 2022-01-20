@@ -15,7 +15,7 @@ There are two documents that help you to be familiar with LESS
 
 ### 中文教程
 
-链接: https://pan.baidu.com/s/12RTYrw9Ef8H1mE2rBIijKw 提取码: nihu
+链接: [三维辐射传输模型LESS原理与实践简明教程](https://pan.baidu.com/s/12RTYrw9Ef8H1mE2rBIijKw), 提取码: nihu
 
 ### LESS Example Document
 
