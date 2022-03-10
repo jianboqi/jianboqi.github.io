@@ -13,6 +13,14 @@ If you have problems under Windows,please refer to [problems under windows](http
 `[注：请不要使用中文路径]`
 <br>
 <br>
+##### 2022-03-10 (`version 1.9.9-2022-03-10`):
+**Windows**:<a href="https://drive.google.com/file/d/12Xej0bThcuLlEfks79NMNHl0DFTi5nUL/view?usp=sharing" onClick="ga('send', 'event', 'LESSDownload','V1.9.9-2022-03-10','Win64');">LESS-1.9.9-2022-03-10-26-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1Lmyyf6ACMPEQ6_KtTEp1Mw">LESS-1.9.9-2022-03-10-win64</a>. 提取码/Code: 7fib)
+
+* This release adds a new functionality to simulate orthophoto map(choose orthographic sensor, and a new option "Orthophoto Map" will be shown in the Observation section).
+* Py6S has been added to the embeded python intepreter, you can also use it through the pytho console at the bottom of the LESS GUI.
+* A new fisheye simulation mode has been added to simulate direct transmittance, i.e., each pixel in the image store the transmitance values (0-1).
+* Some new functionalities have been optimazied related to GUI, e.g., you can locate the object name in the object list by drawing a polygon in the 2D view and cliking Locate.
+
 ##### 2021-12-26 (`version 1.9.9-2021-12-26`):
 **Windows**:<a href="https://drive.google.com/file/d/189N5-oCRUmRLWhFmQWCauBsK45XgUchM/view?usp=sharing" onClick="ga('send', 'event', 'LESSDownload','V1.9.9-2021-11-25','Win64');">LESS-1.9.9-2021-12-26-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/19lhkMRp2fKSWYDpgIauxdw" onClick="ga('send', 'event', 'LESSDownload','V1.9.9-2021-11-25','Win64');">LESS-1.9.9-2021-12-26-win64</a>. 提取码/Code: md4r)
 
