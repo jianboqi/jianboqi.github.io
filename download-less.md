@@ -14,7 +14,7 @@ If you have problems under Windows,please refer to [problems under windows](http
 <br>
 <br>
 ##### 2022-03-10 (`version 1.9.9-2022-03-10`):
-**Windows**:<a href="https://drive.google.com/file/d/12Xej0bThcuLlEfks79NMNHl0DFTi5nUL/view?usp=sharing" onClick="ga('send', 'event', 'LESSDownload','V1.9.9-2022-03-10','Win64');">LESS-1.9.9-2022-03-10-26-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1Lmyyf6ACMPEQ6_KtTEp1Mw">LESS-1.9.9-2022-03-10-win64</a>. 提取码/Code: 7fib)
+**Windows**:<a href="https://drive.google.com/file/d/1ikLWZmaU84CiOSF9XyObs8dcjF3zhD6p/view?usp=sharing" onClick="ga('send', 'event', 'LESSDownload','V1.9.9-2022-03-10','Win64');">LESS-1.9.9-2022-03-10-26-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1D0qcWK5AlM9LwpDPwxrdHw">LESS-1.9.9-2022-03-10-win64</a>. 提取码/Code: 6hwh)
 
 * This release adds a new functionality to simulate orthophoto map(choose orthographic sensor, and a new option "Orthophoto Map" will be shown in the Observation section).
 * Py6S has been added to the embeded python intepreter, you can also use it through the pytho console at the bottom of the LESS GUI.
