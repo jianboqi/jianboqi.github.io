@@ -13,6 +13,14 @@ If you have problems under Windows,please refer to [problems under windows](http
 `[注：请不要使用中文路径]`
 <br>
 <br>
+##### 2022-04-20 (`version 1.9.9-2022-04-20`):
+**Windows**:<a href="https://drive.google.com/file/d/1ikLWZmaU84CiOSF9XyObs8dcjF3zhD6p/view?usp=sharing" onClick="ga('send', 'event', 'LESSDownload','V1.9.9-2022-03-10','Win64');">LESS-1.9.9-2022-03-10-26-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1D0qcWK5AlM9LwpDPwxrdHw">LESS-1.9.9-2022-03-10-win64</a>. 提取码/Code: 6hwh)
+
+* A new model named LESS1D is released, this model provides an GUI to input 1D-like paramters (e.g., lai, lad), but simulations are performed in 3D mode. In short, It is as easy as 1D models, but as accurate as 3D models.
+
+* the module to calcualte LAI has been improved to compute a sub-region LAI.
+* A few bugs reported by users have been fixed.
+
 ##### 2022-03-10 (`version 1.9.9-2022-03-10`):
 **Windows**:<a href="https://drive.google.com/file/d/1ikLWZmaU84CiOSF9XyObs8dcjF3zhD6p/view?usp=sharing" onClick="ga('send', 'event', 'LESSDownload','V1.9.9-2022-03-10','Win64');">LESS-1.9.9-2022-03-10-26-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1D0qcWK5AlM9LwpDPwxrdHw">LESS-1.9.9-2022-03-10-win64</a>. 提取码/Code: 6hwh)
 
