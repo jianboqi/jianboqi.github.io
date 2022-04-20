@@ -18,7 +18,7 @@ If you have problems under Windows,please refer to [problems under windows](http
 
 * A new model named LESS1D is released, this model provides an GUI to input 1D-like paramters (e.g., lai, lad), but simulations are performed in 3D mode. In short, It is as easy as 1D models, but as accurate as 3D models.
 
-![less1ds.png]({{site.baseurl}}/img/content/less1ds.png)
+![less1dss.png]({{site.baseurl}}/img/content/less1dss.png)
 
 * the module to calcualte LAI has been improved to compute a sub-region LAI.
 * A few bugs reported by users have been fixed.
