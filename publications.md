@@ -15,6 +15,8 @@ sectionid: page_publications
 
 ###### 2022
 
+* Song, W., Zhao, T., Mu, X., Zhong, B., Zhao, J., Yan, G., Wang, L., Niu, Z., 2022. [Using a Vegetation Index-Based Mixture Model to Estimate Fractional Vegetation Cover Products by Jointly Using Multiple Satellite Data: Method and Feasibility Analysis](https://www.mdpi.com/1999-4907/13/5/691/htm). Forests 13, 691.
+
 * Bian, Z., Wu, S., Roujean, J.-L., Cao, B., Li, H., Yin, G., Du, Y., Xiao, Q., Liu, Q., 2022. [A TIR forest reflectance and transmittance (FRT) model for directional temperatures with structural and thermal stratification](https://www.sciencedirect.com/science/article/abs/pii/S0034425721004697). Remote Sens. Environ. 268, 112749. 
 
 ###### 2021
