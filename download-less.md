@@ -13,6 +13,12 @@ If you have problems under Windows,please refer to [problems under windows](http
 `[注：请不要使用中文路径]`
 <br>
 <br>
+##### 2022-05-08 (`version 1.9.9-2022-05-08`):
+**Windows**:<a href="https://drive.google.com/file/d/16fbuDZ0zbrEQvsQX5n6vZIz8M41k-3P_/view?usp=sharing">LESS-1.9.9-2022-05-08-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1bdHCCgOCNobvWtsMMelk9g">LESS-1.9.9-2022-05-08-win64</a>. 提取码/Code: vs7b)
+
+* This version adds a GUI interface for 6S.
+* Fixed some bugs when simulating four-components images
+
 ##### 2022-04-20 (`version 1.9.9-2022-04-20`):
 **Windows**:<a href="https://drive.google.com/file/d/1bE4HMGeZjL3bWaTHDyobSoTotM0WQgvC/view?usp=sharing" onClick="ga('send', 'event', 'LESSDownload','V1.9.9-2022-04-20','Win64');">LESS-1.9.9-2022-04-20-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1ard0HG1Pm4nAiUWaG2yxsA">LESS-1.9.9-2022-04-20-win64</a>. 提取码/Code: ix9r)
 
