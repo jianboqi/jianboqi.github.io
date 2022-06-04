@@ -13,6 +13,13 @@ If you have problems under Windows,please refer to [problems under windows](http
 `[注：请不要使用中文路径]`
 <br>
 <br>
+##### 2022-06-03 (`version 1.9.9-2022-06-03`):
+**Windows**:<a href="https://drive.google.com/file/d/16fbuDZ0zbrEQvsQX5n6vZIz8M41k-3P_/view?usp=sharing">LESS-1.9.9-2022-06-03-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1bZPNAjwVCH-xsgzVmy_EDQ">LESS-1.9.9-2022-06-03-win64</a>. 提取码/Code: 3fhg)
+
+* Optimize the LiDAR simulator by given some predefined lidar sensor parameters.
+* Add the scan angle to exported point cloud file.
+* A new function to convert txt file to las format, which is more convenient for processing with other lidar tools (Process->"txt->las")
+
 ##### 2022-05-08 (`version 1.9.9-2022-05-08`):
 **Windows**:<a href="https://drive.google.com/file/d/16fbuDZ0zbrEQvsQX5n6vZIz8M41k-3P_/view?usp=sharing">LESS-1.9.9-2022-05-08-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1bdHCCgOCNobvWtsMMelk9g">LESS-1.9.9-2022-05-08-win64</a>. 提取码/Code: vs7b)
 
