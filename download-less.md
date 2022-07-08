@@ -19,8 +19,8 @@ If you have problems under Windows,please refer to [problems under windows](http
 * A new module to convert airborne lidar data into 3D scenes for LESS simulations.
 * A new image viewer and waveform viewer have been added.
 
-<img src="http://lessrt.org/img/imageviewer.png" height="300"></img> 
-<img src="http://lessrt.org/img/waveformviewer.png" height="400"></img>
+<img src="http://lessrt.org/img/imageviewer.png" height="200"></img> 
+<img src="http://lessrt.org/img/waveformviewer.png" height="200"></img>
 
 ##### 2022-06-03 (`version 1.9.9-2022-06-03`):
 **Windows**:<a href="https://drive.google.com/file/d/16fbuDZ0zbrEQvsQX5n6vZIz8M41k-3P_/view?usp=sharing">LESS-1.9.9-2022-06-03-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1bZPNAjwVCH-xsgzVmy_EDQ">LESS-1.9.9-2022-06-03-win64</a>. 提取码/Code: 3fhg)
