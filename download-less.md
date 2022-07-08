@@ -14,13 +14,15 @@ If you have problems under Windows,please refer to [problems under windows](http
 <br>
 <br>
 ##### 2022-07-08 (`version 1.9.9-2022-07-08`):
-**Windows**:<a href="">LESS-1.9.9-2022-07-08-win64</a>. (百度网盘下载：<a href="">LESS-1.9.9-2022-07-08-win64</a>. 提取码/Code: )
+**Windows**:<a href="">LESS-1.9.9-2022-07-08-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1QL42QI87Vzt_WwK6gLFN5g">LESS-1.9.9-2022-07-08-win64</a>. 提取码/Code: hwh5)
 
 * A new module to convert airborne lidar data into 3D scenes for LESS simulations.
 * A new image viewer and waveform viewer have been added.
+* A new crown generator using asymmetric gaussian function to describe different crown shapes.
 
-<img src="http://lessrt.org/img/imageviewer.png" height="200"></img> 
-<img src="http://lessrt.org/img/waveformviewer.png" height="200"></img>
+<img src="http://lessrt.org/img/imageviewer.png" height="250"></img> 
+<img src="http://lessrt.org/img/waveformviewer.png" height="250"></img>
+<img src="http://lessrt.org/img/crownshape.png" height="250"></img>
 
 ##### 2022-06-03 (`version 1.9.9-2022-06-03`):
 **Windows**:<a href="https://drive.google.com/file/d/16fbuDZ0zbrEQvsQX5n6vZIz8M41k-3P_/view?usp=sharing">LESS-1.9.9-2022-06-03-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1bZPNAjwVCH-xsgzVmy_EDQ">LESS-1.9.9-2022-06-03-win64</a>. 提取码/Code: 3fhg)
