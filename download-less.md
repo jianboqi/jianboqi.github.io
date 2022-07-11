@@ -14,7 +14,7 @@ If you have problems under Windows,please refer to [problems under windows](http
 <br>
 <br>
 ##### 2022-07-08 (`version 1.9.9-2022-07-08`):
-**Windows**:<a href="https://drive.google.com/file/d/1o637Pqa8zGQBGzhEWMobIqhv4dH6MD11/view?usp=sharing">LESS-1.9.9-2022-07-08-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1QCFkyrXX8WZ7FX004MLFeg">LESS-1.9.9-2022-07-08-win64</a>. 提取码/Code: 5ddu)
+**Windows**:<a href="https://drive.google.com/file/d/1Rg85Fh56lvT3S4jCsVNmDEdIjpfmJ2tA/view?usp=sharing">LESS-1.9.9-2022-07-08-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/18LzG7bGKCebZ7KR6fxDVNA">LESS-1.9.9-2022-07-08-win64</a>. 提取码/Code: nb27)
 
 * A new module to convert airborne lidar data into 3D scenes for LESS simulations.
 * A new image viewer and waveform viewer have been added.
