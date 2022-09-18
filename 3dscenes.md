@@ -14,8 +14,8 @@ published: true
 .tablelines table, .tablelines td, .tablelines th {
         border: 1px solid black;
         }
-。tablelines table{
-        width:800px;
+table{
+        width:600px;
         }
 </style>
 
