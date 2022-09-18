@@ -17,6 +17,9 @@ published: true
 table{
         width:600px;
         }
+ .tablelines td img{
+       padding:5px;
+        }
 </style>
 
 
@@ -30,7 +33,8 @@ table{
 |6|HET12_DIS_S1C|<image width="200" height="200" src="http://lessrt.org/img/SCENE-FOREST-HET12_DIS_S1C.png"/>|LAI Leaf: 1.000<br/> LAI Wood: 0.000|0.176|
 |7|HET14_WCO_UND|<image width="200" height="200" src="http://lessrt.org/img/SCENE-FOREST-HET14_WCO_UND.png"/>|LAI Leaf: 2.703<br/> LAI Wood: 0.460|0.394|
 |8|HET15_JBS_WIN|<image width="200" height="200" src="http://lessrt.org/img/SCENE-FOREST-HET15_JBS_WIN.png"/>|LAI Leaf: 0.037<br/> LAI Wood: 1.844|0.280|
-|9|HET16_DIS_S2S|<image width="200" height="200" src="http://lessrt.org/img/SCENE-FOREST-HET16_DIS_S2S.png"/>|LAI Leaf: 1.707<br/> LAI Wood: 0.000|0.278|
+|9|HET16_DIS_S2S|<image width="200" height="200" src="http://
+        lessrt.org/img/SCENE-FOREST-HET16_DIS_S2S.png"/>|LAI Leaf: 1.707<br/> LAI Wood: 0.000|0.278|
 |10|HET16_SRF_UND|<image width="200" height="200" src="http://lessrt.org/img/SCENE-FOREST-HET16_SRF_UND.png"/>|LAI Leaf: 3.230<br/> LAI Wood: 0.797|0.392|
 |11|HET17_DIS_M2S|<image width="200" height="200" src="http://lessrt.org/img/SCENE-FOREST-HET17_DIS_M2S.png"/>|LAI Leaf: 2.453<br/> LAI Wood: 0.000|0.385|
 |12|HET18_DIS_D2S|<image width="200" height="200" src="http://lessrt.org/img/SCENE-FOREST-HET18_DIS_D2S.png"/>|LAI Leaf: 3.317<br/> LAI Wood: 0.000|0.511|
