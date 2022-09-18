@@ -10,6 +10,13 @@ published: true
 ### LESS projects of RAMI-V scenes
 ##### This section provides all the LESS simulations that are built from RAMI-V scenes, you can download the simulations, and open it with LESS model.
 
+<style>
+.tablelines table, .tablelines td, .tablelines th {
+        border: 1px solid black;
+        }
+</style>
+
+
 |ID|Scene Name|Visual Image|LAI|FVC|
 |-------------|-------------|-------------|-------------|-------------|
 |1|HET07_JPS_SUM|<image width="200" height="200" src="http://lessrt.org/img/SCENE-FOREST-HET07_JPS_SUM.png"/>|LAI Leaf: 2.540<br/> LAI Wood: 1.221|0.363|
@@ -50,5 +57,6 @@ published: true
 |36|HOM36_DIS_PED|<image width="200" height="200" src="http://lessrt.org/img/SCENE-FOREST-HOM36_DIS_PED.png"/>|LAI Leaf: 6.000<br/> LAI Wood: 0.000|0.946|
 |37|HOM37_DIS_PEM|<image width="200" height="200" src="http://lessrt.org/img/SCENE-FOREST-HOM37_DIS_PEM.png"/>|LAI Leaf: 3.000<br/> LAI Wood: 0.000|0.814|
 |38|HOM38_DIS_PES|<image width="200" height="200" src="http://lessrt.org/img/SCENE-FOREST-HOM38_DIS_PES.png"/>|LAI Leaf: 2.000<br/> LAI Wood: 0.000|0.718|
+{: .tablelines}
 
     
