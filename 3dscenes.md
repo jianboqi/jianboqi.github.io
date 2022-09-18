@@ -9,9 +9,6 @@ published: true
 ### LESS projects of RAMI-V scenes
 #### This section provides all the LESS simulations that are built from RAMI-V scenes, you can download the simulations, and open it with LESS model.
 
-
-<html>
-    <body>
     <table border="1">
         <caption>DATASET_OBJ (These scenes are from <a href="https://rami-benchmark.jrc.ec.europa.eu/_www/index.php" target="_blank">RAMI website</a>)
         <br/>*LAI of wood is obtained by dividing the total surface area of all woody elements by 2.
@@ -293,7 +290,5 @@ published: true
             <td>0.718</td>
         </tr>
         </table>
-    
-    <body>
-<html>
+
     
