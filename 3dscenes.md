@@ -8,7 +8,10 @@ published: true
 
 
 ### LESS projects of RAMI-V scenes
-##### This section provides all the LESS simulations that are built from RAMI-V scenes, you can download the simulations, and open it with LESS model.
+##### This section provides all the LESS simulations that are built from [RAMI-V](https://rami-benchmark.jrc.ec.europa.eu/_www/index.php) scenes, you can download the simulations, and open it with LESS model.
+
+*LAI of wood is obtained by dividing the total surface area of all woody elements by 2.
+*The LAI of coniferous trees is computed using half the total area of the needles in a shoot.
 
 <style>
 .tablelines table, .tablelines td, .tablelines th {
