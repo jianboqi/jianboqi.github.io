@@ -18,7 +18,7 @@ This section provides all the LESS simulations that are built from [RAMI-V](http
         border: 1px solid black;
         }
 table{
-        width:600px;
+        width:800px;
         }
  .tablelines td img{
        padding:5px;
