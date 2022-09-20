@@ -19,6 +19,10 @@ sectionid: page_publications
 
 * Lai, Y., Mu, X., Li, W., Zou, J., Bian, Y., Zhou, K., Hu, R., Li, L., Xie, D., Yan, G., 2022. [Correcting for the clumping effect in leaf area index calculations using one-dimensional fractal dimension](https://www.sciencedirect.com/science/article/pii/S0034425722003650). Remote Sens. Environ. 281, 113259. 
 
+* Geng, J., Chen, J.M., Fan, W., Tu, L., Pang, Y., Yuan, G., Xu, L., Zhu, C., Zhang, T., Zhang, C., Ye, Z., Zhu, Y., Li, Z., 2022. [Application of a Hypergeometric Model in Simulating Canopy Gap Fraction and BRF for Forest Plantations on Sloping Terrains](https://doi.org/10.1109/JSTARS.2022.3156403). IEEE J. Sel. Top. Appl. Earth Obs. Remote Sens. 15, 2901–2913. 
+
+* Li, X., Tong, T., Luo, T., Wang, J., Rao, Y., Li, L., Jin, D., Wu, D., Huang, H., 2022. [Retrieving the Infected Area of Pine Wilt Disease-Disturbed Pine Forests from Medium-Resolution Satellite Images Using the Stochastic Radiative Transfer Theory](https://doi.org/10.3390/rs14061526). Remote Sens. 14, 1526. 
+
 * Song, W., Zhao, T., Mu, X., Zhong, B., Zhao, J., Yan, G., Wang, L., Niu, Z., 2022. [Using a Vegetation Index-Based Mixture Model to Estimate Fractional Vegetation Cover Products by Jointly Using Multiple Satellite Data: Method and Feasibility Analysis](https://www.mdpi.com/1999-4907/13/5/691/htm). Forests 13, 691.
 
 * Bian, Z., Wu, S., Roujean, J.-L., Cao, B., Li, H., Yin, G., Du, Y., Xiao, Q., Liu, Q., 2022. [A TIR forest reflectance and transmittance (FRT) model for directional temperatures with structural and thermal stratification](https://www.sciencedirect.com/science/article/abs/pii/S0034425721004697). Remote Sens. Environ. 268, 112749. 
