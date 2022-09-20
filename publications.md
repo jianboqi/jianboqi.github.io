@@ -15,6 +15,8 @@ sectionid: page_publications
 
 ###### 2022
 
+* Feng, B., Nie, S., Wang, C., Xi, X., Wang, J., Zhou, G., Wang, H., 2022. [Exploring the Potential of UAV LiDAR Data for Trunk Point Extraction and Direct DBH Measurement](https://doi.org/10.3390/rs14122753). Remote Sens. 14, 2753. 
+
 * Song, W., Mu, X., McVicar, T.R., Knyazikhin, Y., Liu, X., Wang, L., Niu, Z., Yan, G., 2022. [Global quasi-daily fractional vegetation cover estimated from the DSCOVR EPIC directional hotspot dataset](https://www.sciencedirect.com/science/article/pii/S0034425721005551). Remote Sens. Environ. 269, 112835. 
 
 * Lai, Y., Mu, X., Li, W., Zou, J., Bian, Y., Zhou, K., Hu, R., Li, L., Xie, D., Yan, G., 2022. [Correcting for the clumping effect in leaf area index calculations using one-dimensional fractal dimension](https://www.sciencedirect.com/science/article/pii/S0034425722003650). Remote Sens. Environ. 281, 113259. 
