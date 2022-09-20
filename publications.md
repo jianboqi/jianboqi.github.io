@@ -15,7 +15,7 @@ sectionid: page_publications
 
 ###### 2022
 
-* Lai, Y., Mu, X., Li, W., Zou, J., Bian, Y., Zhou, K., Hu, R., Li, L., Xie, D., Yan, G., 2022. [Correcting for the clumping effect in leaf area index calculations using one-dimensional fractal dimension] (https://doi.org/10.1016/j.rse.2022.113259). Remote Sens. Environ. 281, 113259. 
+* Lai, Y., Mu, X., Li, W., Zou, J., Bian, Y., Zhou, K., Hu, R., Li, L., Xie, D., Yan, G., 2022. [Correcting for the clumping effect in leaf area index calculations using one-dimensional fractal dimension](https://doi.org/10.1016/j.rse.2022.113259). Remote Sens. Environ. 281, 113259. 
 
 * Song, W., Zhao, T., Mu, X., Zhong, B., Zhao, J., Yan, G., Wang, L., Niu, Z., 2022. [Using a Vegetation Index-Based Mixture Model to Estimate Fractional Vegetation Cover Products by Jointly Using Multiple Satellite Data: Method and Feasibility Analysis](https://www.mdpi.com/1999-4907/13/5/691/htm). Forests 13, 691.
 
