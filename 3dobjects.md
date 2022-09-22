@@ -8,7 +8,7 @@ published: true
 
 This page provides some basic 3D objects in wavefront file format (.obj). This OBJ file can then be imported into LESS.
 
-### Tree objects
+### Crop objects
 
 <style>
 .tablelines table, .tablelines td, .tablelines th {
@@ -22,7 +22,8 @@ table{
         }
 </style>
 
-|Object Name|Visual Image|Dimension|Download link|
+|Object Name|Visual Image|Dimension [m] <br/> (EW×NS×Height)|Download link|
 |:-------------:|:-------------:|:-------------:|:-------------:|
-|HET07_JPS_SUM|<image width="200" height="200" src="http://lessrt.org/img/SCENE-FOREST-HET07_JPS_SUM.png"/>|||
+|Corn|![corn1](https://user-images.githubusercontent.com/1770654/191771751-e994b375-c195-4685-b961-10d9889ae6b4.png)|1.11×1.16×2.44||
 {: .tablelines}
+
