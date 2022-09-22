@@ -8,7 +8,7 @@ published: true
 
 This page provides some basic 3D objects in wavefront file format (.obj). This OBJ file can then be imported into LESS.
 
-### Crop objects
+### Crop and grass objects
 
 <style>
 .tablelines table, .tablelines td, .tablelines th {
