@@ -47,10 +47,22 @@ defaults:
     seo:
       type: "WebPage"
 
+- scope:
+    path: _3dscenes
+    type: 3dscenes
+  values:
+    layout: docs
+    sectionid: 3dscenes
+    seo:
+      type: "WebPage"
+
 collections:
   docs:
     permalink: /:collection/:path/
     output: true
   posts:
     permalink: /blog/:year/:month/:day/:title/
+    output: true
+  3dscenes:
+    permalink: /:collection/:path/
     output: true
