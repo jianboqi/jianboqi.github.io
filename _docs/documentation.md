@@ -14,6 +14,11 @@ redirect_from: /docs/index.html
 
 链接: [三维辐射传输模型LESS原理与实践简明教程](https://pan.baidu.com/s/12RTYrw9Ef8H1mE2rBIijKw), 提取码: nihu
 
+### Video tutorial （中文）
+~~~ html
+<iframe src="//player.bilibili.com/player.html?aid=374298277&bvid=BV1Po4y1R7ys&cid=305199913&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+~~~
+
 {::comment}
 ### LESS Example Document
 
