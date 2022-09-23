@@ -14,7 +14,7 @@ redirect_from: /docs/index.html
 
 链接: [三维辐射传输模型LESS原理与实践简明教程](https://pan.baidu.com/s/12RTYrw9Ef8H1mE2rBIijKw), 提取码: nihu
 
-<!--
+{::comment}
 ### LESS Example Document
 
 [LESS Example Document (V1.8.8).pdf](http://lessrt.org/Attachments/LESS_Example_Document_V1.8.8.pdf)
@@ -29,4 +29,4 @@ redirect_from: /docs/index.html
 | [Example 3-Albedo Simulation](http://lessrt.org/Attachments/Example3-albedo.zip) |
 | [Example 4-Directional Gap Probability Simulation](http://lessrt.org/Attachments/Example4-directional_gap_probability.zip) |
 | [Example5-Fisheye](http://lessrt.org/Attachments/Example5-Fisheye.zip)|
--->
+{:/comment}
