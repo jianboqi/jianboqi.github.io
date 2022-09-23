@@ -16,6 +16,8 @@ redirect_from: /docs/index.html
 
 ### Video tutorial （中文）
 
+Bilibili: [LESS三维辐射传输模型实践教程](https://www.bilibili.com/video/BV1Po4y1R7ys/)
+
 <figure class="video_container">
 <iframe src="//player.bilibili.com/player.html?aid=374298277&bvid=BV1Po4y1R7ys&cid=305199913&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 </figure>
