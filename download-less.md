@@ -13,11 +13,11 @@ If you have problems under Windows,please refer to [problems under windows](http
 `[注：请不要使用中文路径]`
 <br>
 <br>
-#### 2022-10-02 (version 2.0-2022-10-02):
-**Windows**:<a href="https://drive.google.com/file/d/1Rg85Fh56lvT3S4jCsVNmDEdIjpfmJ2tA/view?usp=sharing">LESS-1.9.9-2022-07-08-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1TuxErHWKpVyf4AJPUiLXPQ?pwd=tadl">LESS-2.0-2022-10-02-win64</a>. 提取码/Code: tadl)
+#### 2022-10-04 (version 2.0-2022-10-04):
+**Windows**:<a href="https://drive.google.com/file/d/1SEo0VsFaP-sHppvtQgdo6e5EMiUVZfdV/view?usp=sharing">LESS-2.0-2022-10-04-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1o5eJ5KjXNQcqnauO8eIyhg?pwd=3dpr">LESS-2.0-2022-10-04-win64</a>. 提取码/Code: 3dpr)
 
 * A new mode that uses turbid medium to describe canopy structures is introduced, it supports image, BRF, FPAR simulaiton etc. In this new mode, tree crowns can be represented with alphashapes to describe the complex crown boundaries.
-* The Simple Crown Generator tool supports to create crowns for support turbid medium.
+* The Simple Crown Generator tool supports creating crown boundaries.
 
 <img src="http://lessrt.org/img/content/turbidsim3dview.png" height="250"/>
 <img src="http://lessrt.org/img/content/turbidsim.png" height="250"/>
