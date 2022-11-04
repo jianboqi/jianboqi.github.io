@@ -8,7 +8,7 @@ redirect_from: /docs/index.html
 
 
 ### LESS User Manual
-[LESS User Manual (V1.8.8).pdf](http://lessrt.org/Attachments/LESS_User_Manual.pdf)
+[LESS User Manual.pdf](http://lessrt.org/Attachments/LESS_User_Manual.pdf)
 
 ### 中文教程
 
