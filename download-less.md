@@ -13,6 +13,14 @@ If you have problems under Windows,please refer to [problems under windows](http
 `[注：请不要使用中文路径]`
 <br>
 <br>
+#### 2022-11-12 (version 2.0-2022-11-12):
+**Windows**:<a href="https://drive.google.com/file/d/1cfjNY1_BlxtctihEgYZQwGAVdQJlGhG0/view?usp=sharing">LESS-2.0-2022-11-12-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1M34AfXVSI5PV6bh-19HuFQ?pwd=6pcp">LESS-2.0-2022-11-12-win64</a>)
+
+* The simple crown generator(Tools->3D Object Creation-> Simple Crown Generator) has been improved to create both facet and turbid crowns. A new feature that considers the within-crown clumping of leaves is introduced.
+
+![scg_c](https://user-images.githubusercontent.com/1770654/201458164-17599ee5-2da9-4c71-88a5-0af9d650a544.png)
+
+
 #### 2022-10-04 (version 2.0-2022-10-04):
 **Windows**:<a href="https://drive.google.com/file/d/1SEo0VsFaP-sHppvtQgdo6e5EMiUVZfdV/view?usp=sharing">LESS-2.0-2022-10-04-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1o5eJ5KjXNQcqnauO8eIyhg?pwd=3dpr">LESS-2.0-2022-10-04-win64</a>. 提取码/Code: 3dpr)
 
