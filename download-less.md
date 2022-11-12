@@ -18,7 +18,7 @@ If you have problems under Windows,please refer to [problems under windows](http
 
 * The simple crown generator(Tools->3D Object Creation-> Simple Crown Generator) has been improved to create both facet and turbid crowns. A new feature that considers the within-crown clumping of leaves is introduced.
 
-<img src="[http://lessrt.org/img/content/combine.png](https://user-images.githubusercontent.com/1770654/201458164-17599ee5-2da9-4c71-88a5-0af9d650a544.png)" height="250"/>
+<img src="https://user-images.githubusercontent.com/1770654/201458164-17599ee5-2da9-4c71-88a5-0af9d650a544.png" height="250"/>
 
 
 #### 2022-10-04 (version 2.0-2022-10-04):
