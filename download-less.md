@@ -13,6 +13,16 @@ If you have problems under Windows,please refer to [problems under windows](http
 `[注：请不要使用中文路径]`
 <br>
 <br>
+
+#### 2022-11-26 (version 2.0-2022-11-26):
+**Windows**:<a href="https://drive.google.com/file/d/1wWYwmAukr73d4N3PZ6j55WZgpcOqzzLb/view?usp=share_link">LESS-2.0-2022-11-26-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1HwbYy3SQEseOJwLTLEQDFw?pwd=lxo1">LESS-2.0-2022-11-26-win64</a>)
+
+* Some new features have been realized for the GUI
+* The visulization of 3D scene has been greatly improved in its performance.
+* The 3D viewer is able to pick object and show its name.
+* The object in the 2D view is highlighted if a tree position is selected.
+* More details about the new features, please refer to [New-features-in-GUI](http://lessrt.org/blog/2022/11/26/New-features-in-GUI/)
+
 #### 2022-11-12 (version 2.0-2022-11-12):
 **Windows**:<a href="https://drive.google.com/file/d/1cfjNY1_BlxtctihEgYZQwGAVdQJlGhG0/view?usp=sharing">LESS-2.0-2022-11-12-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1M34AfXVSI5PV6bh-19HuFQ?pwd=6pcp">LESS-2.0-2022-11-12-win64</a>)
 
