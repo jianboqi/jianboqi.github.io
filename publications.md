@@ -4,6 +4,8 @@ layout: page
 permalink: /publications/
 sectionid: page_publications
 ---
+* Qi, J., Jiang, J., Zhou, K., Xie, D., Huang, H., 2022. [Fast and Accurate Simulation of Canopy Reflectance under Wavelength-Dependent Optical Properties Using a Semi-Empirical 3D Radiative Transfer Model](https://spj.science.org/doi/10.34133/remotesensing.0017). Journal of Remote Sensing 0. https://doi.org/10.34133/remotesensing.0017
+
 * Qi, J., Xie, D., Jiang, J., Huang, H., 2022. [3D radiative transfer modeling of structurally complex forest canopies through a lightweight boundary-based description of leaf clusters](https://www.sciencedirect.com/science/article/abs/pii/S0034425722004072). Remote Sensing of Environment. 283, 113301. https://doi.org/10.1016/j.rse.2022.113301
 
 * Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W., Mu, X., Norford, L.K., 2019. [LESS: LargE-Scale remote sensing data and image simulation framework over heterogeneous 3D scenes](https://www.sciencedirect.com/science/article/pii/S0034425718305443?via%3Dihub). Remote Sensing of Environment. 221, 695–706. https://doi.org/10.1016/j.rse.2018.11.036
@@ -16,6 +18,12 @@ sectionid: page_publications
 ### Publications that have used LESS
 
 ###### 2022
+
+* Geng, J., Tu, L., Chen, J.M., Roujean, J.-L., Yuan, G., Hu, R., Huang, J., Zhang, C., Ye, Z., Qu, X., Yu, M., Zhu, Y., Tian, Q., 2022. [Variation of Clumping Index With Zenith Angle for Forest Canopies](https://ieeexplore.ieee.org/abstract/document/9969653). IEEE Transactions on Geoscience and Remote Sensing 60, 1–11. https://doi.org/10.1109/TGRS.2022.3226154
+
+* Cheng, J., Yang, H., Qi, J., Sun, Z., Han, S., Feng, H., Jiang, J., Xu, W., Li, Z., Yang, G., Zhao, C., 2022. [Estimating canopy-scale chlorophyll content in apple orchards using a 3D radiative transfer model and UAV multispectral imagery](https://www.sciencedirect.com/science/article/abs/pii/S0168169922007098). Computers and Electronics in Agriculture 202, 107401. https://doi.org/10.1016/j.compag.2022.107401
+
+* Dai, Z., Ding, Y., Xu, C., Chen, Y., Liu, L., 2022. [Evaluation of the impact of crop residue on fractional vegetation cover estimation by vegetation indices over conservation tillage cropland: a simulation study](https://www.tandfonline.com/doi/full/10.1080/01431161.2022.2139649). International Journal of Remote Sensing 43, 6463–6482. https://doi.org/10.1080/01431161.2022.2139649
 
 * Feng, B., Nie, S., Wang, C., Xi, X., Wang, J., Zhou, G., Wang, H., 2022. [Exploring the Potential of UAV LiDAR Data for Trunk Point Extraction and Direct DBH Measurement](https://doi.org/10.3390/rs14122753). Remote Sens. 14, 2753. 
 
