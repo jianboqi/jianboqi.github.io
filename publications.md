@@ -15,7 +15,7 @@ sectionid: page_publications
 * 漆建波, 谢东辉, 许月, 阎广建, 2019. [三维辐射传输模型LESS原理及其应用](http://www.rsta.ac.cn/CN/10.11873/j.issn.1004-0323.2019.5.0914). 遥感技术与应用.
 
 
-### Publications that have used LESS
+### Publications and reasearches that have used LESS
 
 ###### 2022
 
