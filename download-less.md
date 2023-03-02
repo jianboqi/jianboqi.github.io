@@ -14,6 +14,14 @@ If you have problems under Windows,please refer to [problems under windows](http
 <br>
 <br>
 
+
+#### 2023-03-02 (version 2.0.1-2023-03-02):
+**Windows**:<a href="https://drive.google.com/file/d/1w9i5JTi9OftZEjQbCK7p96ocrgR-upee/view?usp=share_link">LESS-2.0.1-2023-03-02-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1KaJgoRpIjcXgWEbyPySi5A?pwd=kltq">LESS-2.0.1-2023-03-02-win64</a>)
+
+* When importing OBJ file, users can specify the desired object size, and LESS will automatically scale the obj.
+* Some bugs related to ALS2LESS have been fixed. Now, it support las file without GPS time.
+
+
 #### 2022-11-26 (version 2.0-2022-11-26):
 **Windows**:<a href="https://drive.google.com/file/d/1wWYwmAukr73d4N3PZ6j55WZgpcOqzzLb/view?usp=share_link">LESS-2.0-2022-11-26-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1HwbYy3SQEseOJwLTLEQDFw?pwd=lxo1">LESS-2.0-2022-11-26-win64</a>)
 
