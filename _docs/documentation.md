@@ -12,7 +12,7 @@ redirect_from: /docs/index.html
 
 ### 中文教程
 
-链接: [三维辐射传输模型LESS原理与实践简明教程](https://pan.baidu.com/s/1pZjz3FF1LFWGVChgkmqdOQ?pwd=7eua)
+链接: [三维辐射传输模型LESS原理与实践简明教程](https://pan.baidu.com/s/1ZraBG3yFZaePlqjxKEr4Zw?pwd=6bg7)
 
 ### Video tutorial （中文）
 
