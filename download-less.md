@@ -14,6 +14,12 @@ If you have problems under Windows,please refer to [problems under windows](http
 <br>
 <br>
 
+#### 2023-04-11 (version 2.0.4-2023-04-11):
+**Windows**:<a href="https://drive.google.com/file/d/15zpmyC8-THvCOP6Jo8IzkF7NzmAH9BwP/view?usp=sharing">LESS-2.0.4-2023-04-11-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1y-b1hWQ-y8iDwyBZBlz00w?pwd=g713">LESS-2.0.4-2023-04-11-win64</a>)
+
+* A new module to convert ALS point cloud into LESS simulations(【Tools】【3D Forest From LiDAR (ALS)】). This tool automatically filters the point cloud, segments tree crown, estimates leaf area density, etc. 
+* The Python SDK supports runtime modification of solar and view angles, leaf and soil spectral properties, which enables to fast simulate reflectance when changing optical properties without modifying structural properties if required.
+
 
 #### 2023-03-02 (version 2.0.1-2023-03-02):
 **Windows**:<a href="https://drive.google.com/file/d/1w9i5JTi9OftZEjQbCK7p96ocrgR-upee/view?usp=share_link">LESS-2.0.1-2023-03-02-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1KaJgoRpIjcXgWEbyPySi5A?pwd=kltq">LESS-2.0.1-2023-03-02-win64</a>)
