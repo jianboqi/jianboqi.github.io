@@ -4,7 +4,9 @@ layout: page
 permalink: /publications/
 sectionid: page_publications
 ---
-* Qi, J., Jiang, J., Zhou, K., Xie, D., Huang, H., 2022. [Fast and Accurate Simulation of Canopy Reflectance under Wavelength-Dependent Optical Properties Using a Semi-Empirical 3D Radiative Transfer Model](https://spj.science.org/doi/10.34133/remotesensing.0017). Journal of Remote Sensing 0. https://doi.org/10.34133/remotesensing.0017
+* Gao, G., Qi, J., Lin, S., Hu, R., Huang, H., 2023. [Estimating plant area density of individual trees from discrete airborne laser scanning data using intensity information and path length distribution](https://www.sciencedirect.com/science/article/pii/S1569843223001036). International Journal of Applied Earth Observation and Geoinformation 118, 103281. https://doi.org/10.1016/j.jag.2023.103281
+
+* Qi, J., Jiang, J., Zhou, K., Xie, D., Huang, H., 2023. [Fast and Accurate Simulation of Canopy Reflectance under Wavelength-Dependent Optical Properties Using a Semi-Empirical 3D Radiative Transfer Model](https://spj.science.org/doi/10.34133/remotesensing.0017). Journal of Remote Sensing 0017. https://doi.org/10.34133/remotesensing.0017
 
 * Qi, J., Xie, D., Jiang, J., Huang, H., 2022. [3D radiative transfer modeling of structurally complex forest canopies through a lightweight boundary-based description of leaf clusters](https://www.sciencedirect.com/science/article/abs/pii/S0034425722004072). Remote Sensing of Environment. 283, 113301. https://doi.org/10.1016/j.rse.2022.113301
 
