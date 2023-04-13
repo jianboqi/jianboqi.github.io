@@ -69,21 +69,10 @@ table{
 |38|HOM38_DIS_PES|<image width="200" height="200" src="http://lessrt.org/img/SCENE-FOREST-HOM38_DIS_PES.png"/>|LAI Leaf: 2.000<br/> LAI Wood: 0.000|0.718|[百度网盘](https://pan.baidu.com/s/1J8RURbCZXOpQBUXbBmpMPQ?pwd=cuab)<br/>[Google Drive](https://drive.google.com/file/d/1iapiBU4Sr8OlfCQegF-pBvYthjulQpDO/view?usp=sharing)|
 {: .tablelines}
 
-    
+ 
 ### 3D Objects
 
 This section provides some basic 3D objects in wavefront file format (.obj). This OBJ file can then be imported into LESS.
-<style>
-.tablelines table, .tablelines td, .tablelines th {
-        border: 1px solid black;
-        }
-table{
-        width:600px;
-        }
- .tablelines td img{
-       padding:5px;
-        }
-</style>
 #### Crop and grass objects
 |Object Name|Visual Image|Dimension [m] <br/> (EW×NS×Height)|Download link|Reference|
 |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
