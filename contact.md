@@ -7,4 +7,4 @@ published: true
 ---
 
 * If you have any question, please contact Jianbo Qi: jianboqi@126.com
-* 
+* You can also ask questions in the [LESS forum](http://forum.lessrt.org/)
