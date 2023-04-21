@@ -4,6 +4,8 @@ layout: page
 permalink: /publications/
 sectionid: page_publications
 ---
+* Zhou, K., Xie, D., Qi, J., Zhang, Z., Bo, X., Yan, G., Mu, X., 2023. [Explicitly Reconstructing RAMI-V Scenes for Accurate 3-Dimensional Radiative Transfer Simulation Using the LESS Model](https://spj.science.org/doi/10.34133/remotesensing.0033). J. Remote Sens. 3, 0033. https://doi.org/10.34133/remotesensing.0033
+
 * Gao, G., Qi, J., Lin, S., Hu, R., Huang, H., 2023. [Estimating plant area density of individual trees from discrete airborne laser scanning data using intensity information and path length distribution](https://www.sciencedirect.com/science/article/pii/S1569843223001036). International Journal of Applied Earth Observation and Geoinformation 118, 103281. https://doi.org/10.1016/j.jag.2023.103281
 
 * Qi, J., Jiang, J., Zhou, K., Xie, D., Huang, H., 2023. [Fast and Accurate Simulation of Canopy Reflectance under Wavelength-Dependent Optical Properties Using a Semi-Empirical 3D Radiative Transfer Model](https://spj.science.org/doi/10.34133/remotesensing.0017). Journal of Remote Sensing 0017. https://doi.org/10.34133/remotesensing.0017
