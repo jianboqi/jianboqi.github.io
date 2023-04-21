@@ -13,7 +13,11 @@ Table of contents:
 ### LESS projects of RAMI-V scenes
 This section provides all the LESS simulations that are built from [RAMI-V](https://rami-benchmark.jrc.ec.europa.eu/_www/index.php) scenes, you can download each of the simulations from the following list or download all of them from here: [百度网盘](https://pan.baidu.com/s/1QGPZuxZwMN88UTlHb4qMCA?pwd=1qx7),[Google Drive](https://drive.google.com/drive/folders/19unJIW_dSN24_5SDDfEqwyoqV5AaRKwC?usp=sharing), and open it with LESS model.
 
+If you used the scenes from this page, you can cite the following paper:
+*Zhou, K., Xie, D., Qi, J., Zhang, Z., Bo, X., Yan, G., Mu, X., 2023. Explicitly Reconstructing RAMI-V Scenes for Accurate 3-Dimensional Radiative Transfer Simulation Using the LESS Model. J. Remote Sens. 3, 0033. https://doi.org/10.34133/remotesensing.0033*
+
 *LAI of wood is obtained by dividing the total surface area of all woody elements by 2.
+
 *The LAI of coniferous trees is computed using half the total area of the needles in a shoot.
 
 <style>
