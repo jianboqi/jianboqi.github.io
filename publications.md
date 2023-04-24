@@ -23,6 +23,14 @@ sectionid: page_publications
 
 ### Publications and reasearches that have used LESS
 
+###### 2023
+
+* Zhu, W., You, D., Wen, J., Tang, Y., Gong, B., Han, Y., 2023. [Evaluation of Linear Kernel-Driven BRDF Models over Snow-Free Rugged Terrain](https://www.mdpi.com/2072-4292/15/3/786). Remote Sensing 15, 786. https://doi.org/10.3390/rs15030786
+
+* Liu, Z., Long, J., Lin, H., Du, K., Xu, X., Liu, H., Yang, P., Zhang, T., Ye, Z., 2023. [Interpretation and Mapping Tree Crown Diameter Using Spatial Heterogeneity in Relation to the Radiative Transfer Model Extracted from GF-2 Images in Planted Boreal Forest Ecosystems](https://www.mdpi.com/2072-4292/15/7/1806). Remote Sensing 15, 1806. https://doi.org/10.3390/rs15071806
+
+* 张腾, 游冬琴, 闻建光, 唐勇, 2023. [二向反射遥感反演最优角度采样方法研究](http://www.rsta.ac.cn/CN/10.11873/j.issn.1004-0323.2023.1.0066). 遥感技术与应用 38, 66–77. https://doi.org/10.11873/j.issn.1004-0323.2023.1.0066
+
 ###### 2022
 
 * Tong, Y., Jiao, Z., Zhang, X., Yin, S., Guo, J., 2022. [An Improved Method for Estimating Clumping Index by Digital Hemispheric Photography With Field Measurements](https://ieeexplore.ieee.org/abstract/document/9926131). IEEE Geoscience and Remote Sensing Letters 19, 1–5. https://doi.org/10.1109/LGRS.2022.3216274
