@@ -25,6 +25,8 @@ sectionid: page_publications
 
 ###### 2022
 
+* Tong, Y., Jiao, Z., Zhang, X., Yin, S., Guo, J., 2022. [An Improved Method for Estimating Clumping Index by Digital Hemispheric Photography With Field Measurements](https://ieeexplore.ieee.org/abstract/document/9926131). IEEE Geoscience and Remote Sensing Letters 19, 1–5. https://doi.org/10.1109/LGRS.2022.3216274
+
 * Geng, J., Tu, L., Chen, J.M., Roujean, J.-L., Yuan, G., Hu, R., Huang, J., Zhang, C., Ye, Z., Qu, X., Yu, M., Zhu, Y., Tian, Q., 2022. [Variation of Clumping Index With Zenith Angle for Forest Canopies](https://ieeexplore.ieee.org/abstract/document/9969653). IEEE Transactions on Geoscience and Remote Sensing 60, 1–11. https://doi.org/10.1109/TGRS.2022.3226154
 
 * Cheng, J., Yang, H., Qi, J., Sun, Z., Han, S., Feng, H., Jiang, J., Xu, W., Li, Z., Yang, G., Zhao, C., 2022. [Estimating canopy-scale chlorophyll content in apple orchards using a 3D radiative transfer model and UAV multispectral imagery](https://www.sciencedirect.com/science/article/abs/pii/S0168169922007098). Computers and Electronics in Agriculture 202, 107401. https://doi.org/10.1016/j.compag.2022.107401
