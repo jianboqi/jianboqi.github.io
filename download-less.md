@@ -14,6 +14,17 @@ If you have problems under Windows,please refer to [problems under windows](http
 <br>
 <br>
 
+#### 2023-05-18 (version 2.1.1-2023-05-18):
+**Windows**:<a href="https://drive.google.com/drive/folders/1JeV4XfI8cIztB3kx27AP-1rlX8IvYkHO?usp=share_link">LESS-2.1.1-2023-05-18-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1WoFUrZ2bMRkDDuTWVqq8Fg?pwd=a75y">LESS-2.1.1-2023-05-18-win64</a>)
+
+* We are pleased to announce that we added a very useful tool to generate python code automatically from GUI. (Tools->Generate Python Code), this tool
+automatically generate a python code according to the parameters you set with GUI. With this code (and the provided Python SDK), you can simply modify
+it and run without GUI. You can easily to do the batch processing with this new features by loop some of parameters.
+* The Python interpreter embeded within LESS has been upgraded to Python 3.10
+* New alphashape algorithm has been implemented for the tool 【3D Forest From LiDAR (ALS)】, which has much more higher efficiency.
+* The 3D display of object (in 3D object viewer) can choose to display selected groups only.
+
+
 #### 2023-04-11 (version 2.0.4-2023-04-11):
 **Windows**:<a href="https://drive.google.com/drive/folders/1JeV4XfI8cIztB3kx27AP-1rlX8IvYkHO?usp=share_link">LESS-2.0.4-2023-04-11-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1WoFUrZ2bMRkDDuTWVqq8Fg?pwd=a75y">LESS-2.0.4-2023-04-11-win64</a>)
 
