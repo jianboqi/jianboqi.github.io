@@ -25,6 +25,18 @@ sectionid: page_publications
 
 ###### 2023
 
+* Cheng, J., Yang, H., Qi, J., Han, S., Sun, Z., Feng, H., Chen, R., Zhang, C., Li, J., Yang, G., 2023. Evaluation of the effect of leaf spatial aggregation on chlorophyll content retrieval in open-canopy apple orchards. International Journal of Applied Earth Observation and Geoinformation 121, 103367. https://doi.org/10.1016/j.jag.2023.103367
+
+* Xian, Y., Wang, T., Cheng, W., Letu, H., Du, Y., Leng, W., 2023. A Uniform Model for Correcting Shortwave Downward Radiation Over Rugged Terrain at Various Scales. IEEE Transactions on Geoscience and Remote Sensing 1–1. https://doi.org/10.1109/TGRS.2023.3278081
+
+* Zhang, Q., Wang, D., Gastellu-Etchegorry, J.-P., Yang, J., Qian, Y., 2023. Impact of 3-D structures on directional effective emissivity in urban areas based on DART model. Building and Environment 239, 110410. https://doi.org/10.1016/j.buildenv.2023.110410
+
+* Li, H., Yan, K., Gao, S., Ma, X., Zeng, Y., Li, W., Yin, G., Mu, X., Yan, G., Myneni, R.B., 2023. A Novel Inversion Approach for the Kernel-Driven BRDF Model for Heterogeneous Pixels. Journal of Remote Sensing 3, 0038. https://doi.org/10.34133/remotesensing.0038
+
+* Ye, X., Ren, H., Wang, P., Zhu, Jinshun, Zhu, Jian, 2023. Thermal Infrared Radiance Transfer Modeling of the Urban Landscape at Ultrahigh Spatial Resolution. IEEE Geoscience and Remote Sensing Letters 20, 1–5. https://doi.org/10.1109/LGRS.2023.3270582
+
+* Huang, H., Qi, J., Li, L., 2023. [Enhanced Branch Simulation to Improve RAPID in Optical Region Using RAMI Scenes](https://spj.science.org/doi/full/10.34133/remotesensing.0039). Journal of Remote Sensing 3, 0039. https://doi.org/10.34133/remotesensing.0039
+
 * Zhu, W., You, D., Wen, J., Tang, Y., Gong, B., Han, Y., 2023. [Evaluation of Linear Kernel-Driven BRDF Models over Snow-Free Rugged Terrain](https://www.mdpi.com/2072-4292/15/3/786). Remote Sensing 15, 786. https://doi.org/10.3390/rs15030786
 
 * Liu, Z., Long, J., Lin, H., Du, K., Xu, X., Liu, H., Yang, P., Zhang, T., Ye, Z., 2023. [Interpretation and Mapping Tree Crown Diameter Using Spatial Heterogeneity in Relation to the Radiative Transfer Model Extracted from GF-2 Images in Planted Boreal Forest Ecosystems](https://www.mdpi.com/2072-4292/15/7/1806). Remote Sensing 15, 1806. https://doi.org/10.3390/rs15071806
