@@ -21,7 +21,7 @@ If you have problems under Windows,please refer to [problems under windows](http
 * For the LiDAR Module, Now, we can input a pulse information text file to define the origin and direction of each individual pulses, which enables to simualte more complex scanning patterns, such as mobile lidar.
 * Photon counting LiDAR is implemented with solar noise considered.
 * Incident PAR for each horizontal layer is outputed for the FPAR module.
-* A very useful tool which is named **LESS Plugins** (【Tools】【LESS Plugins】) is newly introduced within LESS, this tool enables users to define a customized plugin based on LESS, some existing plugins include LAI3D to compute 3D LAI distribution, generate CHM from the 3D scene, etc.
+* A very useful tool which is named **LESS Plugins** (【Tools】【LESS Plugins】) is newly introduced within LESS, this tool enables users to define a customized plugin based on LESS, some existing plugins include LAI3D to compute 3D LAI distribution, generate CHM from the 3D scene, etc. More details: [LESS Plugins description](http://lessrt.org/blog/2023/07/16/New-LESS-Plugins/)
 
 #### 2023-05-18 (version 2.1.1-2023-05-18):
 **Windows**:<a href="https://drive.google.com/drive/folders/1JeV4XfI8cIztB3kx27AP-1rlX8IvYkHO?usp=share_link">LESS-2.1.1-2023-05-18-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1WoFUrZ2bMRkDDuTWVqq8Fg?pwd=a75y">LESS-2.1.1-2023-05-18-win64</a>)
