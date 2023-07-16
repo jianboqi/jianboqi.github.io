@@ -9,3 +9,7 @@ This dialog list all the currently awailable plugins, on clicking each of them, 
 Choose one of the plugin, and click 【Run Plugin】, the specific GUI of the selected plugin will be shown, and you can input some parameters
 and Run the plugin to get results.
 ![image](https://github.com/jianboqi/jianboqi.github.io/assets/1770654/c5329d6a-9f27-4c29-a43d-24b410d7d3fd)
+
+## How to develop a new plugin
+A demo plugin named APluginDevDemo is provided. You can copy this plugin a protype: copy this plugin ([LESS installation folder]/app/ython_script/LESSPlugins/StandardPlugins/APluginDevDemo) and rename the foler to your own plugin name (e.g., demo), then rename the APluginDevDemo.py to your own (e.g., demo), then modify the info.json, especially the PluginName attribute to your own name (e.g., demo). Write you own code with in run (or thread_fun) function of demo.py.
+
