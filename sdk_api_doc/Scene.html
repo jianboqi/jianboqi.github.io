@@ -124,99 +124,162 @@ Scene    </h1>
 
                         <label class="view-source-button" for="mod-Scene-view-source"><span>View Source</span></label>
 
-                        <div class="pdoc-code codehilite"><pre><span></span><span id="L-1"><a href="#L-1"><span class="linenos"> 1</span></a><span class="c1"># coding: utf-8</span>
-</span><span id="L-2"><a href="#L-2"><span class="linenos"> 2</span></a><span class="kn">import</span> <span class="nn">json</span>
-</span><span id="L-3"><a href="#L-3"><span class="linenos"> 3</span></a><span class="kn">from</span> <span class="nn">Landscape</span> <span class="kn">import</span> <span class="n">Landscape</span>
-</span><span id="L-4"><a href="#L-4"><span class="linenos"> 4</span></a><span class="kn">from</span> <span class="nn">Sensor</span> <span class="kn">import</span> <span class="n">SensorOrthographic</span><span class="p">,</span> <span class="n">SensorLiDAR</span>
-</span><span id="L-5"><a href="#L-5"><span class="linenos"> 5</span></a><span class="kn">from</span> <span class="nn">Illumination</span> <span class="kn">import</span> <span class="n">Illumination</span>
-</span><span id="L-6"><a href="#L-6"><span class="linenos"> 6</span></a><span class="kn">from</span> <span class="nn">Observation</span> <span class="kn">import</span> <span class="n">ObservationOrthographic</span>
-</span><span id="L-7"><a href="#L-7"><span class="linenos"> 7</span></a><span class="kn">from</span> <span class="nn">AdvancedParams</span> <span class="kn">import</span> <span class="n">AdvancedParams</span>
-</span><span id="L-8"><a href="#L-8"><span class="linenos"> 8</span></a><span class="kn">from</span> <span class="nn">Element</span> <span class="kn">import</span> <span class="n">Element</span>
-</span><span id="L-9"><a href="#L-9"><span class="linenos"> 9</span></a><span class="kn">from</span> <span class="nn">LiDAR</span> <span class="kn">import</span> <span class="n">LiDAR</span>
-</span><span id="L-10"><a href="#L-10"><span class="linenos">10</span></a><span class="kn">import</span> <span class="nn">sys</span>
-</span><span id="L-11"><a href="#L-11"><span class="linenos">11</span></a>
-</span><span id="L-12"><a href="#L-12"><span class="linenos">12</span></a>
-</span><span id="L-13"><a href="#L-13"><span class="linenos">13</span></a><span class="k">class</span> <span class="nc">Scene</span><span class="p">(</span><span class="n">Element</span><span class="p">):</span>
-</span><span id="L-14"><a href="#L-14"><span class="linenos">14</span></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sim</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-</span><span id="L-15"><a href="#L-15"><span class="linenos">15</span></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-</span><span id="L-16"><a href="#L-16"><span class="linenos">16</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span> <span class="o">=</span> <span class="n">SensorOrthographic</span><span class="p">()</span>
-</span><span id="L-17"><a href="#L-17"><span class="linenos">17</span></a>        <span class="c1"># self.__lidarSensor = None</span>
-</span><span id="L-18"><a href="#L-18"><span class="linenos">18</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span> <span class="o">=</span> <span class="n">Landscape</span><span class="p">()</span>
-</span><span id="L-19"><a href="#L-19"><span class="linenos">19</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span> <span class="o">=</span> <span class="n">Illumination</span><span class="p">()</span>
-</span><span id="L-20"><a href="#L-20"><span class="linenos">20</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span> <span class="o">=</span> <span class="n">ObservationOrthographic</span><span class="p">()</span>
-</span><span id="L-21"><a href="#L-21"><span class="linenos">21</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span> <span class="o">=</span> <span class="n">AdvancedParams</span><span class="p">()</span>
-</span><span id="L-22"><a href="#L-22"><span class="linenos">22</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="n">sim</span><span class="p">)</span>
-</span><span id="L-23"><a href="#L-23"><span class="linenos">23</span></a>
-</span><span id="L-24"><a href="#L-24"><span class="linenos">24</span></a>    <span class="k">def</span> <span class="nf">set_sensor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sensor</span><span class="p">):</span>
-</span><span id="L-25"><a href="#L-25"><span class="linenos">25</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span> <span class="o">=</span> <span class="n">sensor</span>
-</span><span id="L-26"><a href="#L-26"><span class="linenos">26</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
-</span><span id="L-27"><a href="#L-27"><span class="linenos">27</span></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="p">,</span> <span class="n">SensorLiDAR</span><span class="p">):</span>
-</span><span id="L-28"><a href="#L-28"><span class="linenos">28</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">get_scanning_device</span><span class="p">()</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
-</span><span id="L-29"><a href="#L-29"><span class="linenos">29</span></a>        <span class="c1"># correct atmosphere skl according to number of bands</span>
-</span><span id="L-30"><a href="#L-30"><span class="linenos">30</span></a>        <span class="n">new_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">get_spectral_bands</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">))</span>
-</span><span id="L-31"><a href="#L-31"><span class="linenos">31</span></a>        <span class="n">ill</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">()</span><span class="o">.</span><span class="n">get_scene</span><span class="p">()</span><span class="o">.</span><span class="n">get_illumination</span><span class="p">()</span>
-</span><span id="L-32"><a href="#L-32"><span class="linenos">32</span></a>        <span class="n">ats_skl</span> <span class="o">=</span> <span class="n">ill</span><span class="o">.</span><span class="n">get_ats_percentage</span><span class="p">()</span>
-</span><span id="L-33"><a href="#L-33"><span class="linenos">33</span></a>        <span class="n">arr</span> <span class="o">=</span> <span class="n">ats_skl</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
-</span><span id="L-34"><a href="#L-34"><span class="linenos">34</span></a>        <span class="n">old_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
-</span><span id="L-35"><a href="#L-35"><span class="linenos">35</span></a>        <span class="k">if</span> <span class="n">new_len</span> <span class="o">&gt;=</span> <span class="n">old_len</span><span class="p">:</span>
-</span><span id="L-36"><a href="#L-36"><span class="linenos">36</span></a>            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">new_len</span> <span class="o">-</span> <span class="n">old_len</span><span class="p">):</span>
-</span><span id="L-37"><a href="#L-37"><span class="linenos">37</span></a>                <span class="n">arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;0.0&quot;</span><span class="p">)</span>
-</span><span id="L-38"><a href="#L-38"><span class="linenos">38</span></a>        <span class="k">else</span><span class="p">:</span>
-</span><span id="L-39"><a href="#L-39"><span class="linenos">39</span></a>            <span class="n">arr</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">new_len</span><span class="p">]</span>
-</span><span id="L-40"><a href="#L-40"><span class="linenos">40</span></a>        <span class="n">ill</span><span class="o">.</span><span class="n">set_ats_percentage</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span>
-</span><span id="L-41"><a href="#L-41"><span class="linenos">41</span></a>
-</span><span id="L-42"><a href="#L-42"><span class="linenos">42</span></a>        <span class="c1"># compute bounding box when virtual plane is enabled</span>
-</span><span id="L-43"><a href="#L-43"><span class="linenos">43</span></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">get_virtualPlane</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="L-44"><a href="#L-44"><span class="linenos">44</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">()</span><span class="o">.</span><span class="n">prepare_for_ui</span><span class="p">()</span>
-</span><span id="L-45"><a href="#L-45"><span class="linenos">45</span></a>
-</span><span id="L-46"><a href="#L-46"><span class="linenos">46</span></a>    <span class="k">def</span> <span class="nf">get_sensor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="L-47"><a href="#L-47"><span class="linenos">47</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span>
-</span><span id="L-48"><a href="#L-48"><span class="linenos">48</span></a>
-</span><span id="L-49"><a href="#L-49"><span class="linenos">49</span></a>    <span class="k">def</span> <span class="nf">with_lidar_sensor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="L-50"><a href="#L-50"><span class="linenos">50</span></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="p">,</span> <span class="n">SensorLiDAR</span><span class="p">):</span>
-</span><span id="L-51"><a href="#L-51"><span class="linenos">51</span></a>            <span class="k">return</span> <span class="kc">True</span>
-</span><span id="L-52"><a href="#L-52"><span class="linenos">52</span></a>        <span class="k">else</span><span class="p">:</span>
-</span><span id="L-53"><a href="#L-53"><span class="linenos">53</span></a>            <span class="k">return</span> <span class="kc">False</span>
-</span><span id="L-54"><a href="#L-54"><span class="linenos">54</span></a>
-</span><span id="L-55"><a href="#L-55"><span class="linenos">55</span></a>    <span class="k">def</span> <span class="nf">set_landscape</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">landscape</span><span class="p">):</span>
-</span><span id="L-56"><a href="#L-56"><span class="linenos">56</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span> <span class="o">=</span> <span class="n">landscape</span>
-</span><span id="L-57"><a href="#L-57"><span class="linenos">57</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
-</span><span id="L-58"><a href="#L-58"><span class="linenos">58</span></a>
-</span><span id="L-59"><a href="#L-59"><span class="linenos">59</span></a>    <span class="k">def</span> <span class="nf">get_landscape</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="L-60"><a href="#L-60"><span class="linenos">60</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span>
-</span><span id="L-61"><a href="#L-61"><span class="linenos">61</span></a>
-</span><span id="L-62"><a href="#L-62"><span class="linenos">62</span></a>    <span class="k">def</span> <span class="nf">set_illumination</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">illumination</span><span class="p">):</span>
-</span><span id="L-63"><a href="#L-63"><span class="linenos">63</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span> <span class="o">=</span> <span class="n">illumination</span>
-</span><span id="L-64"><a href="#L-64"><span class="linenos">64</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
-</span><span id="L-65"><a href="#L-65"><span class="linenos">65</span></a>
-</span><span id="L-66"><a href="#L-66"><span class="linenos">66</span></a>    <span class="k">def</span> <span class="nf">get_illumination</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="L-67"><a href="#L-67"><span class="linenos">67</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span>
-</span><span id="L-68"><a href="#L-68"><span class="linenos">68</span></a>
-</span><span id="L-69"><a href="#L-69"><span class="linenos">69</span></a>    <span class="k">def</span> <span class="nf">set_observation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">observation</span><span class="p">):</span>
-</span><span id="L-70"><a href="#L-70"><span class="linenos">70</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span> <span class="o">=</span> <span class="n">observation</span>
-</span><span id="L-71"><a href="#L-71"><span class="linenos">71</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
-</span><span id="L-72"><a href="#L-72"><span class="linenos">72</span></a>
-</span><span id="L-73"><a href="#L-73"><span class="linenos">73</span></a>    <span class="k">def</span> <span class="nf">get_observation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="L-74"><a href="#L-74"><span class="linenos">74</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span>
-</span><span id="L-75"><a href="#L-75"><span class="linenos">75</span></a>
-</span><span id="L-76"><a href="#L-76"><span class="linenos">76</span></a>    <span class="k">def</span> <span class="nf">set_advanced_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">advanced_params</span><span class="p">):</span>
-</span><span id="L-77"><a href="#L-77"><span class="linenos">77</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span> <span class="o">=</span> <span class="n">advanced_params</span>
-</span><span id="L-78"><a href="#L-78"><span class="linenos">78</span></a>
-</span><span id="L-79"><a href="#L-79"><span class="linenos">79</span></a>    <span class="k">def</span> <span class="nf">get_advanced_params</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="L-80"><a href="#L-80"><span class="linenos">80</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span>
-</span><span id="L-81"><a href="#L-81"><span class="linenos">81</span></a>
-</span><span id="L-82"><a href="#L-82"><span class="linenos">82</span></a>    <span class="k">def</span> <span class="nf">to_json_object</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sim</span><span class="p">):</span>
-</span><span id="L-83"><a href="#L-83"><span class="linenos">83</span></a>        <span class="n">json_object</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Advanced&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
-</span><span id="L-84"><a href="#L-84"><span class="linenos">84</span></a>                       <span class="s2">&quot;illumination&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
-</span><span id="L-85"><a href="#L-85"><span class="linenos">85</span></a>                       <span class="s2">&quot;observation&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
-</span><span id="L-86"><a href="#L-86"><span class="linenos">86</span></a>                       <span class="s2">&quot;sensor&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
-</span><span id="L-87"><a href="#L-87"><span class="linenos">87</span></a>                       <span class="s2">&quot;scene&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(</span><span class="n">sim</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="p">)}</span>
-</span><span id="L-88"><a href="#L-88"><span class="linenos">88</span></a>        <span class="k">return</span> <span class="n">json_object</span>
-</span><span id="L-89"><a href="#L-89"><span class="linenos">89</span></a>
-</span><span id="L-90"><a href="#L-90"><span class="linenos">90</span></a>    <span class="k">def</span> <span class="nf">write_scene</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">json_file_path</span><span class="p">):</span>
-</span><span id="L-91"><a href="#L-91"><span class="linenos">91</span></a>        <span class="n">f_out</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">json_file_path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
-</span><span id="L-92"><a href="#L-92"><span class="linenos">92</span></a>        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">()),</span> <span class="n">f_out</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-</span><span id="L-93"><a href="#L-93"><span class="linenos">93</span></a>        <span class="n">f_out</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+                        <div class="pdoc-code codehilite"><pre><span></span><span id="L-1"><a href="#L-1"><span class="linenos">  1</span></a><span class="c1"># coding: utf-8</span>
+</span><span id="L-2"><a href="#L-2"><span class="linenos">  2</span></a><span class="kn">import</span> <span class="nn">json</span>
+</span><span id="L-3"><a href="#L-3"><span class="linenos">  3</span></a><span class="kn">from</span> <span class="nn">Landscape</span> <span class="kn">import</span> <span class="n">Landscape</span>
+</span><span id="L-4"><a href="#L-4"><span class="linenos">  4</span></a><span class="kn">from</span> <span class="nn">Sensor</span> <span class="kn">import</span> <span class="n">SensorOrthographic</span><span class="p">,</span> <span class="n">SensorPerspective</span><span class="p">,</span> <span class="n">SensorFisheye</span><span class="p">,</span> <span class="n">SensorPhotonTracing</span><span class="p">,</span> <span class="n">SensorLiDAR</span>
+</span><span id="L-5"><a href="#L-5"><span class="linenos">  5</span></a><span class="kn">from</span> <span class="nn">Illumination</span> <span class="kn">import</span> <span class="n">Illumination</span>
+</span><span id="L-6"><a href="#L-6"><span class="linenos">  6</span></a><span class="kn">from</span> <span class="nn">Observation</span> <span class="kn">import</span> <span class="n">ObservationOrthographic</span><span class="p">,</span> <span class="n">ObservationPerspective</span><span class="p">,</span> <span class="n">ObservationPhotonTracing</span><span class="p">,</span> <span class="n">ObservationFisheye</span>
+</span><span id="L-7"><a href="#L-7"><span class="linenos">  7</span></a><span class="kn">from</span> <span class="nn">AdvancedParams</span> <span class="kn">import</span> <span class="n">AdvancedParams</span>
+</span><span id="L-8"><a href="#L-8"><span class="linenos">  8</span></a><span class="kn">from</span> <span class="nn">Element</span> <span class="kn">import</span> <span class="n">Element</span>
+</span><span id="L-9"><a href="#L-9"><span class="linenos">  9</span></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Union</span>
+</span><span id="L-10"><a href="#L-10"><span class="linenos"> 10</span></a>
+</span><span id="L-11"><a href="#L-11"><span class="linenos"> 11</span></a>
+</span><span id="L-12"><a href="#L-12"><span class="linenos"> 12</span></a><span class="k">class</span> <span class="nc">Scene</span><span class="p">(</span><span class="n">Element</span><span class="p">):</span>
+</span><span id="L-13"><a href="#L-13"><span class="linenos"> 13</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-14"><a href="#L-14"><span class="linenos"> 14</span></a><span class="sd">    The Scene class that represents the virtual scene, containing landscape, illumination,</span>
+</span><span id="L-15"><a href="#L-15"><span class="linenos"> 15</span></a><span class="sd">    observation, sensor, and advanced parameters</span>
+</span><span id="L-16"><a href="#L-16"><span class="linenos"> 16</span></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="L-17"><a href="#L-17"><span class="linenos"> 17</span></a>
+</span><span id="L-18"><a href="#L-18"><span class="linenos"> 18</span></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sim</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+</span><span id="L-19"><a href="#L-19"><span class="linenos"> 19</span></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+</span><span id="L-20"><a href="#L-20"><span class="linenos"> 20</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span> <span class="o">=</span> <span class="n">SensorOrthographic</span><span class="p">()</span>
+</span><span id="L-21"><a href="#L-21"><span class="linenos"> 21</span></a>        <span class="c1"># self.__lidarSensor = None</span>
+</span><span id="L-22"><a href="#L-22"><span class="linenos"> 22</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span> <span class="o">=</span> <span class="n">Landscape</span><span class="p">()</span>
+</span><span id="L-23"><a href="#L-23"><span class="linenos"> 23</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span> <span class="o">=</span> <span class="n">Illumination</span><span class="p">()</span>
+</span><span id="L-24"><a href="#L-24"><span class="linenos"> 24</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span> <span class="o">=</span> <span class="n">ObservationOrthographic</span><span class="p">()</span>
+</span><span id="L-25"><a href="#L-25"><span class="linenos"> 25</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span> <span class="o">=</span> <span class="n">AdvancedParams</span><span class="p">()</span>
+</span><span id="L-26"><a href="#L-26"><span class="linenos"> 26</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="n">sim</span><span class="p">)</span>
+</span><span id="L-27"><a href="#L-27"><span class="linenos"> 27</span></a>
+</span><span id="L-28"><a href="#L-28"><span class="linenos"> 28</span></a>    <span class="k">def</span> <span class="nf">set_sensor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sensor</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">SensorOrthographic</span><span class="p">,</span> <span class="n">SensorPerspective</span><span class="p">,</span> <span class="n">SensorFisheye</span><span class="p">,</span> <span class="n">SensorPhotonTracing</span><span class="p">,</span> <span class="n">SensorLiDAR</span><span class="p">]):</span>
+</span><span id="L-29"><a href="#L-29"><span class="linenos"> 29</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-30"><a href="#L-30"><span class="linenos"> 30</span></a><span class="sd">        Set the sensor for simulation</span>
+</span><span id="L-31"><a href="#L-31"><span class="linenos"> 31</span></a><span class="sd">        :param sensor: Sensor of different types</span>
+</span><span id="L-32"><a href="#L-32"><span class="linenos"> 32</span></a><span class="sd">        :return:</span>
+</span><span id="L-33"><a href="#L-33"><span class="linenos"> 33</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="L-34"><a href="#L-34"><span class="linenos"> 34</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span> <span class="o">=</span> <span class="n">sensor</span>
+</span><span id="L-35"><a href="#L-35"><span class="linenos"> 35</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
+</span><span id="L-36"><a href="#L-36"><span class="linenos"> 36</span></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="p">,</span> <span class="n">SensorLiDAR</span><span class="p">):</span>
+</span><span id="L-37"><a href="#L-37"><span class="linenos"> 37</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">get_scanning_device</span><span class="p">()</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
+</span><span id="L-38"><a href="#L-38"><span class="linenos"> 38</span></a>        <span class="c1"># correct atmosphere skl according to number of bands</span>
+</span><span id="L-39"><a href="#L-39"><span class="linenos"> 39</span></a>        <span class="n">new_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">get_spectral_bands</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">))</span>
+</span><span id="L-40"><a href="#L-40"><span class="linenos"> 40</span></a>        <span class="n">ill</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">()</span><span class="o">.</span><span class="n">get_scene</span><span class="p">()</span><span class="o">.</span><span class="n">get_illumination</span><span class="p">()</span>
+</span><span id="L-41"><a href="#L-41"><span class="linenos"> 41</span></a>        <span class="n">ats_skl</span> <span class="o">=</span> <span class="n">ill</span><span class="o">.</span><span class="n">get_ats_percentage</span><span class="p">()</span>
+</span><span id="L-42"><a href="#L-42"><span class="linenos"> 42</span></a>        <span class="n">arr</span> <span class="o">=</span> <span class="n">ats_skl</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
+</span><span id="L-43"><a href="#L-43"><span class="linenos"> 43</span></a>        <span class="n">old_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
+</span><span id="L-44"><a href="#L-44"><span class="linenos"> 44</span></a>        <span class="k">if</span> <span class="n">new_len</span> <span class="o">&gt;=</span> <span class="n">old_len</span><span class="p">:</span>
+</span><span id="L-45"><a href="#L-45"><span class="linenos"> 45</span></a>            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">new_len</span> <span class="o">-</span> <span class="n">old_len</span><span class="p">):</span>
+</span><span id="L-46"><a href="#L-46"><span class="linenos"> 46</span></a>                <span class="n">arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;0.0&quot;</span><span class="p">)</span>
+</span><span id="L-47"><a href="#L-47"><span class="linenos"> 47</span></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="L-48"><a href="#L-48"><span class="linenos"> 48</span></a>            <span class="n">arr</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">new_len</span><span class="p">]</span>
+</span><span id="L-49"><a href="#L-49"><span class="linenos"> 49</span></a>        <span class="n">ill</span><span class="o">.</span><span class="n">set_ats_percentage</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span>
+</span><span id="L-50"><a href="#L-50"><span class="linenos"> 50</span></a>
+</span><span id="L-51"><a href="#L-51"><span class="linenos"> 51</span></a>        <span class="c1"># compute bounding box when virtual plane is enabled</span>
+</span><span id="L-52"><a href="#L-52"><span class="linenos"> 52</span></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">get_virtualPlane</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="L-53"><a href="#L-53"><span class="linenos"> 53</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">()</span><span class="o">.</span><span class="n">prepare_for_ui</span><span class="p">()</span>
+</span><span id="L-54"><a href="#L-54"><span class="linenos"> 54</span></a>
+</span><span id="L-55"><a href="#L-55"><span class="linenos"> 55</span></a>    <span class="k">def</span> <span class="nf">get_sensor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="L-56"><a href="#L-56"><span class="linenos"> 56</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-57"><a href="#L-57"><span class="linenos"> 57</span></a><span class="sd">        Return the current sensor</span>
+</span><span id="L-58"><a href="#L-58"><span class="linenos"> 58</span></a><span class="sd">        :return:</span>
+</span><span id="L-59"><a href="#L-59"><span class="linenos"> 59</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="L-60"><a href="#L-60"><span class="linenos"> 60</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span>
+</span><span id="L-61"><a href="#L-61"><span class="linenos"> 61</span></a>
+</span><span id="L-62"><a href="#L-62"><span class="linenos"> 62</span></a>    <span class="k">def</span> <span class="nf">with_lidar_sensor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="L-63"><a href="#L-63"><span class="linenos"> 63</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-64"><a href="#L-64"><span class="linenos"> 64</span></a><span class="sd">        Whether the scene is configured with a LiDAR sensor</span>
+</span><span id="L-65"><a href="#L-65"><span class="linenos"> 65</span></a><span class="sd">        :return:</span>
+</span><span id="L-66"><a href="#L-66"><span class="linenos"> 66</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="L-67"><a href="#L-67"><span class="linenos"> 67</span></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="p">,</span> <span class="n">SensorLiDAR</span><span class="p">):</span>
+</span><span id="L-68"><a href="#L-68"><span class="linenos"> 68</span></a>            <span class="k">return</span> <span class="kc">True</span>
+</span><span id="L-69"><a href="#L-69"><span class="linenos"> 69</span></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="L-70"><a href="#L-70"><span class="linenos"> 70</span></a>            <span class="k">return</span> <span class="kc">False</span>
+</span><span id="L-71"><a href="#L-71"><span class="linenos"> 71</span></a>
+</span><span id="L-72"><a href="#L-72"><span class="linenos"> 72</span></a>    <span class="k">def</span> <span class="nf">set_landscape</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">landscape</span><span class="p">:</span> <span class="n">Landscape</span><span class="p">):</span>
+</span><span id="L-73"><a href="#L-73"><span class="linenos"> 73</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-74"><a href="#L-74"><span class="linenos"> 74</span></a><span class="sd">        Set the landscape for the scene</span>
+</span><span id="L-75"><a href="#L-75"><span class="linenos"> 75</span></a><span class="sd">        :param landscape:</span>
+</span><span id="L-76"><a href="#L-76"><span class="linenos"> 76</span></a><span class="sd">        :return:</span>
+</span><span id="L-77"><a href="#L-77"><span class="linenos"> 77</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="L-78"><a href="#L-78"><span class="linenos"> 78</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span> <span class="o">=</span> <span class="n">landscape</span>
+</span><span id="L-79"><a href="#L-79"><span class="linenos"> 79</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
+</span><span id="L-80"><a href="#L-80"><span class="linenos"> 80</span></a>
+</span><span id="L-81"><a href="#L-81"><span class="linenos"> 81</span></a>    <span class="k">def</span> <span class="nf">get_landscape</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="L-82"><a href="#L-82"><span class="linenos"> 82</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-83"><a href="#L-83"><span class="linenos"> 83</span></a><span class="sd">        Get the landscape</span>
+</span><span id="L-84"><a href="#L-84"><span class="linenos"> 84</span></a><span class="sd">        :return:</span>
+</span><span id="L-85"><a href="#L-85"><span class="linenos"> 85</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="L-86"><a href="#L-86"><span class="linenos"> 86</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span>
+</span><span id="L-87"><a href="#L-87"><span class="linenos"> 87</span></a>
+</span><span id="L-88"><a href="#L-88"><span class="linenos"> 88</span></a>    <span class="k">def</span> <span class="nf">set_illumination</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">illumination</span><span class="p">:</span> <span class="n">Illumination</span><span class="p">):</span>
+</span><span id="L-89"><a href="#L-89"><span class="linenos"> 89</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-90"><a href="#L-90"><span class="linenos"> 90</span></a><span class="sd">        Set the illumination for the scene</span>
+</span><span id="L-91"><a href="#L-91"><span class="linenos"> 91</span></a><span class="sd">        :param illumination:</span>
+</span><span id="L-92"><a href="#L-92"><span class="linenos"> 92</span></a><span class="sd">        :return:</span>
+</span><span id="L-93"><a href="#L-93"><span class="linenos"> 93</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="L-94"><a href="#L-94"><span class="linenos"> 94</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span> <span class="o">=</span> <span class="n">illumination</span>
+</span><span id="L-95"><a href="#L-95"><span class="linenos"> 95</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
+</span><span id="L-96"><a href="#L-96"><span class="linenos"> 96</span></a>
+</span><span id="L-97"><a href="#L-97"><span class="linenos"> 97</span></a>    <span class="k">def</span> <span class="nf">get_illumination</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="L-98"><a href="#L-98"><span class="linenos"> 98</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-99"><a href="#L-99"><span class="linenos"> 99</span></a><span class="sd">        Get the current illumination</span>
+</span><span id="L-100"><a href="#L-100"><span class="linenos">100</span></a><span class="sd">        :return:</span>
+</span><span id="L-101"><a href="#L-101"><span class="linenos">101</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="L-102"><a href="#L-102"><span class="linenos">102</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span>
+</span><span id="L-103"><a href="#L-103"><span class="linenos">103</span></a>
+</span><span id="L-104"><a href="#L-104"><span class="linenos">104</span></a>    <span class="k">def</span> <span class="nf">set_observation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">observation</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ObservationOrthographic</span><span class="p">,</span> <span class="n">ObservationPerspective</span><span class="p">,</span> <span class="n">ObservationPhotonTracing</span><span class="p">,</span> <span class="n">ObservationFisheye</span><span class="p">]):</span>
+</span><span id="L-105"><a href="#L-105"><span class="linenos">105</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-106"><a href="#L-106"><span class="linenos">106</span></a><span class="sd">        Set observation</span>
+</span><span id="L-107"><a href="#L-107"><span class="linenos">107</span></a><span class="sd">        :param observation:</span>
+</span><span id="L-108"><a href="#L-108"><span class="linenos">108</span></a><span class="sd">        :return:</span>
+</span><span id="L-109"><a href="#L-109"><span class="linenos">109</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="L-110"><a href="#L-110"><span class="linenos">110</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span> <span class="o">=</span> <span class="n">observation</span>
+</span><span id="L-111"><a href="#L-111"><span class="linenos">111</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
+</span><span id="L-112"><a href="#L-112"><span class="linenos">112</span></a>
+</span><span id="L-113"><a href="#L-113"><span class="linenos">113</span></a>    <span class="k">def</span> <span class="nf">get_observation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="L-114"><a href="#L-114"><span class="linenos">114</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-115"><a href="#L-115"><span class="linenos">115</span></a><span class="sd">        Get the observation</span>
+</span><span id="L-116"><a href="#L-116"><span class="linenos">116</span></a><span class="sd">        :return:</span>
+</span><span id="L-117"><a href="#L-117"><span class="linenos">117</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="L-118"><a href="#L-118"><span class="linenos">118</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span>
+</span><span id="L-119"><a href="#L-119"><span class="linenos">119</span></a>
+</span><span id="L-120"><a href="#L-120"><span class="linenos">120</span></a>    <span class="k">def</span> <span class="nf">set_advanced_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">advanced_params</span><span class="p">:</span> <span class="n">AdvancedParams</span><span class="p">):</span>
+</span><span id="L-121"><a href="#L-121"><span class="linenos">121</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-122"><a href="#L-122"><span class="linenos">122</span></a><span class="sd">        Set the advanced parameter</span>
+</span><span id="L-123"><a href="#L-123"><span class="linenos">123</span></a><span class="sd">        :param advanced_params:</span>
+</span><span id="L-124"><a href="#L-124"><span class="linenos">124</span></a><span class="sd">        :return:</span>
+</span><span id="L-125"><a href="#L-125"><span class="linenos">125</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="L-126"><a href="#L-126"><span class="linenos">126</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span> <span class="o">=</span> <span class="n">advanced_params</span>
+</span><span id="L-127"><a href="#L-127"><span class="linenos">127</span></a>
+</span><span id="L-128"><a href="#L-128"><span class="linenos">128</span></a>    <span class="k">def</span> <span class="nf">get_advanced_params</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="L-129"><a href="#L-129"><span class="linenos">129</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-130"><a href="#L-130"><span class="linenos">130</span></a><span class="sd">        Get the advanced parameter</span>
+</span><span id="L-131"><a href="#L-131"><span class="linenos">131</span></a><span class="sd">        :return:</span>
+</span><span id="L-132"><a href="#L-132"><span class="linenos">132</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="L-133"><a href="#L-133"><span class="linenos">133</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span>
+</span><span id="L-134"><a href="#L-134"><span class="linenos">134</span></a>
+</span><span id="L-135"><a href="#L-135"><span class="linenos">135</span></a>    <span class="k">def</span> <span class="nf">to_json_object</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sim</span><span class="p">):</span>
+</span><span id="L-136"><a href="#L-136"><span class="linenos">136</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-137"><a href="#L-137"><span class="linenos">137</span></a><span class="sd">        Save scene to json string</span>
+</span><span id="L-138"><a href="#L-138"><span class="linenos">138</span></a><span class="sd">        :param sim: the simulation</span>
+</span><span id="L-139"><a href="#L-139"><span class="linenos">139</span></a><span class="sd">        :return:</span>
+</span><span id="L-140"><a href="#L-140"><span class="linenos">140</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="L-141"><a href="#L-141"><span class="linenos">141</span></a>        <span class="n">json_object</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Advanced&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
+</span><span id="L-142"><a href="#L-142"><span class="linenos">142</span></a>                       <span class="s2">&quot;illumination&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
+</span><span id="L-143"><a href="#L-143"><span class="linenos">143</span></a>                       <span class="s2">&quot;observation&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
+</span><span id="L-144"><a href="#L-144"><span class="linenos">144</span></a>                       <span class="s2">&quot;sensor&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
+</span><span id="L-145"><a href="#L-145"><span class="linenos">145</span></a>                       <span class="s2">&quot;scene&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(</span><span class="n">sim</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="p">)}</span>
+</span><span id="L-146"><a href="#L-146"><span class="linenos">146</span></a>        <span class="k">return</span> <span class="n">json_object</span>
+</span><span id="L-147"><a href="#L-147"><span class="linenos">147</span></a>
+</span><span id="L-148"><a href="#L-148"><span class="linenos">148</span></a>    <span class="k">def</span> <span class="nf">write_scene</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">json_file_path</span><span class="p">):</span>
+</span><span id="L-149"><a href="#L-149"><span class="linenos">149</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-150"><a href="#L-150"><span class="linenos">150</span></a><span class="sd">        Write the scene to file</span>
+</span><span id="L-151"><a href="#L-151"><span class="linenos">151</span></a><span class="sd">        :param json_file_path:</span>
+</span><span id="L-152"><a href="#L-152"><span class="linenos">152</span></a><span class="sd">        :return:</span>
+</span><span id="L-153"><a href="#L-153"><span class="linenos">153</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="L-154"><a href="#L-154"><span class="linenos">154</span></a>        <span class="n">f_out</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">json_file_path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
+</span><span id="L-155"><a href="#L-155"><span class="linenos">155</span></a>        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">()),</span> <span class="n">f_out</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</span><span id="L-156"><a href="#L-156"><span class="linenos">156</span></a>        <span class="n">f_out</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </span></pre></div>
 
 
@@ -232,91 +295,158 @@ Scene    </h1>
 
     </div>
     <a class="headerlink" href="#Scene"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene-14"><a href="#Scene-14"><span class="linenos">14</span></a><span class="k">class</span> <span class="nc">Scene</span><span class="p">(</span><span class="n">Element</span><span class="p">):</span>
-</span><span id="Scene-15"><a href="#Scene-15"><span class="linenos">15</span></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sim</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-</span><span id="Scene-16"><a href="#Scene-16"><span class="linenos">16</span></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-</span><span id="Scene-17"><a href="#Scene-17"><span class="linenos">17</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span> <span class="o">=</span> <span class="n">SensorOrthographic</span><span class="p">()</span>
-</span><span id="Scene-18"><a href="#Scene-18"><span class="linenos">18</span></a>        <span class="c1"># self.__lidarSensor = None</span>
-</span><span id="Scene-19"><a href="#Scene-19"><span class="linenos">19</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span> <span class="o">=</span> <span class="n">Landscape</span><span class="p">()</span>
-</span><span id="Scene-20"><a href="#Scene-20"><span class="linenos">20</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span> <span class="o">=</span> <span class="n">Illumination</span><span class="p">()</span>
-</span><span id="Scene-21"><a href="#Scene-21"><span class="linenos">21</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span> <span class="o">=</span> <span class="n">ObservationOrthographic</span><span class="p">()</span>
-</span><span id="Scene-22"><a href="#Scene-22"><span class="linenos">22</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span> <span class="o">=</span> <span class="n">AdvancedParams</span><span class="p">()</span>
-</span><span id="Scene-23"><a href="#Scene-23"><span class="linenos">23</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="n">sim</span><span class="p">)</span>
-</span><span id="Scene-24"><a href="#Scene-24"><span class="linenos">24</span></a>
-</span><span id="Scene-25"><a href="#Scene-25"><span class="linenos">25</span></a>    <span class="k">def</span> <span class="nf">set_sensor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sensor</span><span class="p">):</span>
-</span><span id="Scene-26"><a href="#Scene-26"><span class="linenos">26</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span> <span class="o">=</span> <span class="n">sensor</span>
-</span><span id="Scene-27"><a href="#Scene-27"><span class="linenos">27</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
-</span><span id="Scene-28"><a href="#Scene-28"><span class="linenos">28</span></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="p">,</span> <span class="n">SensorLiDAR</span><span class="p">):</span>
-</span><span id="Scene-29"><a href="#Scene-29"><span class="linenos">29</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">get_scanning_device</span><span class="p">()</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
-</span><span id="Scene-30"><a href="#Scene-30"><span class="linenos">30</span></a>        <span class="c1"># correct atmosphere skl according to number of bands</span>
-</span><span id="Scene-31"><a href="#Scene-31"><span class="linenos">31</span></a>        <span class="n">new_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">get_spectral_bands</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">))</span>
-</span><span id="Scene-32"><a href="#Scene-32"><span class="linenos">32</span></a>        <span class="n">ill</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">()</span><span class="o">.</span><span class="n">get_scene</span><span class="p">()</span><span class="o">.</span><span class="n">get_illumination</span><span class="p">()</span>
-</span><span id="Scene-33"><a href="#Scene-33"><span class="linenos">33</span></a>        <span class="n">ats_skl</span> <span class="o">=</span> <span class="n">ill</span><span class="o">.</span><span class="n">get_ats_percentage</span><span class="p">()</span>
-</span><span id="Scene-34"><a href="#Scene-34"><span class="linenos">34</span></a>        <span class="n">arr</span> <span class="o">=</span> <span class="n">ats_skl</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
-</span><span id="Scene-35"><a href="#Scene-35"><span class="linenos">35</span></a>        <span class="n">old_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
-</span><span id="Scene-36"><a href="#Scene-36"><span class="linenos">36</span></a>        <span class="k">if</span> <span class="n">new_len</span> <span class="o">&gt;=</span> <span class="n">old_len</span><span class="p">:</span>
-</span><span id="Scene-37"><a href="#Scene-37"><span class="linenos">37</span></a>            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">new_len</span> <span class="o">-</span> <span class="n">old_len</span><span class="p">):</span>
-</span><span id="Scene-38"><a href="#Scene-38"><span class="linenos">38</span></a>                <span class="n">arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;0.0&quot;</span><span class="p">)</span>
-</span><span id="Scene-39"><a href="#Scene-39"><span class="linenos">39</span></a>        <span class="k">else</span><span class="p">:</span>
-</span><span id="Scene-40"><a href="#Scene-40"><span class="linenos">40</span></a>            <span class="n">arr</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">new_len</span><span class="p">]</span>
-</span><span id="Scene-41"><a href="#Scene-41"><span class="linenos">41</span></a>        <span class="n">ill</span><span class="o">.</span><span class="n">set_ats_percentage</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span>
-</span><span id="Scene-42"><a href="#Scene-42"><span class="linenos">42</span></a>
-</span><span id="Scene-43"><a href="#Scene-43"><span class="linenos">43</span></a>        <span class="c1"># compute bounding box when virtual plane is enabled</span>
-</span><span id="Scene-44"><a href="#Scene-44"><span class="linenos">44</span></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">get_virtualPlane</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="Scene-45"><a href="#Scene-45"><span class="linenos">45</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">()</span><span class="o">.</span><span class="n">prepare_for_ui</span><span class="p">()</span>
-</span><span id="Scene-46"><a href="#Scene-46"><span class="linenos">46</span></a>
-</span><span id="Scene-47"><a href="#Scene-47"><span class="linenos">47</span></a>    <span class="k">def</span> <span class="nf">get_sensor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="Scene-48"><a href="#Scene-48"><span class="linenos">48</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span>
-</span><span id="Scene-49"><a href="#Scene-49"><span class="linenos">49</span></a>
-</span><span id="Scene-50"><a href="#Scene-50"><span class="linenos">50</span></a>    <span class="k">def</span> <span class="nf">with_lidar_sensor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="Scene-51"><a href="#Scene-51"><span class="linenos">51</span></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="p">,</span> <span class="n">SensorLiDAR</span><span class="p">):</span>
-</span><span id="Scene-52"><a href="#Scene-52"><span class="linenos">52</span></a>            <span class="k">return</span> <span class="kc">True</span>
-</span><span id="Scene-53"><a href="#Scene-53"><span class="linenos">53</span></a>        <span class="k">else</span><span class="p">:</span>
-</span><span id="Scene-54"><a href="#Scene-54"><span class="linenos">54</span></a>            <span class="k">return</span> <span class="kc">False</span>
-</span><span id="Scene-55"><a href="#Scene-55"><span class="linenos">55</span></a>
-</span><span id="Scene-56"><a href="#Scene-56"><span class="linenos">56</span></a>    <span class="k">def</span> <span class="nf">set_landscape</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">landscape</span><span class="p">):</span>
-</span><span id="Scene-57"><a href="#Scene-57"><span class="linenos">57</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span> <span class="o">=</span> <span class="n">landscape</span>
-</span><span id="Scene-58"><a href="#Scene-58"><span class="linenos">58</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
-</span><span id="Scene-59"><a href="#Scene-59"><span class="linenos">59</span></a>
-</span><span id="Scene-60"><a href="#Scene-60"><span class="linenos">60</span></a>    <span class="k">def</span> <span class="nf">get_landscape</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="Scene-61"><a href="#Scene-61"><span class="linenos">61</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span>
-</span><span id="Scene-62"><a href="#Scene-62"><span class="linenos">62</span></a>
-</span><span id="Scene-63"><a href="#Scene-63"><span class="linenos">63</span></a>    <span class="k">def</span> <span class="nf">set_illumination</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">illumination</span><span class="p">):</span>
-</span><span id="Scene-64"><a href="#Scene-64"><span class="linenos">64</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span> <span class="o">=</span> <span class="n">illumination</span>
-</span><span id="Scene-65"><a href="#Scene-65"><span class="linenos">65</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
-</span><span id="Scene-66"><a href="#Scene-66"><span class="linenos">66</span></a>
-</span><span id="Scene-67"><a href="#Scene-67"><span class="linenos">67</span></a>    <span class="k">def</span> <span class="nf">get_illumination</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="Scene-68"><a href="#Scene-68"><span class="linenos">68</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span>
-</span><span id="Scene-69"><a href="#Scene-69"><span class="linenos">69</span></a>
-</span><span id="Scene-70"><a href="#Scene-70"><span class="linenos">70</span></a>    <span class="k">def</span> <span class="nf">set_observation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">observation</span><span class="p">):</span>
-</span><span id="Scene-71"><a href="#Scene-71"><span class="linenos">71</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span> <span class="o">=</span> <span class="n">observation</span>
-</span><span id="Scene-72"><a href="#Scene-72"><span class="linenos">72</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
-</span><span id="Scene-73"><a href="#Scene-73"><span class="linenos">73</span></a>
-</span><span id="Scene-74"><a href="#Scene-74"><span class="linenos">74</span></a>    <span class="k">def</span> <span class="nf">get_observation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="Scene-75"><a href="#Scene-75"><span class="linenos">75</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span>
-</span><span id="Scene-76"><a href="#Scene-76"><span class="linenos">76</span></a>
-</span><span id="Scene-77"><a href="#Scene-77"><span class="linenos">77</span></a>    <span class="k">def</span> <span class="nf">set_advanced_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">advanced_params</span><span class="p">):</span>
-</span><span id="Scene-78"><a href="#Scene-78"><span class="linenos">78</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span> <span class="o">=</span> <span class="n">advanced_params</span>
-</span><span id="Scene-79"><a href="#Scene-79"><span class="linenos">79</span></a>
-</span><span id="Scene-80"><a href="#Scene-80"><span class="linenos">80</span></a>    <span class="k">def</span> <span class="nf">get_advanced_params</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="Scene-81"><a href="#Scene-81"><span class="linenos">81</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span>
-</span><span id="Scene-82"><a href="#Scene-82"><span class="linenos">82</span></a>
-</span><span id="Scene-83"><a href="#Scene-83"><span class="linenos">83</span></a>    <span class="k">def</span> <span class="nf">to_json_object</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sim</span><span class="p">):</span>
-</span><span id="Scene-84"><a href="#Scene-84"><span class="linenos">84</span></a>        <span class="n">json_object</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Advanced&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
-</span><span id="Scene-85"><a href="#Scene-85"><span class="linenos">85</span></a>                       <span class="s2">&quot;illumination&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
-</span><span id="Scene-86"><a href="#Scene-86"><span class="linenos">86</span></a>                       <span class="s2">&quot;observation&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
-</span><span id="Scene-87"><a href="#Scene-87"><span class="linenos">87</span></a>                       <span class="s2">&quot;sensor&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
-</span><span id="Scene-88"><a href="#Scene-88"><span class="linenos">88</span></a>                       <span class="s2">&quot;scene&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(</span><span class="n">sim</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="p">)}</span>
-</span><span id="Scene-89"><a href="#Scene-89"><span class="linenos">89</span></a>        <span class="k">return</span> <span class="n">json_object</span>
-</span><span id="Scene-90"><a href="#Scene-90"><span class="linenos">90</span></a>
-</span><span id="Scene-91"><a href="#Scene-91"><span class="linenos">91</span></a>    <span class="k">def</span> <span class="nf">write_scene</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">json_file_path</span><span class="p">):</span>
-</span><span id="Scene-92"><a href="#Scene-92"><span class="linenos">92</span></a>        <span class="n">f_out</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">json_file_path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
-</span><span id="Scene-93"><a href="#Scene-93"><span class="linenos">93</span></a>        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">()),</span> <span class="n">f_out</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-</span><span id="Scene-94"><a href="#Scene-94"><span class="linenos">94</span></a>        <span class="n">f_out</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene-13"><a href="#Scene-13"><span class="linenos"> 13</span></a><span class="k">class</span> <span class="nc">Scene</span><span class="p">(</span><span class="n">Element</span><span class="p">):</span>
+</span><span id="Scene-14"><a href="#Scene-14"><span class="linenos"> 14</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene-15"><a href="#Scene-15"><span class="linenos"> 15</span></a><span class="sd">    The Scene class that represents the virtual scene, containing landscape, illumination,</span>
+</span><span id="Scene-16"><a href="#Scene-16"><span class="linenos"> 16</span></a><span class="sd">    observation, sensor, and advanced parameters</span>
+</span><span id="Scene-17"><a href="#Scene-17"><span class="linenos"> 17</span></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="Scene-18"><a href="#Scene-18"><span class="linenos"> 18</span></a>
+</span><span id="Scene-19"><a href="#Scene-19"><span class="linenos"> 19</span></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sim</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+</span><span id="Scene-20"><a href="#Scene-20"><span class="linenos"> 20</span></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+</span><span id="Scene-21"><a href="#Scene-21"><span class="linenos"> 21</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span> <span class="o">=</span> <span class="n">SensorOrthographic</span><span class="p">()</span>
+</span><span id="Scene-22"><a href="#Scene-22"><span class="linenos"> 22</span></a>        <span class="c1"># self.__lidarSensor = None</span>
+</span><span id="Scene-23"><a href="#Scene-23"><span class="linenos"> 23</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span> <span class="o">=</span> <span class="n">Landscape</span><span class="p">()</span>
+</span><span id="Scene-24"><a href="#Scene-24"><span class="linenos"> 24</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span> <span class="o">=</span> <span class="n">Illumination</span><span class="p">()</span>
+</span><span id="Scene-25"><a href="#Scene-25"><span class="linenos"> 25</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span> <span class="o">=</span> <span class="n">ObservationOrthographic</span><span class="p">()</span>
+</span><span id="Scene-26"><a href="#Scene-26"><span class="linenos"> 26</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span> <span class="o">=</span> <span class="n">AdvancedParams</span><span class="p">()</span>
+</span><span id="Scene-27"><a href="#Scene-27"><span class="linenos"> 27</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="n">sim</span><span class="p">)</span>
+</span><span id="Scene-28"><a href="#Scene-28"><span class="linenos"> 28</span></a>
+</span><span id="Scene-29"><a href="#Scene-29"><span class="linenos"> 29</span></a>    <span class="k">def</span> <span class="nf">set_sensor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sensor</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">SensorOrthographic</span><span class="p">,</span> <span class="n">SensorPerspective</span><span class="p">,</span> <span class="n">SensorFisheye</span><span class="p">,</span> <span class="n">SensorPhotonTracing</span><span class="p">,</span> <span class="n">SensorLiDAR</span><span class="p">]):</span>
+</span><span id="Scene-30"><a href="#Scene-30"><span class="linenos"> 30</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene-31"><a href="#Scene-31"><span class="linenos"> 31</span></a><span class="sd">        Set the sensor for simulation</span>
+</span><span id="Scene-32"><a href="#Scene-32"><span class="linenos"> 32</span></a><span class="sd">        :param sensor: Sensor of different types</span>
+</span><span id="Scene-33"><a href="#Scene-33"><span class="linenos"> 33</span></a><span class="sd">        :return:</span>
+</span><span id="Scene-34"><a href="#Scene-34"><span class="linenos"> 34</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene-35"><a href="#Scene-35"><span class="linenos"> 35</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span> <span class="o">=</span> <span class="n">sensor</span>
+</span><span id="Scene-36"><a href="#Scene-36"><span class="linenos"> 36</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
+</span><span id="Scene-37"><a href="#Scene-37"><span class="linenos"> 37</span></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="p">,</span> <span class="n">SensorLiDAR</span><span class="p">):</span>
+</span><span id="Scene-38"><a href="#Scene-38"><span class="linenos"> 38</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">get_scanning_device</span><span class="p">()</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
+</span><span id="Scene-39"><a href="#Scene-39"><span class="linenos"> 39</span></a>        <span class="c1"># correct atmosphere skl according to number of bands</span>
+</span><span id="Scene-40"><a href="#Scene-40"><span class="linenos"> 40</span></a>        <span class="n">new_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">get_spectral_bands</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">))</span>
+</span><span id="Scene-41"><a href="#Scene-41"><span class="linenos"> 41</span></a>        <span class="n">ill</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">()</span><span class="o">.</span><span class="n">get_scene</span><span class="p">()</span><span class="o">.</span><span class="n">get_illumination</span><span class="p">()</span>
+</span><span id="Scene-42"><a href="#Scene-42"><span class="linenos"> 42</span></a>        <span class="n">ats_skl</span> <span class="o">=</span> <span class="n">ill</span><span class="o">.</span><span class="n">get_ats_percentage</span><span class="p">()</span>
+</span><span id="Scene-43"><a href="#Scene-43"><span class="linenos"> 43</span></a>        <span class="n">arr</span> <span class="o">=</span> <span class="n">ats_skl</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
+</span><span id="Scene-44"><a href="#Scene-44"><span class="linenos"> 44</span></a>        <span class="n">old_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
+</span><span id="Scene-45"><a href="#Scene-45"><span class="linenos"> 45</span></a>        <span class="k">if</span> <span class="n">new_len</span> <span class="o">&gt;=</span> <span class="n">old_len</span><span class="p">:</span>
+</span><span id="Scene-46"><a href="#Scene-46"><span class="linenos"> 46</span></a>            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">new_len</span> <span class="o">-</span> <span class="n">old_len</span><span class="p">):</span>
+</span><span id="Scene-47"><a href="#Scene-47"><span class="linenos"> 47</span></a>                <span class="n">arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;0.0&quot;</span><span class="p">)</span>
+</span><span id="Scene-48"><a href="#Scene-48"><span class="linenos"> 48</span></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="Scene-49"><a href="#Scene-49"><span class="linenos"> 49</span></a>            <span class="n">arr</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">new_len</span><span class="p">]</span>
+</span><span id="Scene-50"><a href="#Scene-50"><span class="linenos"> 50</span></a>        <span class="n">ill</span><span class="o">.</span><span class="n">set_ats_percentage</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span>
+</span><span id="Scene-51"><a href="#Scene-51"><span class="linenos"> 51</span></a>
+</span><span id="Scene-52"><a href="#Scene-52"><span class="linenos"> 52</span></a>        <span class="c1"># compute bounding box when virtual plane is enabled</span>
+</span><span id="Scene-53"><a href="#Scene-53"><span class="linenos"> 53</span></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">get_virtualPlane</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="Scene-54"><a href="#Scene-54"><span class="linenos"> 54</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">()</span><span class="o">.</span><span class="n">prepare_for_ui</span><span class="p">()</span>
+</span><span id="Scene-55"><a href="#Scene-55"><span class="linenos"> 55</span></a>
+</span><span id="Scene-56"><a href="#Scene-56"><span class="linenos"> 56</span></a>    <span class="k">def</span> <span class="nf">get_sensor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Scene-57"><a href="#Scene-57"><span class="linenos"> 57</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene-58"><a href="#Scene-58"><span class="linenos"> 58</span></a><span class="sd">        Return the current sensor</span>
+</span><span id="Scene-59"><a href="#Scene-59"><span class="linenos"> 59</span></a><span class="sd">        :return:</span>
+</span><span id="Scene-60"><a href="#Scene-60"><span class="linenos"> 60</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene-61"><a href="#Scene-61"><span class="linenos"> 61</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span>
+</span><span id="Scene-62"><a href="#Scene-62"><span class="linenos"> 62</span></a>
+</span><span id="Scene-63"><a href="#Scene-63"><span class="linenos"> 63</span></a>    <span class="k">def</span> <span class="nf">with_lidar_sensor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Scene-64"><a href="#Scene-64"><span class="linenos"> 64</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene-65"><a href="#Scene-65"><span class="linenos"> 65</span></a><span class="sd">        Whether the scene is configured with a LiDAR sensor</span>
+</span><span id="Scene-66"><a href="#Scene-66"><span class="linenos"> 66</span></a><span class="sd">        :return:</span>
+</span><span id="Scene-67"><a href="#Scene-67"><span class="linenos"> 67</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene-68"><a href="#Scene-68"><span class="linenos"> 68</span></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="p">,</span> <span class="n">SensorLiDAR</span><span class="p">):</span>
+</span><span id="Scene-69"><a href="#Scene-69"><span class="linenos"> 69</span></a>            <span class="k">return</span> <span class="kc">True</span>
+</span><span id="Scene-70"><a href="#Scene-70"><span class="linenos"> 70</span></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="Scene-71"><a href="#Scene-71"><span class="linenos"> 71</span></a>            <span class="k">return</span> <span class="kc">False</span>
+</span><span id="Scene-72"><a href="#Scene-72"><span class="linenos"> 72</span></a>
+</span><span id="Scene-73"><a href="#Scene-73"><span class="linenos"> 73</span></a>    <span class="k">def</span> <span class="nf">set_landscape</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">landscape</span><span class="p">:</span> <span class="n">Landscape</span><span class="p">):</span>
+</span><span id="Scene-74"><a href="#Scene-74"><span class="linenos"> 74</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene-75"><a href="#Scene-75"><span class="linenos"> 75</span></a><span class="sd">        Set the landscape for the scene</span>
+</span><span id="Scene-76"><a href="#Scene-76"><span class="linenos"> 76</span></a><span class="sd">        :param landscape:</span>
+</span><span id="Scene-77"><a href="#Scene-77"><span class="linenos"> 77</span></a><span class="sd">        :return:</span>
+</span><span id="Scene-78"><a href="#Scene-78"><span class="linenos"> 78</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene-79"><a href="#Scene-79"><span class="linenos"> 79</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span> <span class="o">=</span> <span class="n">landscape</span>
+</span><span id="Scene-80"><a href="#Scene-80"><span class="linenos"> 80</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
+</span><span id="Scene-81"><a href="#Scene-81"><span class="linenos"> 81</span></a>
+</span><span id="Scene-82"><a href="#Scene-82"><span class="linenos"> 82</span></a>    <span class="k">def</span> <span class="nf">get_landscape</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Scene-83"><a href="#Scene-83"><span class="linenos"> 83</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene-84"><a href="#Scene-84"><span class="linenos"> 84</span></a><span class="sd">        Get the landscape</span>
+</span><span id="Scene-85"><a href="#Scene-85"><span class="linenos"> 85</span></a><span class="sd">        :return:</span>
+</span><span id="Scene-86"><a href="#Scene-86"><span class="linenos"> 86</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene-87"><a href="#Scene-87"><span class="linenos"> 87</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span>
+</span><span id="Scene-88"><a href="#Scene-88"><span class="linenos"> 88</span></a>
+</span><span id="Scene-89"><a href="#Scene-89"><span class="linenos"> 89</span></a>    <span class="k">def</span> <span class="nf">set_illumination</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">illumination</span><span class="p">:</span> <span class="n">Illumination</span><span class="p">):</span>
+</span><span id="Scene-90"><a href="#Scene-90"><span class="linenos"> 90</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene-91"><a href="#Scene-91"><span class="linenos"> 91</span></a><span class="sd">        Set the illumination for the scene</span>
+</span><span id="Scene-92"><a href="#Scene-92"><span class="linenos"> 92</span></a><span class="sd">        :param illumination:</span>
+</span><span id="Scene-93"><a href="#Scene-93"><span class="linenos"> 93</span></a><span class="sd">        :return:</span>
+</span><span id="Scene-94"><a href="#Scene-94"><span class="linenos"> 94</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene-95"><a href="#Scene-95"><span class="linenos"> 95</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span> <span class="o">=</span> <span class="n">illumination</span>
+</span><span id="Scene-96"><a href="#Scene-96"><span class="linenos"> 96</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
+</span><span id="Scene-97"><a href="#Scene-97"><span class="linenos"> 97</span></a>
+</span><span id="Scene-98"><a href="#Scene-98"><span class="linenos"> 98</span></a>    <span class="k">def</span> <span class="nf">get_illumination</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Scene-99"><a href="#Scene-99"><span class="linenos"> 99</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene-100"><a href="#Scene-100"><span class="linenos">100</span></a><span class="sd">        Get the current illumination</span>
+</span><span id="Scene-101"><a href="#Scene-101"><span class="linenos">101</span></a><span class="sd">        :return:</span>
+</span><span id="Scene-102"><a href="#Scene-102"><span class="linenos">102</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene-103"><a href="#Scene-103"><span class="linenos">103</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span>
+</span><span id="Scene-104"><a href="#Scene-104"><span class="linenos">104</span></a>
+</span><span id="Scene-105"><a href="#Scene-105"><span class="linenos">105</span></a>    <span class="k">def</span> <span class="nf">set_observation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">observation</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ObservationOrthographic</span><span class="p">,</span> <span class="n">ObservationPerspective</span><span class="p">,</span> <span class="n">ObservationPhotonTracing</span><span class="p">,</span> <span class="n">ObservationFisheye</span><span class="p">]):</span>
+</span><span id="Scene-106"><a href="#Scene-106"><span class="linenos">106</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene-107"><a href="#Scene-107"><span class="linenos">107</span></a><span class="sd">        Set observation</span>
+</span><span id="Scene-108"><a href="#Scene-108"><span class="linenos">108</span></a><span class="sd">        :param observation:</span>
+</span><span id="Scene-109"><a href="#Scene-109"><span class="linenos">109</span></a><span class="sd">        :return:</span>
+</span><span id="Scene-110"><a href="#Scene-110"><span class="linenos">110</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene-111"><a href="#Scene-111"><span class="linenos">111</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span> <span class="o">=</span> <span class="n">observation</span>
+</span><span id="Scene-112"><a href="#Scene-112"><span class="linenos">112</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
+</span><span id="Scene-113"><a href="#Scene-113"><span class="linenos">113</span></a>
+</span><span id="Scene-114"><a href="#Scene-114"><span class="linenos">114</span></a>    <span class="k">def</span> <span class="nf">get_observation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Scene-115"><a href="#Scene-115"><span class="linenos">115</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene-116"><a href="#Scene-116"><span class="linenos">116</span></a><span class="sd">        Get the observation</span>
+</span><span id="Scene-117"><a href="#Scene-117"><span class="linenos">117</span></a><span class="sd">        :return:</span>
+</span><span id="Scene-118"><a href="#Scene-118"><span class="linenos">118</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene-119"><a href="#Scene-119"><span class="linenos">119</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span>
+</span><span id="Scene-120"><a href="#Scene-120"><span class="linenos">120</span></a>
+</span><span id="Scene-121"><a href="#Scene-121"><span class="linenos">121</span></a>    <span class="k">def</span> <span class="nf">set_advanced_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">advanced_params</span><span class="p">:</span> <span class="n">AdvancedParams</span><span class="p">):</span>
+</span><span id="Scene-122"><a href="#Scene-122"><span class="linenos">122</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene-123"><a href="#Scene-123"><span class="linenos">123</span></a><span class="sd">        Set the advanced parameter</span>
+</span><span id="Scene-124"><a href="#Scene-124"><span class="linenos">124</span></a><span class="sd">        :param advanced_params:</span>
+</span><span id="Scene-125"><a href="#Scene-125"><span class="linenos">125</span></a><span class="sd">        :return:</span>
+</span><span id="Scene-126"><a href="#Scene-126"><span class="linenos">126</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene-127"><a href="#Scene-127"><span class="linenos">127</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span> <span class="o">=</span> <span class="n">advanced_params</span>
+</span><span id="Scene-128"><a href="#Scene-128"><span class="linenos">128</span></a>
+</span><span id="Scene-129"><a href="#Scene-129"><span class="linenos">129</span></a>    <span class="k">def</span> <span class="nf">get_advanced_params</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Scene-130"><a href="#Scene-130"><span class="linenos">130</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene-131"><a href="#Scene-131"><span class="linenos">131</span></a><span class="sd">        Get the advanced parameter</span>
+</span><span id="Scene-132"><a href="#Scene-132"><span class="linenos">132</span></a><span class="sd">        :return:</span>
+</span><span id="Scene-133"><a href="#Scene-133"><span class="linenos">133</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene-134"><a href="#Scene-134"><span class="linenos">134</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span>
+</span><span id="Scene-135"><a href="#Scene-135"><span class="linenos">135</span></a>
+</span><span id="Scene-136"><a href="#Scene-136"><span class="linenos">136</span></a>    <span class="k">def</span> <span class="nf">to_json_object</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sim</span><span class="p">):</span>
+</span><span id="Scene-137"><a href="#Scene-137"><span class="linenos">137</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene-138"><a href="#Scene-138"><span class="linenos">138</span></a><span class="sd">        Save scene to json string</span>
+</span><span id="Scene-139"><a href="#Scene-139"><span class="linenos">139</span></a><span class="sd">        :param sim: the simulation</span>
+</span><span id="Scene-140"><a href="#Scene-140"><span class="linenos">140</span></a><span class="sd">        :return:</span>
+</span><span id="Scene-141"><a href="#Scene-141"><span class="linenos">141</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene-142"><a href="#Scene-142"><span class="linenos">142</span></a>        <span class="n">json_object</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Advanced&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
+</span><span id="Scene-143"><a href="#Scene-143"><span class="linenos">143</span></a>                       <span class="s2">&quot;illumination&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
+</span><span id="Scene-144"><a href="#Scene-144"><span class="linenos">144</span></a>                       <span class="s2">&quot;observation&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
+</span><span id="Scene-145"><a href="#Scene-145"><span class="linenos">145</span></a>                       <span class="s2">&quot;sensor&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
+</span><span id="Scene-146"><a href="#Scene-146"><span class="linenos">146</span></a>                       <span class="s2">&quot;scene&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(</span><span class="n">sim</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="p">)}</span>
+</span><span id="Scene-147"><a href="#Scene-147"><span class="linenos">147</span></a>        <span class="k">return</span> <span class="n">json_object</span>
+</span><span id="Scene-148"><a href="#Scene-148"><span class="linenos">148</span></a>
+</span><span id="Scene-149"><a href="#Scene-149"><span class="linenos">149</span></a>    <span class="k">def</span> <span class="nf">write_scene</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">json_file_path</span><span class="p">):</span>
+</span><span id="Scene-150"><a href="#Scene-150"><span class="linenos">150</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene-151"><a href="#Scene-151"><span class="linenos">151</span></a><span class="sd">        Write the scene to file</span>
+</span><span id="Scene-152"><a href="#Scene-152"><span class="linenos">152</span></a><span class="sd">        :param json_file_path:</span>
+</span><span id="Scene-153"><a href="#Scene-153"><span class="linenos">153</span></a><span class="sd">        :return:</span>
+</span><span id="Scene-154"><a href="#Scene-154"><span class="linenos">154</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene-155"><a href="#Scene-155"><span class="linenos">155</span></a>        <span class="n">f_out</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">json_file_path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
+</span><span id="Scene-156"><a href="#Scene-156"><span class="linenos">156</span></a>        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">()),</span> <span class="n">f_out</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</span><span id="Scene-157"><a href="#Scene-157"><span class="linenos">157</span></a>        <span class="n">f_out</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </span></pre></div>
 
 
-    
+            <div class="docstring"><p>The Scene class that represents the virtual scene, containing landscape, illumination,
+observation, sensor, and advanced parameters</p>
+</div>
+
 
                             <div id="Scene.__init__" class="classattr">
                                         <input id="Scene.__init__-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
@@ -328,15 +458,15 @@ Scene    </h1>
 
     </div>
     <a class="headerlink" href="#Scene.__init__"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.__init__-15"><a href="#Scene.__init__-15"><span class="linenos">15</span></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sim</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-</span><span id="Scene.__init__-16"><a href="#Scene.__init__-16"><span class="linenos">16</span></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-</span><span id="Scene.__init__-17"><a href="#Scene.__init__-17"><span class="linenos">17</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span> <span class="o">=</span> <span class="n">SensorOrthographic</span><span class="p">()</span>
-</span><span id="Scene.__init__-18"><a href="#Scene.__init__-18"><span class="linenos">18</span></a>        <span class="c1"># self.__lidarSensor = None</span>
-</span><span id="Scene.__init__-19"><a href="#Scene.__init__-19"><span class="linenos">19</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span> <span class="o">=</span> <span class="n">Landscape</span><span class="p">()</span>
-</span><span id="Scene.__init__-20"><a href="#Scene.__init__-20"><span class="linenos">20</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span> <span class="o">=</span> <span class="n">Illumination</span><span class="p">()</span>
-</span><span id="Scene.__init__-21"><a href="#Scene.__init__-21"><span class="linenos">21</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span> <span class="o">=</span> <span class="n">ObservationOrthographic</span><span class="p">()</span>
-</span><span id="Scene.__init__-22"><a href="#Scene.__init__-22"><span class="linenos">22</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span> <span class="o">=</span> <span class="n">AdvancedParams</span><span class="p">()</span>
-</span><span id="Scene.__init__-23"><a href="#Scene.__init__-23"><span class="linenos">23</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="n">sim</span><span class="p">)</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.__init__-19"><a href="#Scene.__init__-19"><span class="linenos">19</span></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sim</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+</span><span id="Scene.__init__-20"><a href="#Scene.__init__-20"><span class="linenos">20</span></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+</span><span id="Scene.__init__-21"><a href="#Scene.__init__-21"><span class="linenos">21</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span> <span class="o">=</span> <span class="n">SensorOrthographic</span><span class="p">()</span>
+</span><span id="Scene.__init__-22"><a href="#Scene.__init__-22"><span class="linenos">22</span></a>        <span class="c1"># self.__lidarSensor = None</span>
+</span><span id="Scene.__init__-23"><a href="#Scene.__init__-23"><span class="linenos">23</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span> <span class="o">=</span> <span class="n">Landscape</span><span class="p">()</span>
+</span><span id="Scene.__init__-24"><a href="#Scene.__init__-24"><span class="linenos">24</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span> <span class="o">=</span> <span class="n">Illumination</span><span class="p">()</span>
+</span><span id="Scene.__init__-25"><a href="#Scene.__init__-25"><span class="linenos">25</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span> <span class="o">=</span> <span class="n">ObservationOrthographic</span><span class="p">()</span>
+</span><span id="Scene.__init__-26"><a href="#Scene.__init__-26"><span class="linenos">26</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span> <span class="o">=</span> <span class="n">AdvancedParams</span><span class="p">()</span>
+</span><span id="Scene.__init__-27"><a href="#Scene.__init__-27"><span class="linenos">27</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="n">sim</span><span class="p">)</span>
 </span></pre></div>
 
 
@@ -348,37 +478,52 @@ Scene    </h1>
 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">set_sensor</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">sensor</span></span><span class="return-annotation">):</span></span>
+        <span class="name">set_sensor</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">sensor</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n"><a href="Sensor.html#SensorOrthographic">Sensor.SensorOrthographic</a></span><span class="p">,</span> <span class="n"><a href="Sensor.html#SensorPerspective">Sensor.SensorPerspective</a></span><span class="p">,</span> <span class="n"><a href="Sensor.html#SensorFisheye">Sensor.SensorFisheye</a></span><span class="p">,</span> <span class="n"><a href="Sensor.html#SensorPhotonTracing">Sensor.SensorPhotonTracing</a></span><span class="p">,</span> <span class="n"><a href="Sensor.html#SensorLiDAR">Sensor.SensorLiDAR</a></span><span class="p">]</span></span><span class="return-annotation">):</span></span>
 
                 <label class="view-source-button" for="Scene.set_sensor-view-source"><span>View Source</span></label>
 
     </div>
     <a class="headerlink" href="#Scene.set_sensor"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.set_sensor-25"><a href="#Scene.set_sensor-25"><span class="linenos">25</span></a>    <span class="k">def</span> <span class="nf">set_sensor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sensor</span><span class="p">):</span>
-</span><span id="Scene.set_sensor-26"><a href="#Scene.set_sensor-26"><span class="linenos">26</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span> <span class="o">=</span> <span class="n">sensor</span>
-</span><span id="Scene.set_sensor-27"><a href="#Scene.set_sensor-27"><span class="linenos">27</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
-</span><span id="Scene.set_sensor-28"><a href="#Scene.set_sensor-28"><span class="linenos">28</span></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="p">,</span> <span class="n">SensorLiDAR</span><span class="p">):</span>
-</span><span id="Scene.set_sensor-29"><a href="#Scene.set_sensor-29"><span class="linenos">29</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">get_scanning_device</span><span class="p">()</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
-</span><span id="Scene.set_sensor-30"><a href="#Scene.set_sensor-30"><span class="linenos">30</span></a>        <span class="c1"># correct atmosphere skl according to number of bands</span>
-</span><span id="Scene.set_sensor-31"><a href="#Scene.set_sensor-31"><span class="linenos">31</span></a>        <span class="n">new_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">get_spectral_bands</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">))</span>
-</span><span id="Scene.set_sensor-32"><a href="#Scene.set_sensor-32"><span class="linenos">32</span></a>        <span class="n">ill</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">()</span><span class="o">.</span><span class="n">get_scene</span><span class="p">()</span><span class="o">.</span><span class="n">get_illumination</span><span class="p">()</span>
-</span><span id="Scene.set_sensor-33"><a href="#Scene.set_sensor-33"><span class="linenos">33</span></a>        <span class="n">ats_skl</span> <span class="o">=</span> <span class="n">ill</span><span class="o">.</span><span class="n">get_ats_percentage</span><span class="p">()</span>
-</span><span id="Scene.set_sensor-34"><a href="#Scene.set_sensor-34"><span class="linenos">34</span></a>        <span class="n">arr</span> <span class="o">=</span> <span class="n">ats_skl</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
-</span><span id="Scene.set_sensor-35"><a href="#Scene.set_sensor-35"><span class="linenos">35</span></a>        <span class="n">old_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
-</span><span id="Scene.set_sensor-36"><a href="#Scene.set_sensor-36"><span class="linenos">36</span></a>        <span class="k">if</span> <span class="n">new_len</span> <span class="o">&gt;=</span> <span class="n">old_len</span><span class="p">:</span>
-</span><span id="Scene.set_sensor-37"><a href="#Scene.set_sensor-37"><span class="linenos">37</span></a>            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">new_len</span> <span class="o">-</span> <span class="n">old_len</span><span class="p">):</span>
-</span><span id="Scene.set_sensor-38"><a href="#Scene.set_sensor-38"><span class="linenos">38</span></a>                <span class="n">arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;0.0&quot;</span><span class="p">)</span>
-</span><span id="Scene.set_sensor-39"><a href="#Scene.set_sensor-39"><span class="linenos">39</span></a>        <span class="k">else</span><span class="p">:</span>
-</span><span id="Scene.set_sensor-40"><a href="#Scene.set_sensor-40"><span class="linenos">40</span></a>            <span class="n">arr</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">new_len</span><span class="p">]</span>
-</span><span id="Scene.set_sensor-41"><a href="#Scene.set_sensor-41"><span class="linenos">41</span></a>        <span class="n">ill</span><span class="o">.</span><span class="n">set_ats_percentage</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span>
-</span><span id="Scene.set_sensor-42"><a href="#Scene.set_sensor-42"><span class="linenos">42</span></a>
-</span><span id="Scene.set_sensor-43"><a href="#Scene.set_sensor-43"><span class="linenos">43</span></a>        <span class="c1"># compute bounding box when virtual plane is enabled</span>
-</span><span id="Scene.set_sensor-44"><a href="#Scene.set_sensor-44"><span class="linenos">44</span></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">get_virtualPlane</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-</span><span id="Scene.set_sensor-45"><a href="#Scene.set_sensor-45"><span class="linenos">45</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">()</span><span class="o">.</span><span class="n">prepare_for_ui</span><span class="p">()</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.set_sensor-29"><a href="#Scene.set_sensor-29"><span class="linenos">29</span></a>    <span class="k">def</span> <span class="nf">set_sensor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sensor</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">SensorOrthographic</span><span class="p">,</span> <span class="n">SensorPerspective</span><span class="p">,</span> <span class="n">SensorFisheye</span><span class="p">,</span> <span class="n">SensorPhotonTracing</span><span class="p">,</span> <span class="n">SensorLiDAR</span><span class="p">]):</span>
+</span><span id="Scene.set_sensor-30"><a href="#Scene.set_sensor-30"><span class="linenos">30</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene.set_sensor-31"><a href="#Scene.set_sensor-31"><span class="linenos">31</span></a><span class="sd">        Set the sensor for simulation</span>
+</span><span id="Scene.set_sensor-32"><a href="#Scene.set_sensor-32"><span class="linenos">32</span></a><span class="sd">        :param sensor: Sensor of different types</span>
+</span><span id="Scene.set_sensor-33"><a href="#Scene.set_sensor-33"><span class="linenos">33</span></a><span class="sd">        :return:</span>
+</span><span id="Scene.set_sensor-34"><a href="#Scene.set_sensor-34"><span class="linenos">34</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene.set_sensor-35"><a href="#Scene.set_sensor-35"><span class="linenos">35</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span> <span class="o">=</span> <span class="n">sensor</span>
+</span><span id="Scene.set_sensor-36"><a href="#Scene.set_sensor-36"><span class="linenos">36</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
+</span><span id="Scene.set_sensor-37"><a href="#Scene.set_sensor-37"><span class="linenos">37</span></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="p">,</span> <span class="n">SensorLiDAR</span><span class="p">):</span>
+</span><span id="Scene.set_sensor-38"><a href="#Scene.set_sensor-38"><span class="linenos">38</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">get_scanning_device</span><span class="p">()</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
+</span><span id="Scene.set_sensor-39"><a href="#Scene.set_sensor-39"><span class="linenos">39</span></a>        <span class="c1"># correct atmosphere skl according to number of bands</span>
+</span><span id="Scene.set_sensor-40"><a href="#Scene.set_sensor-40"><span class="linenos">40</span></a>        <span class="n">new_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">get_spectral_bands</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">))</span>
+</span><span id="Scene.set_sensor-41"><a href="#Scene.set_sensor-41"><span class="linenos">41</span></a>        <span class="n">ill</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">()</span><span class="o">.</span><span class="n">get_scene</span><span class="p">()</span><span class="o">.</span><span class="n">get_illumination</span><span class="p">()</span>
+</span><span id="Scene.set_sensor-42"><a href="#Scene.set_sensor-42"><span class="linenos">42</span></a>        <span class="n">ats_skl</span> <span class="o">=</span> <span class="n">ill</span><span class="o">.</span><span class="n">get_ats_percentage</span><span class="p">()</span>
+</span><span id="Scene.set_sensor-43"><a href="#Scene.set_sensor-43"><span class="linenos">43</span></a>        <span class="n">arr</span> <span class="o">=</span> <span class="n">ats_skl</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
+</span><span id="Scene.set_sensor-44"><a href="#Scene.set_sensor-44"><span class="linenos">44</span></a>        <span class="n">old_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
+</span><span id="Scene.set_sensor-45"><a href="#Scene.set_sensor-45"><span class="linenos">45</span></a>        <span class="k">if</span> <span class="n">new_len</span> <span class="o">&gt;=</span> <span class="n">old_len</span><span class="p">:</span>
+</span><span id="Scene.set_sensor-46"><a href="#Scene.set_sensor-46"><span class="linenos">46</span></a>            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">new_len</span> <span class="o">-</span> <span class="n">old_len</span><span class="p">):</span>
+</span><span id="Scene.set_sensor-47"><a href="#Scene.set_sensor-47"><span class="linenos">47</span></a>                <span class="n">arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;0.0&quot;</span><span class="p">)</span>
+</span><span id="Scene.set_sensor-48"><a href="#Scene.set_sensor-48"><span class="linenos">48</span></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="Scene.set_sensor-49"><a href="#Scene.set_sensor-49"><span class="linenos">49</span></a>            <span class="n">arr</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">new_len</span><span class="p">]</span>
+</span><span id="Scene.set_sensor-50"><a href="#Scene.set_sensor-50"><span class="linenos">50</span></a>        <span class="n">ill</span><span class="o">.</span><span class="n">set_ats_percentage</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span>
+</span><span id="Scene.set_sensor-51"><a href="#Scene.set_sensor-51"><span class="linenos">51</span></a>
+</span><span id="Scene.set_sensor-52"><a href="#Scene.set_sensor-52"><span class="linenos">52</span></a>        <span class="c1"># compute bounding box when virtual plane is enabled</span>
+</span><span id="Scene.set_sensor-53"><a href="#Scene.set_sensor-53"><span class="linenos">53</span></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">get_virtualPlane</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="Scene.set_sensor-54"><a href="#Scene.set_sensor-54"><span class="linenos">54</span></a>            <span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">()</span><span class="o">.</span><span class="n">prepare_for_ui</span><span class="p">()</span>
 </span></pre></div>
 
 
-    
+            <div class="docstring"><p>Set the sensor for simulation</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>sensor</strong>:  Sensor of different types</li>
+</ul>
+
+<h6 id="returns">Returns</h6>
+</div>
+
 
                             </div>
                             <div id="Scene.get_sensor" class="classattr">
@@ -392,12 +537,20 @@ Scene    </h1>
 
     </div>
     <a class="headerlink" href="#Scene.get_sensor"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.get_sensor-47"><a href="#Scene.get_sensor-47"><span class="linenos">47</span></a>    <span class="k">def</span> <span class="nf">get_sensor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="Scene.get_sensor-48"><a href="#Scene.get_sensor-48"><span class="linenos">48</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.get_sensor-56"><a href="#Scene.get_sensor-56"><span class="linenos">56</span></a>    <span class="k">def</span> <span class="nf">get_sensor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Scene.get_sensor-57"><a href="#Scene.get_sensor-57"><span class="linenos">57</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene.get_sensor-58"><a href="#Scene.get_sensor-58"><span class="linenos">58</span></a><span class="sd">        Return the current sensor</span>
+</span><span id="Scene.get_sensor-59"><a href="#Scene.get_sensor-59"><span class="linenos">59</span></a><span class="sd">        :return:</span>
+</span><span id="Scene.get_sensor-60"><a href="#Scene.get_sensor-60"><span class="linenos">60</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene.get_sensor-61"><a href="#Scene.get_sensor-61"><span class="linenos">61</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span>
 </span></pre></div>
 
 
-    
+            <div class="docstring"><p>Return the current sensor</p>
+
+<h6 id="returns">Returns</h6>
+</div>
+
 
                             </div>
                             <div id="Scene.with_lidar_sensor" class="classattr">
@@ -411,15 +564,23 @@ Scene    </h1>
 
     </div>
     <a class="headerlink" href="#Scene.with_lidar_sensor"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.with_lidar_sensor-50"><a href="#Scene.with_lidar_sensor-50"><span class="linenos">50</span></a>    <span class="k">def</span> <span class="nf">with_lidar_sensor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="Scene.with_lidar_sensor-51"><a href="#Scene.with_lidar_sensor-51"><span class="linenos">51</span></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="p">,</span> <span class="n">SensorLiDAR</span><span class="p">):</span>
-</span><span id="Scene.with_lidar_sensor-52"><a href="#Scene.with_lidar_sensor-52"><span class="linenos">52</span></a>            <span class="k">return</span> <span class="kc">True</span>
-</span><span id="Scene.with_lidar_sensor-53"><a href="#Scene.with_lidar_sensor-53"><span class="linenos">53</span></a>        <span class="k">else</span><span class="p">:</span>
-</span><span id="Scene.with_lidar_sensor-54"><a href="#Scene.with_lidar_sensor-54"><span class="linenos">54</span></a>            <span class="k">return</span> <span class="kc">False</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.with_lidar_sensor-63"><a href="#Scene.with_lidar_sensor-63"><span class="linenos">63</span></a>    <span class="k">def</span> <span class="nf">with_lidar_sensor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Scene.with_lidar_sensor-64"><a href="#Scene.with_lidar_sensor-64"><span class="linenos">64</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene.with_lidar_sensor-65"><a href="#Scene.with_lidar_sensor-65"><span class="linenos">65</span></a><span class="sd">        Whether the scene is configured with a LiDAR sensor</span>
+</span><span id="Scene.with_lidar_sensor-66"><a href="#Scene.with_lidar_sensor-66"><span class="linenos">66</span></a><span class="sd">        :return:</span>
+</span><span id="Scene.with_lidar_sensor-67"><a href="#Scene.with_lidar_sensor-67"><span class="linenos">67</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene.with_lidar_sensor-68"><a href="#Scene.with_lidar_sensor-68"><span class="linenos">68</span></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="p">,</span> <span class="n">SensorLiDAR</span><span class="p">):</span>
+</span><span id="Scene.with_lidar_sensor-69"><a href="#Scene.with_lidar_sensor-69"><span class="linenos">69</span></a>            <span class="k">return</span> <span class="kc">True</span>
+</span><span id="Scene.with_lidar_sensor-70"><a href="#Scene.with_lidar_sensor-70"><span class="linenos">70</span></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="Scene.with_lidar_sensor-71"><a href="#Scene.with_lidar_sensor-71"><span class="linenos">71</span></a>            <span class="k">return</span> <span class="kc">False</span>
 </span></pre></div>
 
 
-    
+            <div class="docstring"><p>Whether the scene is configured with a LiDAR sensor</p>
+
+<h6 id="returns">Returns</h6>
+</div>
+
 
                             </div>
                             <div id="Scene.set_landscape" class="classattr">
@@ -427,19 +588,34 @@ Scene    </h1>
 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">set_landscape</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">landscape</span></span><span class="return-annotation">):</span></span>
+        <span class="name">set_landscape</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">landscape</span><span class="p">:</span> <span class="n"><a href="Landscape.html#Landscape">Landscape.Landscape</a></span></span><span class="return-annotation">):</span></span>
 
                 <label class="view-source-button" for="Scene.set_landscape-view-source"><span>View Source</span></label>
 
     </div>
     <a class="headerlink" href="#Scene.set_landscape"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.set_landscape-56"><a href="#Scene.set_landscape-56"><span class="linenos">56</span></a>    <span class="k">def</span> <span class="nf">set_landscape</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">landscape</span><span class="p">):</span>
-</span><span id="Scene.set_landscape-57"><a href="#Scene.set_landscape-57"><span class="linenos">57</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span> <span class="o">=</span> <span class="n">landscape</span>
-</span><span id="Scene.set_landscape-58"><a href="#Scene.set_landscape-58"><span class="linenos">58</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.set_landscape-73"><a href="#Scene.set_landscape-73"><span class="linenos">73</span></a>    <span class="k">def</span> <span class="nf">set_landscape</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">landscape</span><span class="p">:</span> <span class="n">Landscape</span><span class="p">):</span>
+</span><span id="Scene.set_landscape-74"><a href="#Scene.set_landscape-74"><span class="linenos">74</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene.set_landscape-75"><a href="#Scene.set_landscape-75"><span class="linenos">75</span></a><span class="sd">        Set the landscape for the scene</span>
+</span><span id="Scene.set_landscape-76"><a href="#Scene.set_landscape-76"><span class="linenos">76</span></a><span class="sd">        :param landscape:</span>
+</span><span id="Scene.set_landscape-77"><a href="#Scene.set_landscape-77"><span class="linenos">77</span></a><span class="sd">        :return:</span>
+</span><span id="Scene.set_landscape-78"><a href="#Scene.set_landscape-78"><span class="linenos">78</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene.set_landscape-79"><a href="#Scene.set_landscape-79"><span class="linenos">79</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span> <span class="o">=</span> <span class="n">landscape</span>
+</span><span id="Scene.set_landscape-80"><a href="#Scene.set_landscape-80"><span class="linenos">80</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
 </span></pre></div>
 
 
-    
+            <div class="docstring"><p>Set the landscape for the scene</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>landscape</strong>: </li>
+</ul>
+
+<h6 id="returns">Returns</h6>
+</div>
+
 
                             </div>
                             <div id="Scene.get_landscape" class="classattr">
@@ -453,12 +629,20 @@ Scene    </h1>
 
     </div>
     <a class="headerlink" href="#Scene.get_landscape"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.get_landscape-60"><a href="#Scene.get_landscape-60"><span class="linenos">60</span></a>    <span class="k">def</span> <span class="nf">get_landscape</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="Scene.get_landscape-61"><a href="#Scene.get_landscape-61"><span class="linenos">61</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.get_landscape-82"><a href="#Scene.get_landscape-82"><span class="linenos">82</span></a>    <span class="k">def</span> <span class="nf">get_landscape</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Scene.get_landscape-83"><a href="#Scene.get_landscape-83"><span class="linenos">83</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene.get_landscape-84"><a href="#Scene.get_landscape-84"><span class="linenos">84</span></a><span class="sd">        Get the landscape</span>
+</span><span id="Scene.get_landscape-85"><a href="#Scene.get_landscape-85"><span class="linenos">85</span></a><span class="sd">        :return:</span>
+</span><span id="Scene.get_landscape-86"><a href="#Scene.get_landscape-86"><span class="linenos">86</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene.get_landscape-87"><a href="#Scene.get_landscape-87"><span class="linenos">87</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span>
 </span></pre></div>
 
 
-    
+            <div class="docstring"><p>Get the landscape</p>
+
+<h6 id="returns">Returns</h6>
+</div>
+
 
                             </div>
                             <div id="Scene.set_illumination" class="classattr">
@@ -466,19 +650,34 @@ Scene    </h1>
 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">set_illumination</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">illumination</span></span><span class="return-annotation">):</span></span>
+        <span class="name">set_illumination</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">illumination</span><span class="p">:</span> <span class="n"><a href="Illumination.html#Illumination">Illumination.Illumination</a></span></span><span class="return-annotation">):</span></span>
 
                 <label class="view-source-button" for="Scene.set_illumination-view-source"><span>View Source</span></label>
 
     </div>
     <a class="headerlink" href="#Scene.set_illumination"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.set_illumination-63"><a href="#Scene.set_illumination-63"><span class="linenos">63</span></a>    <span class="k">def</span> <span class="nf">set_illumination</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">illumination</span><span class="p">):</span>
-</span><span id="Scene.set_illumination-64"><a href="#Scene.set_illumination-64"><span class="linenos">64</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span> <span class="o">=</span> <span class="n">illumination</span>
-</span><span id="Scene.set_illumination-65"><a href="#Scene.set_illumination-65"><span class="linenos">65</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.set_illumination-89"><a href="#Scene.set_illumination-89"><span class="linenos">89</span></a>    <span class="k">def</span> <span class="nf">set_illumination</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">illumination</span><span class="p">:</span> <span class="n">Illumination</span><span class="p">):</span>
+</span><span id="Scene.set_illumination-90"><a href="#Scene.set_illumination-90"><span class="linenos">90</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene.set_illumination-91"><a href="#Scene.set_illumination-91"><span class="linenos">91</span></a><span class="sd">        Set the illumination for the scene</span>
+</span><span id="Scene.set_illumination-92"><a href="#Scene.set_illumination-92"><span class="linenos">92</span></a><span class="sd">        :param illumination:</span>
+</span><span id="Scene.set_illumination-93"><a href="#Scene.set_illumination-93"><span class="linenos">93</span></a><span class="sd">        :return:</span>
+</span><span id="Scene.set_illumination-94"><a href="#Scene.set_illumination-94"><span class="linenos">94</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene.set_illumination-95"><a href="#Scene.set_illumination-95"><span class="linenos">95</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span> <span class="o">=</span> <span class="n">illumination</span>
+</span><span id="Scene.set_illumination-96"><a href="#Scene.set_illumination-96"><span class="linenos">96</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
 </span></pre></div>
 
 
-    
+            <div class="docstring"><p>Set the illumination for the scene</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>illumination</strong>: </li>
+</ul>
+
+<h6 id="returns">Returns</h6>
+</div>
+
 
                             </div>
                             <div id="Scene.get_illumination" class="classattr">
@@ -492,12 +691,20 @@ Scene    </h1>
 
     </div>
     <a class="headerlink" href="#Scene.get_illumination"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.get_illumination-67"><a href="#Scene.get_illumination-67"><span class="linenos">67</span></a>    <span class="k">def</span> <span class="nf">get_illumination</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="Scene.get_illumination-68"><a href="#Scene.get_illumination-68"><span class="linenos">68</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.get_illumination-98"><a href="#Scene.get_illumination-98"><span class="linenos"> 98</span></a>    <span class="k">def</span> <span class="nf">get_illumination</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Scene.get_illumination-99"><a href="#Scene.get_illumination-99"><span class="linenos"> 99</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene.get_illumination-100"><a href="#Scene.get_illumination-100"><span class="linenos">100</span></a><span class="sd">        Get the current illumination</span>
+</span><span id="Scene.get_illumination-101"><a href="#Scene.get_illumination-101"><span class="linenos">101</span></a><span class="sd">        :return:</span>
+</span><span id="Scene.get_illumination-102"><a href="#Scene.get_illumination-102"><span class="linenos">102</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene.get_illumination-103"><a href="#Scene.get_illumination-103"><span class="linenos">103</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span>
 </span></pre></div>
 
 
-    
+            <div class="docstring"><p>Get the current illumination</p>
+
+<h6 id="returns">Returns</h6>
+</div>
+
 
                             </div>
                             <div id="Scene.set_observation" class="classattr">
@@ -505,19 +712,34 @@ Scene    </h1>
 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">set_observation</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">observation</span></span><span class="return-annotation">):</span></span>
+        <span class="name">set_observation</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">observation</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n"><a href="Observation.html#ObservationOrthographic">Observation.ObservationOrthographic</a></span><span class="p">,</span> <span class="n"><a href="Observation.html#ObservationPerspective">Observation.ObservationPerspective</a></span><span class="p">,</span> <span class="n"><a href="Observation.html#ObservationPhotonTracing">Observation.ObservationPhotonTracing</a></span><span class="p">,</span> <span class="n"><a href="Observation.html#ObservationFisheye">Observation.ObservationFisheye</a></span><span class="p">]</span></span><span class="return-annotation">):</span></span>
 
                 <label class="view-source-button" for="Scene.set_observation-view-source"><span>View Source</span></label>
 
     </div>
     <a class="headerlink" href="#Scene.set_observation"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.set_observation-70"><a href="#Scene.set_observation-70"><span class="linenos">70</span></a>    <span class="k">def</span> <span class="nf">set_observation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">observation</span><span class="p">):</span>
-</span><span id="Scene.set_observation-71"><a href="#Scene.set_observation-71"><span class="linenos">71</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span> <span class="o">=</span> <span class="n">observation</span>
-</span><span id="Scene.set_observation-72"><a href="#Scene.set_observation-72"><span class="linenos">72</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.set_observation-105"><a href="#Scene.set_observation-105"><span class="linenos">105</span></a>    <span class="k">def</span> <span class="nf">set_observation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">observation</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ObservationOrthographic</span><span class="p">,</span> <span class="n">ObservationPerspective</span><span class="p">,</span> <span class="n">ObservationPhotonTracing</span><span class="p">,</span> <span class="n">ObservationFisheye</span><span class="p">]):</span>
+</span><span id="Scene.set_observation-106"><a href="#Scene.set_observation-106"><span class="linenos">106</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene.set_observation-107"><a href="#Scene.set_observation-107"><span class="linenos">107</span></a><span class="sd">        Set observation</span>
+</span><span id="Scene.set_observation-108"><a href="#Scene.set_observation-108"><span class="linenos">108</span></a><span class="sd">        :param observation:</span>
+</span><span id="Scene.set_observation-109"><a href="#Scene.set_observation-109"><span class="linenos">109</span></a><span class="sd">        :return:</span>
+</span><span id="Scene.set_observation-110"><a href="#Scene.set_observation-110"><span class="linenos">110</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene.set_observation-111"><a href="#Scene.set_observation-111"><span class="linenos">111</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span> <span class="o">=</span> <span class="n">observation</span>
+</span><span id="Scene.set_observation-112"><a href="#Scene.set_observation-112"><span class="linenos">112</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span><span class="o">.</span><span class="n">set_sim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">())</span>
 </span></pre></div>
 
 
-    
+            <div class="docstring"><p>Set observation</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>observation</strong>: </li>
+</ul>
+
+<h6 id="returns">Returns</h6>
+</div>
+
 
                             </div>
                             <div id="Scene.get_observation" class="classattr">
@@ -531,12 +753,20 @@ Scene    </h1>
 
     </div>
     <a class="headerlink" href="#Scene.get_observation"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.get_observation-74"><a href="#Scene.get_observation-74"><span class="linenos">74</span></a>    <span class="k">def</span> <span class="nf">get_observation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="Scene.get_observation-75"><a href="#Scene.get_observation-75"><span class="linenos">75</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.get_observation-114"><a href="#Scene.get_observation-114"><span class="linenos">114</span></a>    <span class="k">def</span> <span class="nf">get_observation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Scene.get_observation-115"><a href="#Scene.get_observation-115"><span class="linenos">115</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene.get_observation-116"><a href="#Scene.get_observation-116"><span class="linenos">116</span></a><span class="sd">        Get the observation</span>
+</span><span id="Scene.get_observation-117"><a href="#Scene.get_observation-117"><span class="linenos">117</span></a><span class="sd">        :return:</span>
+</span><span id="Scene.get_observation-118"><a href="#Scene.get_observation-118"><span class="linenos">118</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene.get_observation-119"><a href="#Scene.get_observation-119"><span class="linenos">119</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span>
 </span></pre></div>
 
 
-    
+            <div class="docstring"><p>Get the observation</p>
+
+<h6 id="returns">Returns</h6>
+</div>
+
 
                             </div>
                             <div id="Scene.set_advanced_params" class="classattr">
@@ -544,18 +774,33 @@ Scene    </h1>
 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">set_advanced_params</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">advanced_params</span></span><span class="return-annotation">):</span></span>
+        <span class="name">set_advanced_params</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">advanced_params</span><span class="p">:</span> <span class="n"><a href="AdvancedParams.html#AdvancedParams">AdvancedParams.AdvancedParams</a></span></span><span class="return-annotation">):</span></span>
 
                 <label class="view-source-button" for="Scene.set_advanced_params-view-source"><span>View Source</span></label>
 
     </div>
     <a class="headerlink" href="#Scene.set_advanced_params"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.set_advanced_params-77"><a href="#Scene.set_advanced_params-77"><span class="linenos">77</span></a>    <span class="k">def</span> <span class="nf">set_advanced_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">advanced_params</span><span class="p">):</span>
-</span><span id="Scene.set_advanced_params-78"><a href="#Scene.set_advanced_params-78"><span class="linenos">78</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span> <span class="o">=</span> <span class="n">advanced_params</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.set_advanced_params-121"><a href="#Scene.set_advanced_params-121"><span class="linenos">121</span></a>    <span class="k">def</span> <span class="nf">set_advanced_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">advanced_params</span><span class="p">:</span> <span class="n">AdvancedParams</span><span class="p">):</span>
+</span><span id="Scene.set_advanced_params-122"><a href="#Scene.set_advanced_params-122"><span class="linenos">122</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene.set_advanced_params-123"><a href="#Scene.set_advanced_params-123"><span class="linenos">123</span></a><span class="sd">        Set the advanced parameter</span>
+</span><span id="Scene.set_advanced_params-124"><a href="#Scene.set_advanced_params-124"><span class="linenos">124</span></a><span class="sd">        :param advanced_params:</span>
+</span><span id="Scene.set_advanced_params-125"><a href="#Scene.set_advanced_params-125"><span class="linenos">125</span></a><span class="sd">        :return:</span>
+</span><span id="Scene.set_advanced_params-126"><a href="#Scene.set_advanced_params-126"><span class="linenos">126</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene.set_advanced_params-127"><a href="#Scene.set_advanced_params-127"><span class="linenos">127</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span> <span class="o">=</span> <span class="n">advanced_params</span>
 </span></pre></div>
 
 
-    
+            <div class="docstring"><p>Set the advanced parameter</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>advanced_params</strong>: </li>
+</ul>
+
+<h6 id="returns">Returns</h6>
+</div>
+
 
                             </div>
                             <div id="Scene.get_advanced_params" class="classattr">
@@ -569,12 +814,20 @@ Scene    </h1>
 
     </div>
     <a class="headerlink" href="#Scene.get_advanced_params"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.get_advanced_params-80"><a href="#Scene.get_advanced_params-80"><span class="linenos">80</span></a>    <span class="k">def</span> <span class="nf">get_advanced_params</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="Scene.get_advanced_params-81"><a href="#Scene.get_advanced_params-81"><span class="linenos">81</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.get_advanced_params-129"><a href="#Scene.get_advanced_params-129"><span class="linenos">129</span></a>    <span class="k">def</span> <span class="nf">get_advanced_params</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Scene.get_advanced_params-130"><a href="#Scene.get_advanced_params-130"><span class="linenos">130</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene.get_advanced_params-131"><a href="#Scene.get_advanced_params-131"><span class="linenos">131</span></a><span class="sd">        Get the advanced parameter</span>
+</span><span id="Scene.get_advanced_params-132"><a href="#Scene.get_advanced_params-132"><span class="linenos">132</span></a><span class="sd">        :return:</span>
+</span><span id="Scene.get_advanced_params-133"><a href="#Scene.get_advanced_params-133"><span class="linenos">133</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene.get_advanced_params-134"><a href="#Scene.get_advanced_params-134"><span class="linenos">134</span></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span>
 </span></pre></div>
 
 
-    
+            <div class="docstring"><p>Get the advanced parameter</p>
+
+<h6 id="returns">Returns</h6>
+</div>
+
 
                             </div>
                             <div id="Scene.to_json_object" class="classattr">
@@ -588,17 +841,32 @@ Scene    </h1>
 
     </div>
     <a class="headerlink" href="#Scene.to_json_object"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.to_json_object-83"><a href="#Scene.to_json_object-83"><span class="linenos">83</span></a>    <span class="k">def</span> <span class="nf">to_json_object</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sim</span><span class="p">):</span>
-</span><span id="Scene.to_json_object-84"><a href="#Scene.to_json_object-84"><span class="linenos">84</span></a>        <span class="n">json_object</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Advanced&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
-</span><span id="Scene.to_json_object-85"><a href="#Scene.to_json_object-85"><span class="linenos">85</span></a>                       <span class="s2">&quot;illumination&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
-</span><span id="Scene.to_json_object-86"><a href="#Scene.to_json_object-86"><span class="linenos">86</span></a>                       <span class="s2">&quot;observation&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
-</span><span id="Scene.to_json_object-87"><a href="#Scene.to_json_object-87"><span class="linenos">87</span></a>                       <span class="s2">&quot;sensor&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
-</span><span id="Scene.to_json_object-88"><a href="#Scene.to_json_object-88"><span class="linenos">88</span></a>                       <span class="s2">&quot;scene&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(</span><span class="n">sim</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="p">)}</span>
-</span><span id="Scene.to_json_object-89"><a href="#Scene.to_json_object-89"><span class="linenos">89</span></a>        <span class="k">return</span> <span class="n">json_object</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.to_json_object-136"><a href="#Scene.to_json_object-136"><span class="linenos">136</span></a>    <span class="k">def</span> <span class="nf">to_json_object</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sim</span><span class="p">):</span>
+</span><span id="Scene.to_json_object-137"><a href="#Scene.to_json_object-137"><span class="linenos">137</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene.to_json_object-138"><a href="#Scene.to_json_object-138"><span class="linenos">138</span></a><span class="sd">        Save scene to json string</span>
+</span><span id="Scene.to_json_object-139"><a href="#Scene.to_json_object-139"><span class="linenos">139</span></a><span class="sd">        :param sim: the simulation</span>
+</span><span id="Scene.to_json_object-140"><a href="#Scene.to_json_object-140"><span class="linenos">140</span></a><span class="sd">        :return:</span>
+</span><span id="Scene.to_json_object-141"><a href="#Scene.to_json_object-141"><span class="linenos">141</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene.to_json_object-142"><a href="#Scene.to_json_object-142"><span class="linenos">142</span></a>        <span class="n">json_object</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Advanced&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__advanced_params</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
+</span><span id="Scene.to_json_object-143"><a href="#Scene.to_json_object-143"><span class="linenos">143</span></a>                       <span class="s2">&quot;illumination&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__illumination</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
+</span><span id="Scene.to_json_object-144"><a href="#Scene.to_json_object-144"><span class="linenos">144</span></a>                       <span class="s2">&quot;observation&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__observation</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
+</span><span id="Scene.to_json_object-145"><a href="#Scene.to_json_object-145"><span class="linenos">145</span></a>                       <span class="s2">&quot;sensor&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(),</span>
+</span><span id="Scene.to_json_object-146"><a href="#Scene.to_json_object-146"><span class="linenos">146</span></a>                       <span class="s2">&quot;scene&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__landscape</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(</span><span class="n">sim</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sensor</span><span class="p">)}</span>
+</span><span id="Scene.to_json_object-147"><a href="#Scene.to_json_object-147"><span class="linenos">147</span></a>        <span class="k">return</span> <span class="n">json_object</span>
 </span></pre></div>
 
 
-    
+            <div class="docstring"><p>Save scene to json string</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>sim</strong>:  the simulation</li>
+</ul>
+
+<h6 id="returns">Returns</h6>
+</div>
+
 
                             </div>
                             <div id="Scene.write_scene" class="classattr">
@@ -612,14 +880,29 @@ Scene    </h1>
 
     </div>
     <a class="headerlink" href="#Scene.write_scene"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.write_scene-91"><a href="#Scene.write_scene-91"><span class="linenos">91</span></a>    <span class="k">def</span> <span class="nf">write_scene</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">json_file_path</span><span class="p">):</span>
-</span><span id="Scene.write_scene-92"><a href="#Scene.write_scene-92"><span class="linenos">92</span></a>        <span class="n">f_out</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">json_file_path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
-</span><span id="Scene.write_scene-93"><a href="#Scene.write_scene-93"><span class="linenos">93</span></a>        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">()),</span> <span class="n">f_out</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-</span><span id="Scene.write_scene-94"><a href="#Scene.write_scene-94"><span class="linenos">94</span></a>        <span class="n">f_out</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Scene.write_scene-149"><a href="#Scene.write_scene-149"><span class="linenos">149</span></a>    <span class="k">def</span> <span class="nf">write_scene</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">json_file_path</span><span class="p">):</span>
+</span><span id="Scene.write_scene-150"><a href="#Scene.write_scene-150"><span class="linenos">150</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Scene.write_scene-151"><a href="#Scene.write_scene-151"><span class="linenos">151</span></a><span class="sd">        Write the scene to file</span>
+</span><span id="Scene.write_scene-152"><a href="#Scene.write_scene-152"><span class="linenos">152</span></a><span class="sd">        :param json_file_path:</span>
+</span><span id="Scene.write_scene-153"><a href="#Scene.write_scene-153"><span class="linenos">153</span></a><span class="sd">        :return:</span>
+</span><span id="Scene.write_scene-154"><a href="#Scene.write_scene-154"><span class="linenos">154</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Scene.write_scene-155"><a href="#Scene.write_scene-155"><span class="linenos">155</span></a>        <span class="n">f_out</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">json_file_path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
+</span><span id="Scene.write_scene-156"><a href="#Scene.write_scene-156"><span class="linenos">156</span></a>        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_json_object</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_sim</span><span class="p">()),</span> <span class="n">f_out</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</span><span id="Scene.write_scene-157"><a href="#Scene.write_scene-157"><span class="linenos">157</span></a>        <span class="n">f_out</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </span></pre></div>
 
 
-    
+            <div class="docstring"><p>Write the scene to file</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>json_file_path</strong>: </li>
+</ul>
+
+<h6 id="returns">Returns</h6>
+</div>
+
 
                             </div>
                             <div class="inherited">
