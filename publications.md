@@ -29,6 +29,8 @@ sectionid: page_publications
 
 * Chen, S., Xiao, P., Zhang, X., Qi, J., Yin, G., Ma, W. and Liu, H., 2023. [Simulating snow-covered forest bidirectional reflectance by extending hybrid geometric optical–radiative transfer model](https://www.sciencedirect.com/science/article/abs/pii/S003442572300264X). Remote Sensing of Environment, 296, p.113713.
 
+* Wu, Q., Yang, S.S. and Jiang, J., [Impacts of Clumping Effect on Canopy Reflectance Using 3-D Radiative Transfer Modeling](https://www.frontiersin.org/articles/10.3389/ffgc.2023.1106773/full). Frontiers in Forests and Global Change, 6, p.1106773.
+
 * Zhang, J., Sun, R., Xiao, Z., Zhao, L. and Xie, D., 2023. [AM–GM Algorithm for Evaluating, Analyzing, and Correcting the Spatial Scaling Bias of the Leaf Area Index](https://www.mdpi.com/2072-4292/15/12/3068). Remote Sensing, 15(12), p.3068.
 
 * Cheng, J., Yang, H., Qi, J., Han, S., Sun, Z., Feng, H., Chen, R., Zhang, C., Li, J., Yang, G., 2023. [Evaluation of the effect of leaf spatial aggregation on chlorophyll content retrieval in open-canopy apple orchards](https://doi.org/10.1016/j.jag.2023.103367). International Journal of Applied Earth Observation and Geoinformation 121, 103367. 
