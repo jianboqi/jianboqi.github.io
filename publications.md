@@ -25,6 +25,8 @@ sectionid: page_publications
 
 ###### 2023
 
+Gao, S., Zhong, R., Yan, K., Ma, X., Chen, X., Pu, J., Gao, S., Qi, J., Yin, G. and Myneni, R.B., 2023. [Evaluating the saturation effect of vegetation indices in forests using 3D radiative transfer simulations and satellite observations](https://www.sciencedirect.com/science/article/abs/pii/S003442572300216X). Remote Sensing of Environment, 295, p.113665.
+
 * Chen, S., Xiao, P., Zhang, X., Qi, J., Yin, G., Ma, W. and Liu, H., 2023. [Simulating snow-covered forest bidirectional reflectance by extending hybrid geometric optical–radiative transfer model](https://www.sciencedirect.com/science/article/abs/pii/S003442572300264X). Remote Sensing of Environment, 296, p.113713.
 
 * Cheng, J., Yang, H., Qi, J., Han, S., Sun, Z., Feng, H., Chen, R., Zhang, C., Li, J., Yang, G., 2023. Evaluation of the effect of leaf spatial aggregation on chlorophyll content retrieval in open-canopy apple orchards. International Journal of Applied Earth Observation and Geoinformation 121, 103367. https://doi.org/10.1016/j.jag.2023.103367
