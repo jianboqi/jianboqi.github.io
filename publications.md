@@ -29,15 +29,15 @@ Gao, S., Zhong, R., Yan, K., Ma, X., Chen, X., Pu, J., Gao, S., Qi, J., Yin, G. 
 
 * Chen, S., Xiao, P., Zhang, X., Qi, J., Yin, G., Ma, W. and Liu, H., 2023. [Simulating snow-covered forest bidirectional reflectance by extending hybrid geometric optical–radiative transfer model](https://www.sciencedirect.com/science/article/abs/pii/S003442572300264X). Remote Sensing of Environment, 296, p.113713.
 
-* Cheng, J., Yang, H., Qi, J., Han, S., Sun, Z., Feng, H., Chen, R., Zhang, C., Li, J., Yang, G., 2023. Evaluation of the effect of leaf spatial aggregation on chlorophyll content retrieval in open-canopy apple orchards. International Journal of Applied Earth Observation and Geoinformation 121, 103367. https://doi.org/10.1016/j.jag.2023.103367
+* Cheng, J., Yang, H., Qi, J., Han, S., Sun, Z., Feng, H., Chen, R., Zhang, C., Li, J., Yang, G., 2023. [Evaluation of the effect of leaf spatial aggregation on chlorophyll content retrieval in open-canopy apple orchards](https://doi.org/10.1016/j.jag.2023.103367). International Journal of Applied Earth Observation and Geoinformation 121, 103367. 
 
-* Xian, Y., Wang, T., Cheng, W., Letu, H., Du, Y., Leng, W., 2023. A Uniform Model for Correcting Shortwave Downward Radiation Over Rugged Terrain at Various Scales. IEEE Transactions on Geoscience and Remote Sensing 1–1. https://doi.org/10.1109/TGRS.2023.3278081
+* Xian, Y., Wang, T., Cheng, W., Letu, H., Du, Y., Leng, W., 2023. [A Uniform Model for Correcting Shortwave Downward Radiation Over Rugged Terrain at Various Scales](https://doi.org/10.1109/TGRS.2023.3278081). IEEE Transactions on Geoscience and Remote Sensing 1–1.
+* 
+* Zhang, Q., Wang, D., Gastellu-Etchegorry, J.-P., Yang, J., Qian, Y., 2023. [Impact of 3-D structures on directional effective emissivity in urban areas based on DART model](https://doi.org/10.1016/j.buildenv.2023.110410). Building and Environment 239, 110410. 
 
-* Zhang, Q., Wang, D., Gastellu-Etchegorry, J.-P., Yang, J., Qian, Y., 2023. Impact of 3-D structures on directional effective emissivity in urban areas based on DART model. Building and Environment 239, 110410. https://doi.org/10.1016/j.buildenv.2023.110410
+* Li, H., Yan, K., Gao, S., Ma, X., Zeng, Y., Li, W., Yin, G., Mu, X., Yan, G., Myneni, R.B., 2023. [A Novel Inversion Approach for the Kernel-Driven BRDF Model for Heterogeneous Pixels](https://doi.org/10.34133/remotesensing.0038). Journal of Remote Sensing 3, 0038. 
 
-* Li, H., Yan, K., Gao, S., Ma, X., Zeng, Y., Li, W., Yin, G., Mu, X., Yan, G., Myneni, R.B., 2023. A Novel Inversion Approach for the Kernel-Driven BRDF Model for Heterogeneous Pixels. Journal of Remote Sensing 3, 0038. https://doi.org/10.34133/remotesensing.0038
-
-* Ye, X., Ren, H., Wang, P., Zhu, Jinshun, Zhu, Jian, 2023. Thermal Infrared Radiance Transfer Modeling of the Urban Landscape at Ultrahigh Spatial Resolution. IEEE Geoscience and Remote Sensing Letters 20, 1–5. https://doi.org/10.1109/LGRS.2023.3270582
+* Ye, X., Ren, H., Wang, P., Zhu, Jinshun, Zhu, Jian, 2023. [Thermal Infrared Radiance Transfer Modeling of the Urban Landscape at Ultrahigh Spatial Resolution](https://doi.org/10.1109/LGRS.2023.3270582). IEEE Geoscience and Remote Sensing Letters 20, 1–5. 
 
 * Huang, H., Qi, J., Li, L., 2023. [Enhanced Branch Simulation to Improve RAPID in Optical Region Using RAMI Scenes](https://spj.science.org/doi/full/10.34133/remotesensing.0039). Journal of Remote Sensing 3, 0039. https://doi.org/10.34133/remotesensing.0039
 
