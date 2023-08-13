@@ -25,6 +25,8 @@ sectionid: page_publications
 
 ###### 2023
 
+* Chen, S., Xiao, P., Zhang, X., Qi, J., Yin, G., Ma, W. and Liu, H., 2023. [Simulating snow-covered forest bidirectional reflectance by extending hybrid geometric optical–radiative transfer model](https://www.sciencedirect.com/science/article/abs/pii/S003442572300264X). Remote Sensing of Environment, 296, p.113713.
+
 * Cheng, J., Yang, H., Qi, J., Han, S., Sun, Z., Feng, H., Chen, R., Zhang, C., Li, J., Yang, G., 2023. Evaluation of the effect of leaf spatial aggregation on chlorophyll content retrieval in open-canopy apple orchards. International Journal of Applied Earth Observation and Geoinformation 121, 103367. https://doi.org/10.1016/j.jag.2023.103367
 
 * Xian, Y., Wang, T., Cheng, W., Letu, H., Du, Y., Leng, W., 2023. A Uniform Model for Correcting Shortwave Downward Radiation Over Rugged Terrain at Various Scales. IEEE Transactions on Geoscience and Remote Sensing 1–1. https://doi.org/10.1109/TGRS.2023.3278081
