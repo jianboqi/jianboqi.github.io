@@ -20,7 +20,7 @@ If you have problems under Windows,please refer to [problems under windows](http
 * This version introduce a major improvement for LESS---Solar Induced Fluorescence (SIF), this supports multiangle sif simulation with Photontracing,
   and sif images by Orthographic, perspective and Fisheye sensors.
 * A few bugs have been fixed.
-  ![image](https://github.com/jianboqi/jianboqi.github.io/assets/1770654/b80c43d8-3eb2-4083-86c3-53d2cc4c5a81)
+![20230819113919](https://github.com/jianboqi/jianboqi.github.io/assets/1770654/f1ad33a2-b6e7-46d0-b335-0dd75ccee8f9)
 
 
 #### 2023-07-16 (version 2.1.4-2023-07-16):
