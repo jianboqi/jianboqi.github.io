@@ -19,9 +19,10 @@ If you have problems under Windows,please refer to [problems under windows](http
 
 * This version introduce a major improvement for LESS---Solar Induced Fluorescence (SIF), this supports multiangle sif simulation with Photontracing,
   and sif images by Orthographic, perspective and Fisheye sensors.
+* A new plugin to simulate directional brightness temperature for thermal radiation is implemented. It can simulate multiple directional BT simultaneously by batch-processing images automatically
 * A few bugs have been fixed.
 ![20230819113919](https://github.com/jianboqi/jianboqi.github.io/assets/1770654/f1ad33a2-b6e7-46d0-b335-0dd75ccee8f9)
-
+![微信截图_20230820095653(1)](https://github.com/jianboqi/jianboqi.github.io/assets/1770654/5d733d0e-b000-4ee4-9db2-e469cef75bd8)
 
 #### 2023-07-16 (version 2.1.4-2023-07-16):
 **Windows**:<a href="https://drive.google.com/drive/folders/1JeV4XfI8cIztB3kx27AP-1rlX8IvYkHO?usp=share_link">LESS-2.1.4-2023-07-16-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1WoFUrZ2bMRkDDuTWVqq8Fg?pwd=a75y">LESS-2.1.4-2023-07-16-win64</a>)
