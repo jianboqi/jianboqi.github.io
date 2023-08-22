@@ -12,16 +12,16 @@ The major user manual in English:
 
 [LESS User Manual-V1.1.pdf](http://lessrt.org/Attachments/LESS_User_Manual-V1.1.pdf)
 
+### 中文教程
+
+链接: [三维辐射传输模型LESS原理与实践简明教程](https://pan.baidu.com/s/1ZraBG3yFZaePlqjxKEr4Zw?pwd=6bg7)
+
 ### PyLessSDK API documentation
 This link lists all the available functions and properties provided by PyLessSDK. However, when writing code, except of 
 looking up the API list, another convenient way is to use the Python Code Generator provided by LESS GUI. When you create
 a simulation project using GUI, click 【Tools】【Generate Python Code】，then you will get a py file, which contains the code corresponding to the simulation created with GUI. With this code, you can modify the code according to your own needs. 
 
 [PyLessSDK API documentation](https://lessrt.org/sdk_api_doc/index.html)
-
-### 中文教程
-
-链接: [三维辐射传输模型LESS原理与实践简明教程](https://pan.baidu.com/s/1ZraBG3yFZaePlqjxKEr4Zw?pwd=6bg7)
 
 ### Video tutorial （中文）
 
