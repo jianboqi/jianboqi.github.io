@@ -8,6 +8,7 @@ redirect_from: /docs/index.html
 
 
 ### LESS User Manual
+The major user manual in English:
 [LESS User Manual-V1.1.pdf](http://lessrt.org/Attachments/LESS_User_Manual-V1.1.pdf)
 
 ### PyLessSDK API documentation
