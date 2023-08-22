@@ -11,6 +11,9 @@ redirect_from: /docs/index.html
 [LESS User Manual-V1.1.pdf](http://lessrt.org/Attachments/LESS_User_Manual-V1.1.pdf)
 
 ### PyLessSDK API documentation
+This link lists all the available functions and properties provided by PyLessSDK. However, when writing code, except of 
+looking up the API list, another convenient way is to use the Python Code Generator provided by LESS GUI. When you create
+a simulation project using GUI, click 【Tools】【Generate Python Code】，then you will get a py file, which contains the code corresponding to the simulation created with GUI. With this code, you can modify the code according to your own needs. 
 
 [PyLessSDK API documentation](https://lessrt.org/sdk_api_doc/index.html)
 
