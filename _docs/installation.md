@@ -10,6 +10,7 @@ permalink: /docs/installation/
 * If you can not start LESS or can not launch simulations, please try to install VC runtime [VC_redist_2017.x64](https://github.com/jianboqi/lessrt/releases/download/LESS1.8.6/VC_redist_2017.x64.exe) and [vcredist_x64_2010.exe](https://github.com/jianboqi/lessrt/releases/download/LESS1.8.6/vcredist_x64_2010.exe)
 * 不要安装在中文路径下
 
+<!--
 ## Use LESS under linux
 
 ### GUI Version
@@ -41,4 +42,4 @@ If your ubuntu system does not have a graphic user interface or you can only wor
 Ubuntu 16.04: [LESS-1.8.6-Ubuntu16.04-cmd.zip](https://github.com/jianboqi/lessrt/releases/download/LESS1.8.6/LESS-1.8.6-Ubuntu16.04-cmd.zip).
 
 Now, the workflow is: **Generate scene file (windows)**->**upload scene file to linux**->**run with command line**.
-
+-->
