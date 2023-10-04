@@ -29,9 +29,9 @@ sectionid: page_publications
 
 ###### 2023
 
-Lin, X., Li, A., Bian, J., Zhang, Z., Lei, G., Chen, L., Qi, J., 2023. [Reconstruction of a large-scale realistic three-dimensional (3-D) mountain forest scene for radiative transfer simulations](https://doi.org/10.1080/15481603.2023.2261993). GIScience & Remote Sensing 60, 2261993. https://doi.org/10.1080/15481603.2023.2261993
+* Lin, X., Li, A., Bian, J., Zhang, Z., Lei, G., Chen, L., Qi, J., 2023. [Reconstruction of a large-scale realistic three-dimensional (3-D) mountain forest scene for radiative transfer simulations](https://doi.org/10.1080/15481603.2023.2261993). GIScience & Remote Sensing 60, 2261993. https://doi.org/10.1080/15481603.2023.2261993
 
-Zeng, Y., Hao, D., Park, T., Zhu, P., Huete, A., Myneni, R., Knyazikhin, Y., Qi, J., Nemani, R.R., Li, F., Huang, J., Gao, Y., Li, B., Ji, F., Köhler, P., Frankenberg, C., Berry, J.A., Chen, M., 2023. [Structural complexity biases vegetation greenness measures](https://doi.org/10.1038/s41559-023-02187-6). Nature Ecology Evolution 1–9. 
+* Zeng, Y., Hao, D., Park, T., Zhu, P., Huete, A., Myneni, R., Knyazikhin, Y., Qi, J., Nemani, R.R., Li, F., Huang, J., Gao, Y., Li, B., Ji, F., Köhler, P., Frankenberg, C., Berry, J.A., Chen, M., 2023. [Structural complexity biases vegetation greenness measures](https://doi.org/10.1038/s41559-023-02187-6). Nature Ecology Evolution 1–9. 
 
 * Yang, S., Peng, N., Zhai, D., Tao, Y., He, Q., Mu, X., Li, Y., Fan, W., 2023. [Fisheye-based forest LAI field measurements for remote sensing validation at high spatial resolution](https://ieeexplore.ieee.org/document/10229196). IEEE Geoscience and Remote Sensing Letters 1–1. https://doi.org/10.1109/LGRS.2023.3308369
 
