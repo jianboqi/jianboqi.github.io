@@ -5,12 +5,14 @@ permalink: /publications/
 sectionid: page_publications
 ---
 
-* Zhao, X., Qi, J., Xu, H., Yu, Z., Yuan, L., Chen, Y., Huang, H., 2023. [Evaluating the potential of airborne hyperspectral LiDAR for assessing forest insects and diseases with 3D Radiative Transfer Modeling](https://doi.org/10.1016/j.rse.2023.113759). Remote Sens. Environ. 297, 113759.
+
+
+* Zhao, X., Qi, J., Xu, H., Yu, Z., Yuan, L., Chen, Y., Huang, H., 2023. [Evaluating the potential of airborne hyperspectral LiDAR for assessing forest insects and diseases with 3D Radiative Transfer Modeling](https://doi.org/10.1016/j.rse.2023.113759). Remote Sensing of Environment. 297, 113759.
 
 
 * 叶雨洋, 漆建波, 曹颖, 蒋靖怡, 2023. [基于LESS模型的异质植被冠层光合有效辐射吸收比与植被指数的关系研究](http://www.rsta.ac.cn/CN/10.11873/j.issn.1004-0323.2023.1.0051). 遥感技术与应用 38, 51–65. https://doi.org/10.11873/j.issn.1004-0323.2023.1.0051
 
-* Zhou, K., Xie, D., Qi, J., Zhang, Z., Bo, X., Yan, G., Mu, X., 2023. [Explicitly Reconstructing RAMI-V Scenes for Accurate 3-Dimensional Radiative Transfer Simulation Using the LESS Model](https://spj.science.org/doi/10.34133/remotesensing.0033). J. Remote Sens. 3, 0033. https://doi.org/10.34133/remotesensing.0033
+* Zhou, K., Xie, D., Qi, J., Zhang, Z., Bo, X., Yan, G., Mu, X., 2023. [Explicitly Reconstructing RAMI-V Scenes for Accurate 3-Dimensional Radiative Transfer Simulation Using the LESS Model](https://spj.science.org/doi/10.34133/remotesensing.0033). Journal of Remote Sensing 3, 0033. https://doi.org/10.34133/remotesensing.0033
 
 * Gao, G., Qi, J., Lin, S., Hu, R., Huang, H., 2023. [Estimating plant area density of individual trees from discrete airborne laser scanning data using intensity information and path length distribution](https://www.sciencedirect.com/science/article/pii/S1569843223001036). International Journal of Applied Earth Observation and Geoinformation 118, 103281. https://doi.org/10.1016/j.jag.2023.103281
 
