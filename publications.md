@@ -29,6 +29,8 @@ sectionid: page_publications
 
 ###### 2023
 
+* Liu, X., Chen, Y., Mu, X., Yan, G., Xie, D., Ma, X., Yan, K., Song, W., Liu, Z., 2023. [Correction for the Sun-Angle Effect on the NDVI Based on Path Length](https://doi.org/10.1109/TGRS.2023.3322780). IEEE Transactions on Geoscience and Remote Sensing 1–1. https://doi.org/10.1109/TGRS.2023.3322780
+
 * Lin, X., Li, A., Bian, J., Zhang, Z., Lei, G., Chen, L., Qi, J., 2023. [Reconstruction of a large-scale realistic three-dimensional (3-D) mountain forest scene for radiative transfer simulations](https://doi.org/10.1080/15481603.2023.2261993). GIScience & Remote Sensing 60, 2261993. https://doi.org/10.1080/15481603.2023.2261993
 
 * Zeng, Y., Hao, D., Park, T., Zhu, P., Huete, A., Myneni, R., Knyazikhin, Y., Qi, J., Nemani, R.R., Li, F., Huang, J., Gao, Y., Li, B., Ji, F., Köhler, P., Frankenberg, C., Berry, J.A., Chen, M., 2023. [Structural complexity biases vegetation greenness measures](https://doi.org/10.1038/s41559-023-02187-6). Nature Ecology Evolution 1–9. 
