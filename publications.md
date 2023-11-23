@@ -29,6 +29,8 @@ sectionid: page_publications
 
 ###### 2023
 
+* Han, D., Liu, J., Zhang, R., Liu, Z., Guo, T., Jiang, H., Wang, J., Zhao, H., Ren, S., Yang, P., 2023. [Evaluation of the SAIL Radiative Transfer Model for Simulating Canopy Reflectance of Row Crop Canopies](https://doi.org/10.3390/rs15235433). Remote Sensing 15, 5433. https://doi.org/10.3390/rs15235433
+
 * Liu, X., Chen, Y., Mu, X., Yan, G., Xie, D., Ma, X., Yan, K., Song, W., Liu, Z., 2023. [Correction for the Sun-Angle Effect on the NDVI Based on Path Length](https://doi.org/10.1109/TGRS.2023.3322780). IEEE Transactions on Geoscience and Remote Sensing 1–1. https://doi.org/10.1109/TGRS.2023.3322780
 
 * Lin, X., Li, A., Bian, J., Zhang, Z., Lei, G., Chen, L., Qi, J., 2023. [Reconstruction of a large-scale realistic three-dimensional (3-D) mountain forest scene for radiative transfer simulations](https://doi.org/10.1080/15481603.2023.2261993). GIScience & Remote Sensing 60, 2261993. https://doi.org/10.1080/15481603.2023.2261993
