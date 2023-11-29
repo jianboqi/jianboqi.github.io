@@ -14,6 +14,15 @@ If you have problems under Windows,please refer to [problems under windows](http
 <br>
 <br>
 
+### 2023-11-29 (version 2.1.5-2023-11-29):
+**Windows**:<a href="https://drive.google.com/drive/folders/1JeV4XfI8cIztB3kx27AP-1rlX8IvYkHO?usp=share_link">LESS-2.1.5-2023-11-29-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1WoFUrZ2bMRkDDuTWVqq8Fg?pwd=a75y">LESS-2.1.5-2023-11-29-win64</a>)
+
+* a new plugin has been added to compute directional gap fractions.
+* ImageViewer handles no data value
+* Support to import a temperature file to simualate temperature distribution
+* Simulating Solar Induced Fluorescence with abitary wavelength
+* A few bugs have been fixed.
+
 ### 2023-08-19 (version 2.1.4-2023-08-19):
 **Windows**:<a href="https://drive.google.com/drive/folders/1JeV4XfI8cIztB3kx27AP-1rlX8IvYkHO?usp=share_link">LESS-2.1.4-2023-08-19-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1WoFUrZ2bMRkDDuTWVqq8Fg?pwd=a75y">LESS-2.1.4-2023-08-19-win64</a>)
 
