@@ -27,6 +27,10 @@ sectionid: page_publications
 
 ### Publications and reasearches that have used LESS
 
+###### 2024
+
+* Ran, Y., Song, S., Hou, X., Chen, Y., Chen, Z., Gong, W., 2024. [Multi-echo hyperspectral reflectance extraction method based on full waveform hyperspectral LiDA](https://doi.org/10.1016/j.isprsjprs.2023.11.019)R. ISPRS Journal of Photogrammetry and Remote Sensing 207, 43–56. https://doi.org/10.1016/j.isprsjprs.2023.11.019
+
 ###### 2023
 
 * Han, D., Liu, J., Zhang, R., Liu, Z., Guo, T., Jiang, H., Wang, J., Zhao, H., Ren, S., Yang, P., 2023. [Evaluation of the SAIL Radiative Transfer Model for Simulating Canopy Reflectance of Row Crop Canopies](https://doi.org/10.3390/rs15235433). Remote Sensing 15, 5433. https://doi.org/10.3390/rs15235433
