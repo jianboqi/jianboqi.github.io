@@ -35,6 +35,8 @@ sectionid: page_publications
 
 ###### 2023
 
+Lei, L., Li, Z., Yang, G., Yang, H., 2023. [High-Throughput Extraction of the Distributions of Leaf Base and Inclination Angles of Maize in the Field. IEEE Transactions on Geoscience and Remote Sensing 61, 1–28](https://doi.org/10.1109/TGRS.2023.3332869). https://doi.org/10.1109/TGRS.2023.3332869
+
 * Han, D., Liu, J., Zhang, R., Liu, Z., Guo, T., Jiang, H., Wang, J., Zhao, H., Ren, S., Yang, P., 2023. [Evaluation of the SAIL Radiative Transfer Model for Simulating Canopy Reflectance of Row Crop Canopies](https://doi.org/10.3390/rs15235433). Remote Sensing 15, 5433. https://doi.org/10.3390/rs15235433
 
 * Liu, X., Chen, Y., Mu, X., Yan, G., Xie, D., Ma, X., Yan, K., Song, W., Liu, Z., 2023. [Correction for the Sun-Angle Effect on the NDVI Based on Path Length](https://doi.org/10.1109/TGRS.2023.3322780). IEEE Transactions on Geoscience and Remote Sensing 1–1. https://doi.org/10.1109/TGRS.2023.3322780
