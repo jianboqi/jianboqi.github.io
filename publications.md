@@ -31,6 +31,9 @@ sectionid: page_publications
 
 ###### 2024
 
+* Yang, K., Yan, K., Zhang, X., Zhong, R., Chi, H., Liu, J., Ma, X., Wang, Y., 2024. [Assessing FY-3D MERSI-Ⅱ Observations for Vegetation Dynamics Monitoring: A Performance Test of Land Surface Reflectance](https://doi.org/10.1109/TGRS.2023.3348997). IEEE Transactions on Geoscience and Remote Sensing 1–1. https://doi.org/10.1109/TGRS.2023.3348997
+
+
 * Ran, Y., Song, S., Hou, X., Chen, Y., Chen, Z., Gong, W., 2024. [Multi-echo hyperspectral reflectance extraction method based on full waveform hyperspectral LiDA](https://doi.org/10.1016/j.isprsjprs.2023.11.019)R. ISPRS Journal of Photogrammetry and Remote Sensing 207, 43–56. https://doi.org/10.1016/j.isprsjprs.2023.11.019
 
 ###### 2023
