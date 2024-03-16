@@ -1,8 +1,8 @@
 ---
 title: Contact
 layout: page
-permalink: /contact/
-sectionid: page_contact
+permalink: /aboutus/
+sectionid: page_aboutus
 published: true
 ---
 
