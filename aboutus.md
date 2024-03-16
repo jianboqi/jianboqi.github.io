@@ -10,6 +10,6 @@ The LESS model has been under development since 2013. A preliminary version was 
 
 * If you have any question, please contact [Jianbo Qi](https://www.researchgate.net/profile/Jianbo-Qi-2): jianboqi@126.com
 
-<div width="500">
+<div style="width:500px;">
 <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=whFJJr0q-HxR1vltft3xVFVe_lX7rtDTerS-XexPnSc"></script>
 </div>
