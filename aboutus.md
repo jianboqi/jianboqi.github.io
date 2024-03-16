@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: About Us
 layout: page
 permalink: /aboutus/
 sectionid: page_aboutus
