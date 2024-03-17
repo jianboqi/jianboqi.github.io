@@ -14,6 +14,8 @@ A model development team has been formed, with members from several institutions
        <ul style="padding-left:5px;">
         <li>Associate Professor from Faculty of Geographical Science, Beijing Normal University, China</li>
         <li>The founder, primary developer, maintainer, and model trainer of LESS.</li>
+        <li>Focus on 3D radiative transfer modeling, 3D LiDAR data processing and parameter retrieval, developed the popular LiDAR ground filtering algorithm: <a  href="https://github.com/jianboqi/CSF" target="_blank">Cloth Simulation Filter (CSF)</a>.</li>
+         <li>Email: jianboqi@bnu.edu.cn</li>
         </ul>
      </td>
   </tr>
