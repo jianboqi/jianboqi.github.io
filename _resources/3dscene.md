@@ -26,7 +26,7 @@ table{
 .table thead tr th {
     vertical-align: middle;
 }
-.table thead tr td {
+.table tbody tr td {
     vertical-align: middle;
 }
 </style>
