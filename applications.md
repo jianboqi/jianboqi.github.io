@@ -23,7 +23,7 @@ Table of contents:
 #markdown-toc {
     border: 1px solid #aaa;
     padding: 1.5em;
-    list-style: decimal;
+    list-style: none;
     display: inline-block;
 }
 </style>
