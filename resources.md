@@ -1,8 +1,8 @@
 ---
-title: 3D Scenes
+title: Resources
 layout: page
-permalink: /3dscenes/
-sectionid: page_3dscenes
+permalink: /resources/
+sectionid: page_resources
 published: true
 ---
 
