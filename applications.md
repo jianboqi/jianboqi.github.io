@@ -26,7 +26,7 @@ published: true
     list-style: none;
     display: inline-block;
 }
-#markdown-toc ul li ul{
+#markdown-toc li ul{
     list-style: none;
 }
 </style>
