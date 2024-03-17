@@ -5,7 +5,11 @@ permalink: /applications/
 sectionid: page_applications
 published: true
 ---
+#### Understanding theory of LESS
 
+#### Why LESS is useful
+
+#### Selected demos
 ##### 1. Hotspot effect captured by a perspective camera (flight height around 500 m).
 <img src="/img/content/hotspot.gif" width="500" height="500" />
 
