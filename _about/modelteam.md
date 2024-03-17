@@ -1,6 +1,7 @@
 ---
 title: Model Team
 permalink: /about/modelteam/
+redirect_from: /about/index.html
 ---
 
 A model development team has been formed, with members from several institutions. 
