@@ -63,3 +63,6 @@ collections:
   posts:
     permalink: /blog/:year/:month/:day/:title/
     output: true
+  about:
+    permalink: /:collection/:path/
+    output: true
