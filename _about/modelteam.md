@@ -4,7 +4,8 @@ permalink: /about/modelteam/
 redirect_from: /about/index.html
 ---
 
-A model science team has been formed, with members from several institutions, during the development of LESS. We welcome any types of collaboration, if you have any question, including inquiries about model usage and model features, reporting model bugs, suggesting new model features, plugin submissions, etc.Please do not hesitate to conact us. 我们欢迎各种类型的交流及合作，包括模型功能和使用，模型BUG提交，模型功能建议和合作开发，插件提交等，如有问题请联系我们。
+A model science team with members from several institutions has been formed, during the development of LESS. We welcome any types of collaboration, if you have any question, including inquiries about model usage and model features, reporting model bugs, suggesting new model features, plugin submissions, etc.Please do not hesitate to conact us. 我们欢迎各种类型的交流及合作，包括模型功能和使用，模型BUG提交，模型功能建议和合作开发，插件提交等，如有问题请联系我们。
+
 ##### LESS Science Team Leader: *Jianbo Qi*（<a href="https://geot.bnu.edu.cn/Public/htm/news/5/1176.html" target="_blank">漆建波</a>）
 
 <table style="border-collapse: collapse;">
