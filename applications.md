@@ -5,7 +5,7 @@ permalink: /applications/
 sectionid: page_applications
 published: true
 ---
-#### Understanding theory of LESS
+#### Understanding the theory of LESS
 <hr>
 
 The aim of LESS is to simulate the radiation interactions within intricate landscapes, such as forests and urban structures. The following figure succinctly outlines the primary functionalities of LESS. By inputting landscape structural data, component spectra, illumination/observation geometries, and other necessary information, LESS utilizes ray tracing techniques to solve the 3D radiative transfer problem. It then generates remotely sensed signals, encompassing canopy reflectance, LiDAR data, multispectral images, Solar-Induced Fluorescence (SIF), as well as various process parameters like Fraction of Photosynthetically Active Radiation (FPAR) and photosynthesis rates.
