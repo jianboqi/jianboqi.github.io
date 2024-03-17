@@ -71,7 +71,7 @@ A model science team has been formed, with members from several institutions.
     <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
      <td style="width: 100px; border: none;">
        <ul style="padding-left:5px;">
-        <li>Master student</li>
+        <li>Master student1</li>
         <li>Focus on  .</li>
          <li>Email: </li>
         </ul>
@@ -85,7 +85,7 @@ A model science team has been formed, with members from several institutions.
     <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
      <td style="width: 100px; border: none;">
        <ul style="padding-left:5px;">
-        <li>Master student</li>
+        <li>Master student2</li>
         <li>Focus on  .</li>
          <li>Email: </li>
         </ul>
