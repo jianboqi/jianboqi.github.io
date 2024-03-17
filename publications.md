@@ -31,6 +31,10 @@ sectionid: page_publications
 
 ###### 2024
 
+* Xie, J., Xie, D., Zhou, K., Yan, G., Mu, X., 2024. [Analysis of the directional characteristics of the clumping index (CI) based on RAMI-V canopy scenes](https://doi.org/10.34133/remotesensing.0133). J Remote Sens remotesensing.0133. 
+
+* Tan, S., Zhang, Y., Qi, J., Su, Y., Ma, Q., Qiu, J., 2024. [Exploring the Potential of GEDI in Characterizing Tree Height Composition based on Advanced Radiative Transfer Model Simulations](https://doi.org/10.34133/remotesensing.0132). J Remote Sens remotesensing.0132. 
+
 * Ye, X., Ren, H., Wang, P., Duan, Y., Zhu, J., 2024. [Urban LST Retrieval From the Ultrahigh Spatial Resolution Remote Sensing Data](https://doi.org/10.1109/LGRS.2024.3356249). IEEE Geoscience and Remote Sensing Letters 21, 1–5. 
 
 * Wang, Y., Gu, Y., Tang, J., Guo, B., Warner, T.A., Guo, C., Zheng, H., Hosoi, F., Cheng, T., Zhu, Y., Cao, W., Yao, X., 2024. [Quantify Wheat Canopy Leaf Angle Distribution Using Terrestrial Laser Scanning Data](https://ieeexplore.ieee.org/abstract/document/10398251). IEEE Transactions on Geoscience and Remote Sensing 1–1.
