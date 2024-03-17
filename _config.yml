@@ -49,7 +49,7 @@ defaults:
 
 - scope:
     path: _resources
-    type: docs
+    type: resources
   values:
     layout: docs
     sectionid: resources
