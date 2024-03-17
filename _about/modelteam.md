@@ -4,8 +4,8 @@ permalink: /about/modelteam/
 redirect_from: /about/index.html
 ---
 
-A model development team has been formed, with members from several institutions. 
-##### LESS Team Leader: *Jianbo Qi*（<a href="https://geot.bnu.edu.cn/Public/htm/news/5/1176.html" target="_blank">漆建波</a>）
+A model science team has been formed, with members from several institutions. 
+##### LESS Science Team Leader: *Jianbo Qi*（<a href="https://geot.bnu.edu.cn/Public/htm/news/5/1176.html" target="_blank">漆建波</a>）
 
 <table style="border-collapse: collapse;">
   <tr>
