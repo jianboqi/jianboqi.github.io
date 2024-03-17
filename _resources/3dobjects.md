@@ -10,17 +10,7 @@ This section provides some basic 3D objects in wavefront file format (.obj). Thi
 #### Crop and grass objects
 
 
-<style>
-.tablelines1 table, .tablelines1 td, .tablelines1 th {
-        border: 1px solid black;
-        }
-table{
-        width:600px;
-        }
- .tablelines1 td img{
-       padding:5px;
-        }
-</style>
+
 
 
 
