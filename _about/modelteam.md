@@ -9,7 +9,7 @@ A model science team has been formed, with members from several institutions.
 
 <table style="border-collapse: collapse;">
   <tr>
-    <td style="text-align: left; border: none; width:100px;"><img src="https://github.com/jianboqi/jianboqi.github.io/assets/1770654/3a16762d-3c76-436f-a317-9faf3221b4b3" style="width: 100px; display: block; margin: 0 auto;"></td>
+    <td style="text-align: left; border: none; width:100px;"><img src="http://lessrt.org/img/content/qijb.jpg" style="width: 100px; display: block; margin: 0 auto;"></td>
      <td style="width: 400px; border: none;">
        <ul style="padding-left:5px;">
         <li>Associate Professor from Faculty of Geographical Science, Beijing Normal University, China</li>
@@ -24,7 +24,7 @@ A model science team has been formed, with members from several institutions.
 ##### Team Guider: *Donghui Xie*（<a href="https://geot.bnu.edu.cn/Public/htm/news/5/252.html" target="_blank">谢东辉</a>）
 <table style="border-collapse: collapse;">
   <tr>
-    <td style="text-align: left; border: none; width:100px;"><img src="https://github.com/jianboqi/jianboqi.github.io/assets/1770654/73fa0da1-4078-489e-9f15-969abdb2116a" style="width: 100px; display: block; margin: 0 auto;"></td>
+    <td style="text-align: left; border: none; width:100px;"><img src="http://lessrt.org/img/content/xdh.jpg" style="width: 100px; display: block; margin: 0 auto;"></td>
      <td style="width: 400px; border: none;">
        <ul style="padding-left:5px;">
         <li>Associate Professor from Faculty of Geographical Science, Beijing Normal University, China</li>
