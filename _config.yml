@@ -52,7 +52,7 @@ defaults:
     type: about
   values:
     layout: docs
-    sectionid: _about
+    sectionid: about
     seo:
       type: "WebPage"
 
