@@ -51,7 +51,7 @@ defaults:
     path: _about
     type: about
   values:
-    layout: docs
+    layout: about
     sectionid: about
     seo:
       type: "WebPage"
