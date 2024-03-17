@@ -17,9 +17,6 @@ If you used the scenes from this page, you can cite the following paper:
 *The LAI of coniferous trees is computed using half the total area of the needles in a shoot.
 
 <style>
-.tablelines table, .tablelines td, .tablelines th {
-        border: 1px solid black;
-        }
 table{
         width:900px;
         }
@@ -28,7 +25,9 @@ table{
         }
 .table thead tr th {
     vertical-align: middle;
-    border-bottom: 2px solid #ddd
+}
+.table thead tr td {
+    vertical-align: middle;
 }
 </style>
 
