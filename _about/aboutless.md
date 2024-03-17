@@ -1,5 +1,5 @@
 ---
-title: About Us
+title: About LESS
 permalink: /about/aboutless/
 ---
 
