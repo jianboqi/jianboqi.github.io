@@ -7,7 +7,7 @@ published: true
 ---
 <br/>
 Table of contents:
-{:toc}
+toc {:toc}
 <br/>
 
 #### Understanding the theory of LESS
