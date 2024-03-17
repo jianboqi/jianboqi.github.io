@@ -6,7 +6,7 @@ sectionid: page_applications
 published: true
 ---
 <br/>
-Table of contents:
+**Table of contents:**
 
 <style>
   // Adding 'Contents' headline to the TOC
