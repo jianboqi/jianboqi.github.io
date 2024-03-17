@@ -13,8 +13,7 @@ The aim of LESS is to simulate the radiation interactions within intricate lands
 This process is often referred to as "forward simulation or modeling". Unlike other 1D models, LESS does not rely on assumptions that abstract the canopy as homogeneous layers. Instead, it employs explicitly described structures to represent landscape elements, even down to the detailed structures of individual leaves or shoots. Consequently, LESS is renowned for its precision. Since the ray tracing technique utilized by LESS simulates light scattering at each ray-object intersection point based on fundamental physical laws (e.g., Lambertian reflection), simulations conducted by models like LESS are sometimes termed "first principle" simulations.
 
 In summary, LESS yields considerably accurate results for light scattering within complex landscapes, facilitating various applications such as forest parameter retrieval, comprehension of remote sensing mechanisms, and sensor instrument design.
-
-![LESS](http://lessrt.org/img/content/lessequation.jpg)
+<img src="http://lessrt.org/img/content/lessequation.jpg" width="600"/>
 
 
 
