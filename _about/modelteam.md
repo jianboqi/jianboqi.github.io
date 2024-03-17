@@ -5,7 +5,7 @@ redirect_from: /about/index.html
 ---
 
 A model development team has been formed, with members from several institutions. 
-##### LESS Leader: *Jianbo Qi*（<a href="https://geot.bnu.edu.cn/Public/htm/news/5/1176.html" target="_blank">漆建波</a>）
+##### LESS Team Leader: *Jianbo Qi*（<a href="https://geot.bnu.edu.cn/Public/htm/news/5/1176.html" target="_blank">漆建波</a>）
 
 <table style="border-collapse: collapse;">
   <tr>
@@ -30,6 +30,61 @@ A model development team has been formed, with members from several institutions
         <li>Associate Professor from Faculty of Geographical Science, Beijing Normal University, China</li>
         <li>Focus on 3D forest structural information retrieval, Computer simulation model of vegetation, remote sensing image processing.</li>
          <li>Email: xiedonghui@bnu.edu.cn</li>
+        </ul>
+     </td>
+  </tr>
+</table>
+<hr>
+
+##### Team member
+###### *Xun Zhao* (赵勋)
+<table style="border-collapse: collapse;">
+  <tr>
+    <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
+     <td style="width: 200px; border: none;">
+       <ul style="padding-left:5px;">
+        <li>PhD student</li>
+        <li>Focus on fine-scale vegetation parameter retrieval with LESS.</li>
+         <li>Email: </li>
+        </ul>
+     </td>
+  </tr>
+</table>
+
+###### *Bang Sun* (孙浜)
+<table style="border-collapse: collapse;">
+  <tr>
+    <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
+     <td style="width: 200px; border: none;">
+       <ul style="padding-left:5px;">
+        <li>Master student</li>
+        <li>Focus on 3D chlorophyll fluorescence modeling within LESS.</li>
+         <li>Email: </li>
+        </ul>
+     </td>
+  </tr>
+</table>
+
+<table style="border-collapse: collapse;">
+  <tr>
+    <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
+     <td style="width: 100px; border: none;">
+       <ul style="padding-left:5px;">
+        <li>Master student</li>
+        <li>Focus on  .</li>
+         <li>Email: </li>
+        </ul>
+     </td>
+  </tr>
+</table>
+<table style="border-collapse: collapse;">
+  <tr>
+    <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
+     <td style="width: 100px; border: none;">
+       <ul style="padding-left:5px;">
+        <li>Master student</li>
+        <li>Focus on  .</li>
+         <li>Email: </li>
         </ul>
      </td>
   </tr>
