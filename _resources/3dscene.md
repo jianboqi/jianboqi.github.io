@@ -1,15 +1,10 @@
 ---
-title: 3D Scenes
+title: 3D RAMI Scenes
 permalink: /resources/3dscene/
 redirect_from: /resources/index.html
 ---
 
-
-Table of contents:
-* toc
-{:toc}
-
-### LESS projects of RAMI-V
+### LESS projects of RAMI-V scenes
 This section provides all the LESS simulations that are built from [RAMI-V](https://rami-benchmark.jrc.ec.europa.eu/_www/index.php) scenes, you can download each of the simulations from the following list or download all of them from here: [百度网盘](https://pan.baidu.com/s/1QGPZuxZwMN88UTlHb4qMCA?pwd=1qx7),[Google Drive](https://drive.google.com/drive/folders/19unJIW_dSN24_5SDDfEqwyoqV5AaRKwC?usp=sharing), and open it with LESS model.
 
 If you used the scenes from this page, you can cite the following paper:
@@ -74,28 +69,3 @@ table{
 |37|HOM37_DIS_PEM|<image width="200" height="200" src="http://lessrt.org/img/SCENE-FOREST-HOM37_DIS_PEM.png"/>|LAI Leaf: 3.000<br/> LAI Wood: 0.000|0.814|[百度网盘](https://pan.baidu.com/s/1aEKfu2SQJku-roGy-InaUQ?pwd=bgtb)<br/>[Google Drive](https://drive.google.com/file/d/1j8Ws5pMozE9Wge8cOVvqm79MmSnlIXtr/view?usp=sharing)|
 |38|HOM38_DIS_PES|<image width="200" height="200" src="http://lessrt.org/img/SCENE-FOREST-HOM38_DIS_PES.png"/>|LAI Leaf: 2.000<br/> LAI Wood: 0.000|0.718|[百度网盘](https://pan.baidu.com/s/1J8RURbCZXOpQBUXbBmpMPQ?pwd=cuab)<br/>[Google Drive](https://drive.google.com/file/d/1iapiBU4Sr8OlfCQegF-pBvYthjulQpDO/view?usp=sharing)|
 {: .tablelines}
-
- 
-### 3D Objects
-
-This section provides some basic 3D objects in wavefront file format (.obj). This OBJ file can then be imported into LESS.
-
-#### Crop and grass objects
-
-<style>
-.tablelines1 table, .tablelines1 td, .tablelines1 th {
-        border: 1px solid black;
-        }
-table{
-        width:600px;
-        }
- .tablelines td img{
-       padding:5px;
-        }
-</style>
-
-|Object Name|Visual Image|Dimension [m] <br/> (EW×NS×Height)|Download link|Reference|
-|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
-|Corn|![corn1](https://user-images.githubusercontent.com/1770654/191771751-e994b375-c195-4685-b961-10d9889ae6b4.png)|1.11×1.16×2.44|[maize_single3.zip](Attachments/3dobjects/maize_single3.zip)||
-|Grass|![grass](https://user-images.githubusercontent.com/1770654/191773100-53a1790b-9558-4386-9625-4b41f6fbe596.png)|0.27×0.25×0.20|[grass_single.zip](Attachments/3dobjects/grass_single.zip)||
-{: .tablelines1}
