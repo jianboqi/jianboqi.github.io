@@ -5,7 +5,7 @@ redirect_from: /about/index.html
 ---
 
 A model development team has been formed, with members from several institutions. 
-#### LESS Leader: *Jianbo Qi*
+#### LESS Leader: *Jianbo Qi*（漆建波）
 
 <table style="border-collapse: collapse;">
   <tr>
