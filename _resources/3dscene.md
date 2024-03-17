@@ -4,9 +4,6 @@ permalink: /resources/3dscene/
 redirect_from: /resources/index.html
 ---
 
-Table of contents:
-* toc
-{:toc}
 
 ### LESS projects of RAMI-V scenes
 This section provides all the LESS simulations that are built from [RAMI-V](https://rami-benchmark.jrc.ec.europa.eu/_www/index.php) scenes, you can download each of the simulations from the following list or download all of them from here: [百度网盘](https://pan.baidu.com/s/1QGPZuxZwMN88UTlHb4qMCA?pwd=1qx7),[Google Drive](https://drive.google.com/drive/folders/19unJIW_dSN24_5SDDfEqwyoqV5AaRKwC?usp=sharing), and open it with LESS model.
@@ -29,6 +26,10 @@ table{
  .tablelines td img{
        padding:5px;
         }
+.table thead tr th {
+    vertical-align: middle;
+    border-bottom: 2px solid #ddd
+}
 </style>
 
 
