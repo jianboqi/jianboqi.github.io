@@ -65,7 +65,7 @@ A model development team has been formed, with members from several institutions
   </tr>
 </table>
 
-<table style="border-collapse: collapse;">
+<table style="border-collapse: collapse;  display: inline-block;">
   <tr>
     <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
      <td style="width: 100px; border: none;">
@@ -77,7 +77,7 @@ A model development team has been formed, with members from several institutions
      </td>
   </tr>
 </table>
-<table style="border-collapse: collapse;">
+<table style="border-collapse: collapse;  display: inline-block;">
   <tr>
     <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
      <td style="width: 100px; border: none;">
