@@ -4,7 +4,7 @@ permalink: /about/modelteam/
 ---
 
 A model development team has been formed, with members from several institutions. 
-#### LESS Leader: Associate Prof. Jianbo Qi
+#### LESS Leader: *Jianbo Qi*
 
 <table style="border-collapse: collapse;">
   <tr>
