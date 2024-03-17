@@ -15,7 +15,11 @@ Table of contents:
     font-weight: bold;
 }
 
-
+// Using numbers instead of bullets for listing
+#markdown-toc ul {
+    list-style: none;
+}
+  
 #markdown-toc {
     border: 1px solid #aaa;
     padding: 1.5em;
