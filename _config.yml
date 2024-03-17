@@ -56,6 +56,15 @@ defaults:
     seo:
       type: "WebPage"
 
+- scope:
+    path: _resources
+    type: resources
+  values:
+    layout: resources
+    sectionid: resources
+    seo:
+      type: "WebPage"
+
 collections:
   docs:
     permalink: /:collection/:path/
@@ -64,5 +73,8 @@ collections:
     permalink: /blog/:year/:month/:day/:title/
     output: true
   about:
+    permalink: /:collection/:path/
+    output: true
+  resources:
     permalink: /:collection/:path/
     output: true
