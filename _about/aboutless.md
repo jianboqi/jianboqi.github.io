@@ -1,6 +1,6 @@
 ---
 title: About Us
-permalink: /about/aboutus/
+permalink: /about/aboutless/
 ---
 
 #### The development history of LESS
