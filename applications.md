@@ -1,4 +1,4 @@
-![image](https://github.com/jianboqi/jianboqi.github.io/assets/1770654/dc386493-0d79-4c60-9180-9628e912f95a)---
+---
 title: Applications
 layout: page
 permalink: /applications/
