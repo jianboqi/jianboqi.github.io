@@ -19,7 +19,6 @@ If you used the scenes from this page, you can cite the following paper:
 <style>
 table{
         width:900px;
-        color: #333;
         }
  .tablelines td img{
        padding:5px;
