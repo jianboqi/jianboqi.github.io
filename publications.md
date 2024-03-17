@@ -31,8 +31,15 @@ sectionid: page_publications
 
 ###### 2024
 
-* Yang, K., Yan, K., Zhang, X., Zhong, R., Chi, H., Liu, J., Ma, X., Wang, Y., 2024. [Assessing FY-3D MERSI-Ⅱ Observations for Vegetation Dynamics Monitoring: A Performance Test of Land Surface Reflectance](https://doi.org/10.1109/TGRS.2023.3348997). IEEE Transactions on Geoscience and Remote Sensing 1–1. https://doi.org/10.1109/TGRS.2023.3348997
+* Ye, X., Ren, H., Wang, P., Duan, Y., Zhu, J., 2024. [Urban LST Retrieval From the Ultrahigh Spatial Resolution Remote Sensing Data](https://doi.org/10.1109/LGRS.2024.3356249). IEEE Geoscience and Remote Sensing Letters 21, 1–5. 
 
+* Wang, Y., Gu, Y., Tang, J., Guo, B., Warner, T.A., Guo, C., Zheng, H., Hosoi, F., Cheng, T., Zhu, Y., Cao, W., Yao, X., 2024. [Quantify Wheat Canopy Leaf Angle Distribution Using Terrestrial Laser Scanning Data](https://ieeexplore.ieee.org/abstract/document/10398251). IEEE Transactions on Geoscience and Remote Sensing 1–1.
+
+* Li, X., Li, L., Ni, W., Mu, X., Wu, X., Vaglio Laurin, G., Vangi, E., Stereńczak, K., Chirici, G., Yu, S., Huang, H., 2024. [Validating GEDI tree canopy cover product across forest types using co-registered aerial LiDAR data](https://doi.org/10.1016/j.isprsjprs.2023.11.024). ISPRS Journal of Photogrammetry and Remote Sensing 207, 326–337. 
+
+* Li, W., Yan, G., Mu, X., Tong, Y., Zhou, K., Xie, D., 2024. [Modeling the hotspot effect for vegetation canopies based on path length distribution](https://doi.org/10.1016/j.rse.2023.113985). Remote Sensing of Environment 303, 113985. 
+
+* Yang, K., Yan, K., Zhang, X., Zhong, R., Chi, H., Liu, J., Ma, X., Wang, Y., 2024. [Assessing FY-3D MERSI-Ⅱ Observations for Vegetation Dynamics Monitoring: A Performance Test of Land Surface Reflectance](https://doi.org/10.1109/TGRS.2023.3348997). IEEE Transactions on Geoscience and Remote Sensing 1–1. https://doi.org/10.1109/TGRS.2023.3348997
 
 * Ran, Y., Song, S., Hou, X., Chen, Y., Chen, Z., Gong, W., 2024. [Multi-echo hyperspectral reflectance extraction method based on full waveform hyperspectral LiDA](https://doi.org/10.1016/j.isprsjprs.2023.11.019)R. ISPRS Journal of Photogrammetry and Remote Sensing 207, 43–56. https://doi.org/10.1016/j.isprsjprs.2023.11.019
 
