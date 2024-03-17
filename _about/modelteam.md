@@ -8,5 +8,4 @@ A model development team has been formed, with members from several institutions
 
 |||
 |:---:|:---:|
-|![qijb](https://github.com/jianboqi/jianboqi.github.io/assets/1770654/3a16762d-3c76-436f-a317-9faf3221b4b3)
-|Jianbo Qi|
+|![qijb](https://github.com/jianboqi/jianboqi.github.io/assets/1770654/3a16762d-3c76-436f-a317-9faf3221b4b3)|Jianbo Qi|
