@@ -30,11 +30,14 @@ LESS facilitates the aforementioned applications by providing remote sensing obs
  * LESS provides remote sensing observations and the corresponding "ground truth" measurements:
 <img src="http://lessrt.org/img/content/lessapp.jpg" width="600"/>
 
-<hr>
+<br/>
 
 #### Selected applications
+<hr>
 
 #### Selected image demos
+<hr>
+
 ##### 1. Hotspot effect captured by a perspective camera (flight height around 500 m).
 <img src="/img/content/hotspot.gif" width="500" height="500" />
 
