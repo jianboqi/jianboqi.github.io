@@ -1,8 +1,8 @@
 ---
-title: Demo
+title: Applications
 layout: page
-permalink: /demo/
-sectionid: page_demo
+permalink: /applications/
+sectionid: page_applications
 published: true
 ---
 
