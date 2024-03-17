@@ -26,6 +26,9 @@ Table of contents:
     list-style: none;
     display: inline-block;
 }
+#markdown-toc ul li ul{
+    list-style: none;
+}
 </style>
 
  * Do not remove this line (it will not be displayed)
