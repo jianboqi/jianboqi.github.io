@@ -8,6 +8,7 @@ published: true
 <br/>
 Table of contents:
 {:toc}
+<br/>
 
 #### Understanding the theory of LESS
 <hr>
