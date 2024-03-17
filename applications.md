@@ -1,4 +1,4 @@
----
+![image](https://github.com/jianboqi/jianboqi.github.io/assets/1770654/dc386493-0d79-4c60-9180-9628e912f95a)---
 title: Applications
 layout: page
 permalink: /applications/
@@ -6,6 +6,17 @@ sectionid: page_applications
 published: true
 ---
 #### Understanding theory of LESS
+<hr>
+
+The aim of LESS is to simulate the radiation interactions within intricate landscapes, such as forests and urban structures. The following figure succinctly outlines the primary functionalities of LESS. By inputting landscape structural data, component spectra, illumination/observation geometries, and other necessary information, LESS utilizes ray tracing techniques to solve the 3D radiative transfer problem. It then generates remotely sensed signals, encompassing canopy reflectance, LiDAR data, multispectral images, Solar-Induced Fluorescence (SIF), as well as various process parameters like Fraction of Photosynthetically Active Radiation (FPAR) and photosynthesis rates.
+
+This process is often referred to as "forward simulation or modeling". Unlike other 1D models, LESS does not rely on assumptions that abstract the canopy as homogeneous layers. Instead, it employs explicitly described structures to represent landscape elements, even down to the detailed structures of individual leaves or shoots. Consequently, LESS is renowned for its precision. Since the ray tracing technique utilized by LESS simulates light scattering at each ray-object intersection point based on fundamental physical laws (e.g., Lambertian reflection), simulations conducted by models like LESS are sometimes termed "first principle" simulations.
+
+In summary, LESS yields considerably accurate results for light scattering within complex landscapes, facilitating various applications such as forest parameter retrieval, comprehension of remote sensing mechanisms, and sensor instrument design.
+
+![LESS](http://lessrt.org/img/content/lessequation.jpg)
+
+
 
 #### Why LESS is useful
 
