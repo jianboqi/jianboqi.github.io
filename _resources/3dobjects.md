@@ -16,7 +16,7 @@ This section provides some basic 3D objects in wavefront file format (.obj). Thi
 table{
         width:600px;
         }
- .tablelines td img{
+ .tablelines1 td img{
        padding:5px;
         }
 </style>
