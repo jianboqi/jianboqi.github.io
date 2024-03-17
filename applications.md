@@ -50,7 +50,7 @@ In summary, LESS yields considerably accurate results for light scattering withi
 
  * The diagram of LESS's functionality:
 <img src="http://lessrt.org/img/content/lessequation.jpg" width="600"/>
-
+<br/>
 
 #### Why LESS is useful ?
 <hr>
