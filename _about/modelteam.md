@@ -99,3 +99,33 @@ A model science team with members from several institutions has been formed, dur
 </div>
 
 
+<div style="display: inline-block;width: 320px;height: 150px;">
+<table style="border-collapse: collapse;">
+  <tr>
+    <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
+     <td style="width: 200px; border: none;">
+       <b>Siying He (何思颖)</b>
+       <ul style="padding-left:5px;">
+        <li>2022 master student, BJFU</li>
+        <li>Spectral invariant theory</li>
+        </ul>
+     </td>
+  </tr>
+</table>
+</div>
+<div style="display: inline-block;width: 320px;height: 150px;">
+<table style="border-collapse: collapse;">
+  <tr>
+    <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
+     <td style="width: 200px; border: none;">
+       <b>Yan Zhang (张妍)</b>
+       <ul style="padding-left:5px;">
+        <li>2023 master student, BNU</li>
+        <li>Crop monitoring by band selection</li>
+        </ul>
+     </td>
+  </tr>
+</table>
+</div>
+
+
