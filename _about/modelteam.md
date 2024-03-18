@@ -6,7 +6,7 @@ redirect_from: /about/index.html
 
 A model science team with members from several institutions has been formed, during the development of LESS. We welcome any types of collaboration, if you have any question, including inquiries about model usage and model features, reporting model bugs, suggesting new model features, plugin submissions, etc.Please do not hesitate to conact us. 我们欢迎各种类型的交流及合作，包括模型功能和使用，模型BUG提交，模型功能建议和合作开发，插件提交等，如有问题请联系我们。
 
-##### LESS Science Team Leader: <a href="https://www.researchgate.net/profile/Jianbo-Qi-2" target="_blank">Jianbo Qi</a>（<a href="https://geot.bnu.edu.cn/Public/htm/news/5/1176.html" target="_blank">漆建波</a>）
+#### LESS Science Team Leader: <a href="https://www.researchgate.net/profile/Jianbo-Qi-2" target="_blank">Jianbo Qi</a>（<a href="https://geot.bnu.edu.cn/Public/htm/news/5/1176.html" target="_blank">漆建波</a>）
 
 <table style="border-collapse: collapse;">
   <tr>
@@ -22,7 +22,7 @@ A model science team with members from several institutions has been formed, dur
   </tr>
 </table>
 
-##### Team Guider: Donghui Xie（<a href="https://geot.bnu.edu.cn/Public/htm/news/5/252.html" target="_blank">谢东辉</a>）
+#### Team Guider: Donghui Xie（<a href="https://geot.bnu.edu.cn/Public/htm/news/5/252.html" target="_blank">谢东辉</a>）
 <table style="border-collapse: collapse;">
   <tr>
     <td style="text-align: left; border: none; width:100px;"><img src="http://lessrt.org/img/content/xdh.jpg" style="width: 100px; display: block; margin: 0 auto;"></td>
