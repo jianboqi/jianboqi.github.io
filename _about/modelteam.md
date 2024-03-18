@@ -37,44 +37,17 @@ A model science team with members from several institutions has been formed, dur
 </table>
 <hr>
 
-##### Team member
-###### *Xun Zhao* (赵勋)
-<table style="border-collapse: collapse;">
-  <tr>
-    <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
-     <td style="width: 200px; border: none;">
-       <ul style="padding-left:5px;">
-        <li>PhD student</li>
-        <li>Focus on fine-scale vegetation parameter retrieval with LESS.</li>
-         <li>Email: </li>
-        </ul>
-     </td>
-  </tr>
-</table>
-
-###### *Bang Sun* (孙浜)
-<table style="border-collapse: collapse;">
-  <tr>
-    <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
-     <td style="width: 200px; border: none;">
-       <ul style="padding-left:5px;">
-        <li>Master student</li>
-        <li>Focus on 3D chlorophyll fluorescence modeling within LESS.</li>
-         <li>Email: </li>
-        </ul>
-     </td>
-  </tr>
-</table>
-
+#### Team member
+##### Model development
 <div style="display: inline-block;">
 <table style="border-collapse: collapse;">
   <tr>
     <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
-     <td style="width: 100px; border: none;">
+     <td style="width: 200px; border: none;">
+       Bang Sun (孙浜)
        <ul style="padding-left:5px;">
-        <li>Master student1</li>
-        <li>Focus on  .</li>
-         <li>Email: </li>
+        <li>2022 Master student, BNU</li>
+        <li>3D chlorophyll fluorescence modeling.</li>
         </ul>
      </td>
   </tr>
@@ -84,13 +57,46 @@ A model science team with members from several institutions has been formed, dur
 <table style="border-collapse: collapse;">
   <tr>
     <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
-     <td style="width: 100px; border: none;">
+     <td style="width: 200px; border: none;">
+       Jifan Wei (魏继繁)
        <ul style="padding-left:5px;">
-        <li>Master student2</li>
-        <li>Focus on  .</li>
+        <li>2024 Master student, BNU</li>
+        <li>Differentiable radiative transfer modeling</li>
          <li>Email: </li>
         </ul>
      </td>
   </tr>
 </table>
 </div>
+
+##### Model application
+<div style="display: inline-block;">
+<table style="border-collapse: collapse;">
+  <tr>
+    <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
+     <td style="width: 200px; border: none;">
+       Xun Zhao (赵勋)
+       <ul style="padding-left:5px;">
+        <li>2021 Ph.D student, BJFU</li>
+        <li>Fine-scale vegetation parameter retrieval.</li>
+        </ul>
+     </td>
+  </tr>
+</table>
+</div>
+<div style="display: inline-block;">
+<table style="border-collapse: collapse;">
+  <tr>
+    <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
+     <td style="width: 200px; border: none;">
+       Zhexiu Yu (余哲修)
+       <ul style="padding-left:5px;">
+        <li>2020 Ph.D student, BJFU</li>
+        <li>Forest parameter inversion (biomass)</li>
+        </ul>
+     </td>
+  </tr>
+</table>
+</div>
+
+
