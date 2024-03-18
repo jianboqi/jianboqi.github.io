@@ -77,7 +77,7 @@ A model science team with members from several institutions has been formed, dur
        <b>Xun Zhao (赵勋)</b>
        <ul style="padding-left:5px;">
         <li>2021 Ph.D student, BJFU</li>
-        <li>Fine-scale vegetation parameter retrieval.</li>
+        <li>Fine-scale vegetation parameter retrieval</li>
         </ul>
      </td>
   </tr>
