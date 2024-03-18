@@ -35,9 +35,9 @@ A model science team with members from several institutions has been formed, dur
      </td>
   </tr>
 </table>
-<hr>
 
 #### Team member
+<hr>
 ##### Model development
 <div style="display: inline-block;width: 320px;height: 150px;">
 <table style="border-collapse: collapse;">
