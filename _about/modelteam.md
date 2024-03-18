@@ -39,7 +39,7 @@ A model science team with members from several institutions has been formed, dur
 
 #### Team member
 ##### Model development
-<div style="display: inline-block;height: 150px;">
+<div style="display: inline-block;width: 320px;height: 150px;">
 <table style="border-collapse: collapse;">
   <tr>
     <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
@@ -53,7 +53,7 @@ A model science team with members from several institutions has been formed, dur
   </tr>
 </table>
 </div>
-<div style="display: inline-block;height: 150px;">
+<div style="display: inline-block;width: 320px;height: 150px;">
 <table style="border-collapse: collapse;">
   <tr>
     <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
@@ -69,7 +69,7 @@ A model science team with members from several institutions has been formed, dur
 </div>
 
 ##### Model application
-<div style="display: inline-block;height: 150px;">
+<div style="display: inline-block;width: 320px;height: 150px;">
 <table style="border-collapse: collapse;">
   <tr>
     <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
@@ -83,7 +83,7 @@ A model science team with members from several institutions has been formed, dur
   </tr>
 </table>
 </div>
-<div style="display: inline-block;height: 150px;">
+<div style="display: inline-block;width: 320px;height: 150px;">
 <table style="border-collapse: collapse;">
   <tr>
     <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
