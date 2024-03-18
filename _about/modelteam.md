@@ -47,7 +47,7 @@ A model science team with members from several institutions has been formed, dur
        Bang Sun (孙浜)
        <ul style="padding-left:5px;">
         <li>2022 Master student, BNU</li>
-        <li>3D chlorophyll fluorescence modeling.</li>
+        <li>3D chlorophyll fluorescence modeling</li>
         </ul>
      </td>
   </tr>
