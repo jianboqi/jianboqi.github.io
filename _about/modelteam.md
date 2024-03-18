@@ -44,7 +44,7 @@ A model science team with members from several institutions has been formed, dur
   <tr>
     <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
      <td style="width: 200px; border: none;">
-       Bang Sun (孙浜)
+       <b>Bang Sun (孙浜)</b>
        <ul style="padding-left:5px;">
         <li>2022 Master student, BNU</li>
         <li>3D chlorophyll fluorescence modeling</li>
@@ -58,7 +58,7 @@ A model science team with members from several institutions has been formed, dur
   <tr>
     <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
      <td style="width: 200px; border: none;">
-       Jifan Wei (魏继繁)
+       <b>Jifan Wei (魏继繁)</b>
        <ul style="padding-left:5px;">
         <li>2024 Master student, BNU</li>
         <li>Differentiable radiative transfer modeling</li>
@@ -74,7 +74,7 @@ A model science team with members from several institutions has been formed, dur
   <tr>
     <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
      <td style="width: 200px; border: none;">
-       Xun Zhao (赵勋)
+       <b>Xun Zhao (赵勋)</b>
        <ul style="padding-left:5px;">
         <li>2021 Ph.D student, BJFU</li>
         <li>Fine-scale vegetation parameter retrieval.</li>
@@ -88,7 +88,7 @@ A model science team with members from several institutions has been formed, dur
   <tr>
     <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
      <td style="width: 200px; border: none;">
-       Zhexiu Yu (余哲修)
+       <b>Zhexiu Yu (余哲修)</b>
        <ul style="padding-left:5px;">
         <li>2020 Ph.D student, BJFU</li>
         <li>Forest parameter inversion (biomass)</li>
