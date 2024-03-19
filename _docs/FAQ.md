@@ -1,4 +1,4 @@
 ---
 title: FAQ
-permalink: /docs/faq/
+permalink: /docs/FAQ/
 ---
