@@ -4,7 +4,7 @@ permalink: /docs/FAQ/
 ---
 
 <br/>
-**This section  gives answers for questions that are frequently asked by users during the use of LESS:**
+**This section  gives answers for questions that are frequently asked by users during the use of LESS. If you meet problems, you can first refer to this section to check if other users have the same problem**
 
 <style>
   // Adding 'Contents' headline to the TOC
