@@ -34,6 +34,6 @@ permalink: /docs/FAQ/
 
 <br/>
 
-###### 1. When you replace a OBJ file with different structures, why simulation gives the same results?
+##### 1. When you replace a OBJ file with different structures, why simulation gives the same results?
 This is mainly because of the cache mechanism. In LESS, an OBJ file will be first converted to a binary file, which will then be loaded for simulation. This aim of this mechanism is to reduce the loadding time when you do the next simulation within the same scene. Thus, if you change the OBJ file for a previous simulation, but keep the OBJ name unchanged. The next simulation will load the previously cached binary file. Then the simulation results will be the same. An solution is to disable this caching feature by uncheck the 【Cache OBJ file】 in the 【Objects】panel in the LESS GUI.
 
