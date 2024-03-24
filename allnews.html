@@ -8,10 +8,19 @@ sectionid: blog
 <div class="container">
     <div class="inner-content">
         <h1>All News</h1> {% for page in site.posts %}
-        <p>
+        <!--<p>
             <strong><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></strong>
             <span>on {{ page.date | date: "%B %e, %Y" }} {% if page.author %} by {{ page.author }}{% endif %}</span>
-        </p>
+        </p>-->
+        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+            <img src="news1.jpg" alt="News Image" style="width: 100px; margin-right: 10px;">
+            <div>
+                <div style="font-weight: bold; margin-bottom: 5px;">{{ page.date | date: "%B %e, %Y" }}</div>
+                <strong><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></strong>
+            </div>
+        </div>
+
+        
         {% endfor %}
     </div>
 </div>
