@@ -8,15 +8,10 @@ sectionid: blog
 <div class="container">
     <div class="inner-content">
         <h1>All News</h1> {% for page in site.posts %}
-        <div style="display: flex; align-items: center; margin-bottom: 20px;">
-            <img src="{{ page.image}}" alt="News Image" style="width: 100px; margin-right: 10px;">
-            <div>
-                <div style="font-weight: bold; margin-bottom: 5px;">{{ page.date | date: "%B %e, %Y" }}</div>
-                <strong><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></strong>
-            </div>
-        </div>
 
-        
+        <div style="font-weight: bold; margin-bottom: 5px;">{{ page.date | date: "%B %e, %Y" }}</div>
+        <strong><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></strong>
+
         {% endfor %}
     </div>
 </div>
