@@ -11,7 +11,7 @@ sectionid: blog
 
         <div style="font-weight: bold; margin-bottom: 5px;">{{ page.date | date: "%B %e, %Y" }}</div>
         <strong><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></strong>
-
+        <br/>
         {% endfor %}
     </div>
 </div>
