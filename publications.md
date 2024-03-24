@@ -31,6 +31,8 @@ sectionid: page_publications
 
 ###### 2024
 
+* Dong, M., Liu, S., Jiang, R., Qi, J., de Solan, B., Comar, A., Li, L., Li, W., Ding, Y., Baret, F., 2024. [Comparing and combining data-driven and model-driven approaches to monitor wheat green area index with high spatio-temporal resolution satellites](https://www.sciencedirect.com/science/article/pii/S0034425724001299). Remote Sensing of Environment 305, 114118. https://doi.org/10.1016/j.rse.2024.114118
+
 * Xie, J., Xie, D., Zhou, K., Yan, G., Mu, X., 2024. [Analysis of the directional characteristics of the clumping index (CI) based on RAMI-V canopy scenes](https://doi.org/10.34133/remotesensing.0133). J Remote Sens remotesensing.0133. 
 
 * Tan, S., Zhang, Y., Qi, J., Su, Y., Ma, Q., Qiu, J., 2024. [Exploring the Potential of GEDI in Characterizing Tree Height Composition based on Advanced Radiative Transfer Model Simulations](https://doi.org/10.34133/remotesensing.0132). J Remote Sens remotesensing.0132. 
