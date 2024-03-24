@@ -8,10 +8,8 @@ sectionid: blog
 <div class="container">
     <div class="inner-content">
         <h1>All News</h1> {% for page in site.posts %}
-
-        <div style="font-weight: bold; margin-bottom: 5px;">{{ page.date | date: "%B %e, %Y" }}</div>
         <strong><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></strong>
-        <br>
+        <span style="font-weight: bold;">on {{ page.date | date: "%B %e, %Y" }} {% if page.author %} by {{ page.author }}{% endif %}</span>
         {% endfor %}
     </div>
 </div>
