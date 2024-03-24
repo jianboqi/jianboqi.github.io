@@ -1,3 +1,9 @@
+---
+layout: post
+title: A new Plugin module has been released for developing customized plugins
+author: LESS team
+---
+
 Recently, we have introduced a very useful new tool in LESS, which is the LESS Plugins. This tool is a python module that allows users to define their own
 customized plugins based on LESS.
 
