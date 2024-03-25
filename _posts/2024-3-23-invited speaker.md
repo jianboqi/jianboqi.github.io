@@ -4,7 +4,7 @@ title: Invited lecture-"3D-explicit tree representation from terrestrial laser s
 author: Jianbo Qi
 ---
 
-2024年3月23日，LESS团队很高兴邀请到来自比利时根特大学的刘畅博士，在北京师范大学科技楼进行了关于森林三维场景重建和辐射传输建模相关的讲座。本次讲座的主题是”3D-explicit tree representation from terrestrial laser scanning to improve radiative transfer modeling of forests“。
+2024年3月23日，LESS团队很高兴邀请到来自比利时根特大学的刘畅博士，在北京师范大学科技楼进行了关于森林三维场景重建和辐射传输建模相关的讲座。本次讲座的主题是"3D-explicit tree representation from terrestrial laser scanning to improve radiative transfer modeling of forests"
 
 
 遥感可以获得森林生态系统的空间和时间信息，以支持制定更加科学的环境问题政策。利用遥感数据反演森林信息的一个重要基础是辐射传输模型。然而，目前常用的简化辐射传输模型导致了建模过程的不确定性。
@@ -18,3 +18,6 @@ However, the forest structure assumptions currently used in RTMs have led to unc
 By introducing a 3D-explicit forest structure representation for modeling, it is helpful to reduce the uncertainty of forest modeling and improve our understanding of the RT process in forests.
 Through more accurate RT simulation, researchers can better understand key processes such as energy balance and carbon cycle in forest ecosystems, providing strong support for forest management and global climate change research.
 The holding of this lecture not only showcases the latest research progress of 3D-explicit tree representation technology, but also provides a platform for experts and scholars in related fields to communicate with each other. We look forward to more breakthroughs in this field.
+
+![图片1(1)](https://github.com/jianboqi/jianboqi.github.io/assets/1770654/5ea8f410-6964-4800-9ba2-2820ad30f282)
+![图片2(1)](https://github.com/jianboqi/jianboqi.github.io/assets/1770654/56fa0dd9-bfe4-49c4-b19f-90062e2771ae)
