@@ -13,10 +13,14 @@ author: Jianbo Qi
 本次讲座的举办，不仅展示了3D显式树形表征技术的最新研究进展，也为相关领域的专家学者提供了一个交流和学习的平台。我们期待这一领域能够取得更多突破。
 
 On March 23, 2024, the LESS team was pleased to invite Dr. Chang LIU from Ghent University in Belgium to give a lecture on forest 3D scene reconstruction and radiative transfer modeling at Beijing Normal University. The theme of this lecture was "3D-explicit tree representation from terrestrial laser scanning to improve radiative transfer modeling of forests".
+
+
 Remote sensing （RS） can obtain spatial and temporal information on forest ecosystems to support making informed polices on environmental issues. An important basis for retrieving forest information from RS data is the radiative transfer model (RTM). 
 However, the forest structure assumptions currently used in RTMs have led to uncertainties in the modeling process. Dr. Chang Liu shared research on different methods to improve radiative transfer (RT) modeling. 
 By introducing a 3D-explicit forest structure representation for modeling, it is helpful to reduce the uncertainty of forest modeling and improve our understanding of the RT process in forests.
 Through more accurate RT simulation, researchers can better understand key processes such as energy balance and carbon cycle in forest ecosystems, providing strong support for forest management and global climate change research.
+
+
 The holding of this lecture not only showcases the latest research progress of 3D-explicit tree representation technology, but also provides a platform for experts and scholars in related fields to communicate with each other. We look forward to more breakthroughs in this field.
 
 ![图片1(1)](https://github.com/jianboqi/jianboqi.github.io/assets/1770654/5ea8f410-6964-4800-9ba2-2820ad30f282)
