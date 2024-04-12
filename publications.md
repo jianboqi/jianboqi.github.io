@@ -33,6 +33,8 @@ sectionid: page_publications
 
 ###### 2024
 
+* Gao, S., Yan, K., Liu, J., Pu, J., Zou, D., Qi, J., Mu, X., Yan, G., 2024. [Assessment of remote-sensed vegetation indices for estimating forest chlorophyll concentration](https://doi.org/10.1016/j.ecolind.2024.112001). Ecological Indicators 162, 112001. https://doi.org/10.1016/j.ecolind.2024.112001
+
 * Dong, M., Liu, S., Jiang, R., Qi, J., de Solan, B., Comar, A., Li, L., Li, W., Ding, Y., Baret, F., 2024. [Comparing and combining data-driven and model-driven approaches to monitor wheat green area index with high spatio-temporal resolution satellites](https://www.sciencedirect.com/science/article/pii/S0034425724001299). Remote Sensing of Environment 305, 114118. https://doi.org/10.1016/j.rse.2024.114118
 
 * Xie, J., Xie, D., Zhou, K., Yan, G., Mu, X., 2024. [Analysis of the directional characteristics of the clumping index (CI) based on RAMI-V canopy scenes](https://doi.org/10.34133/remotesensing.0133). J Remote Sens remotesensing.0133. 
