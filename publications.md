@@ -5,6 +5,8 @@ permalink: /publications/
 sectionid: page_publications
 ---
 
+* Zhao, X., Qi, J., Yu, Z., Yuan, L., Huang, H., 2024. [Fine-Scale Quantification of Absorbed Photosynthetically Active Radiation (APAR) in Plantation Forests with 3D Radiative Transfer Modeling and LiDAR Data](https://doi.org/10.34133/plantphenomics.0166). Plant Phenomics 6, 0166. https://doi.org/10.34133/plantphenomics.0166
+
 * Luo, Y., Xie, D., Qi, J., Zhou, K., Yan, G., Mu, X., 2023. [LESS LiDAR: A Full-Waveform and Discrete-Return Multispectral LiDAR Simulator Based on Ray Tracing Algorithm](https://doi.org/10.3390/rs15184529). Remote Sensing 15, 4529. https://doi.org/10.3390/rs15184529
 
 * Zhao, X., Qi, J., Xu, H., Yu, Z., Yuan, L., Chen, Y., Huang, H., 2023. [Evaluating the potential of airborne hyperspectral LiDAR for assessing forest insects and diseases with 3D Radiative Transfer Modeling](https://doi.org/10.1016/j.rse.2023.113759). Remote Sensing of Environment. 297, 113759.
