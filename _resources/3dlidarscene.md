@@ -15,7 +15,7 @@ Zhao, X., Qi, J., Yu, Z., Yuan, L., Huang, H., 2024. [Fine-Scale Quantification 
 
 The data can be downloaded from the link, this contains LESS simulation projects that can be directly used by LESS model: [https://doi.org/10.5281/zenodo.10417183](https://doi.org/10.5281/zenodo.10417183)
 
-Each plot has a corresponding CSV file, which records the properties of each individual tree within each plot: [TreeInfo](http://lessrt.org/Attachments/TreeInfo.zip)
+Each plot has a corresponding CSV file, which records the properties of each individual tree within each plot: [TreeInfo](http://lessrt.org/Attachments/3dobjects/TreeInfo.zip)
 
 ![图片1](https://github.com/jianboqi/jianboqi.github.io/assets/1770654/63eff217-2b10-46aa-804b-2b97677e6951)
 
