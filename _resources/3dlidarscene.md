@@ -8,8 +8,8 @@ permalink: /resources/3dlidarscene/
 This section provides some scenes reconstructed from LiDAR data
 
 #### LARIX9: Nine larch  (*Larix principisrupprechtii Mayr*) forest plots generated from TLS and ALS data
-LARIX9 provides 9 forest plots with detailed branch and leaf structures. These forest plots are generated with  combination of TLS and ALS data.
-First of all, a single larch tree library, composed of several individual tree models reconstructed from TLS of this area, are built. Then these single trees are poplulated in the forest plot by using tree positions, heights, and crown area parameters obtained from airborne LiDAR, i.e., the best match from the single larch tree library are used to be populated at each tree position. The following figure shows the visulation of the 9 forest plots. If you used this data, you can cite:
+LARIX9 provides 9 forest plots with detailed branch and leaf structures. These forest plots are generated with a combination of TLS and ALS data.
+First of all, a single larch tree library, composed of several individual tree models reconstructed from TLS of this area, are built. Then these single trees are poplulated in the forest plot by using tree positions, heights, and crown area parameters obtained from airborne LiDAR. Specifically, the most suitable matches from the larch tree library are selected to occupy each tree position within the plot. The following figure shows the visulation of the 9 forest plots. If you used this data, you can cite:
 
 Zhao, X., Qi, J., Yu, Z., Yuan, L., Huang, H., 2024. [Fine-Scale Quantification of Absorbed Photosynthetically Active Radiation (APAR) in Plantation Forests with 3D Radiative Transfer Modeling and LiDAR Data](https://doi.org/10.34133/plantphenomics.0166). Plant Phenomics 6, 0166. https://doi.org/10.34133/plantphenomics.0166
 
