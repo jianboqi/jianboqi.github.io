@@ -14,6 +14,17 @@ If you have problems under Windows,please refer to [problems under windows](http
 <br>
 <br>
 
+### 2024-04-26 (version 2.1.5-2024-04-26):
+**Windows**:<a href="https://drive.google.com/drive/folders/1JeV4XfI8cIztB3kx27AP-1rlX8IvYkHO?usp=share_link" target="_blank">LESS-2.1.5-2024-04-26-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1WoFUrZ2bMRkDDuTWVqq8Fg?pwd=a75y" target="_blank">LESS-2.1.5-2024-04-26-win64</a>)
+
+* The primary updates for this version is to increase the usability of the model, i.e., making it more easy-to-use.
+* We added a lot of tooltips on the GUI, when you move your mouse on this icon "i" , you will imediately get a text to describe the functionality, which will be more intuitive.
+* We moved the defintion of non-Lambertian BRDF model, RPV, ART and Soilspect, to the Optical Database section. Now any object (rather than only terrain before) can be assigned an non-lambertian BRDF model.
+* A new Sensor TRAC to simulate the LAI measurement instrument has been added to the GUI, in the sensor section.
+* 这个版本我们在模型易用性方面做了许多优化，尤其是在GUI界面上添加了许多帮助提示，当鼠标移动到相应的按钮或者文字上上，会弹出该功能的一个说明，可以更好地理解该功能的用法。
+* 这个版本另一个比较大的改进在于将以前只能用于地形上的非朗伯反射模型，比如RPV、积雪ART、土壤Soilspect模型等，移动到了Optical Database处进行统一定义，好处在于其他导入的地物也可以设置非朗伯反射模型。
+* 在GUI增加了一个新的传感器类型，trac，可以用于模拟TRAC LAI测量仪器。
+
 ### 2024-03-19 (version 2.1.5-2024-03-19):
 **Windows**:<a href="https://drive.google.com/drive/folders/1JeV4XfI8cIztB3kx27AP-1rlX8IvYkHO?usp=share_link" target="_blank">LESS-2.1.5-2024-03-19-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1WoFUrZ2bMRkDDuTWVqq8Fg?pwd=a75y" target="_blank">LESS-2.1.5-2024-03-19-win64</a>)
 
