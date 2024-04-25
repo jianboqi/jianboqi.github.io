@@ -33,6 +33,8 @@ sectionid: page_publications
 
 ###### 2024
 
+* Yu, W., Huang, H., Liu, Q., Wang, J., 2024. [Integrating physical model and image simulations to correct topographic effects on surface reflectance](https://doi.org/10.1016/j.isprsjprs.2024.04.017). ISPRS Journal of Photogrammetry and Remote Sensing 211, 356–371. https://doi.org/10.1016/j.isprsjprs.2024.04.017
+
 * Lin, S., Li, L., Liu, S., Gao, G., Zhao, X., Chen, L., Qi, J., Shen, Q., Huang, H., 2024. [Stratified burn severity assessment by integrating spaceborne spectral and waveform attributes in Great Xing’an Mountain](https://doi.org/10.1016/j.rse.2024.114152). Remote Sensing of Environment 307, 114152. https://doi.org/10.1016/j.rse.2024.114152
 
 * Gao, S., Yan, K., Liu, J., Pu, J., Zou, D., Qi, J., Mu, X., Yan, G., 2024. [Assessment of remote-sensed vegetation indices for estimating forest chlorophyll concentration](https://doi.org/10.1016/j.ecolind.2024.112001). Ecological Indicators 162, 112001. https://doi.org/10.1016/j.ecolind.2024.112001
