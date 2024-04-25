@@ -17,7 +17,7 @@ If you have problems under Windows,please refer to [problems under windows](http
 ### 2024-04-26 (version 2.1.5-2024-04-26):
 **Windows**:<a href="https://drive.google.com/drive/folders/1JeV4XfI8cIztB3kx27AP-1rlX8IvYkHO?usp=share_link" target="_blank">LESS-2.1.5-2024-04-26-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1WoFUrZ2bMRkDDuTWVqq8Fg?pwd=a75y" target="_blank">LESS-2.1.5-2024-04-26-win64</a>)
 
-* The primary updates for this version is to increase the usability of the model, i.e., making it more easy-to-use.
+* The primary updates for this version are to increase the usability of the model, i.e., making it more easy-to-use.
 * We added a lot of tooltips on the GUI, when you move your mouse on this icon "i" , you will imediately get a text to describe the functionality, which will be more intuitive.
 * We moved the defintion of non-Lambertian BRDF model, RPV, ART and Soilspect, to the Optical Database section. Now any object (rather than only terrain before) can be assigned an non-lambertian BRDF model.
 * A new Sensor TRAC to simulate the LAI measurement instrument has been added to the GUI, in the sensor section.
