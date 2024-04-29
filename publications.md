@@ -33,6 +33,8 @@ sectionid: page_publications
 
 ###### 2024
 
+* Geng, J., Roujean, J.-L., Kuusk, A., Pang, Y., Tu, L., Zhang, T., Xu, J., Chen, J.M., 2024. [A universal canopy gap fraction model for forests with various tree distributions based on Nilson’s models considering directional overlaps among crowns](https://doi.org/10.1016/j.agrformet.2024.110026). Agricultural and Forest Meteorology 352, 110026. https://doi.org/10.1016/j.agrformet.2024.110026
+
 * Yu, W., Huang, H., Liu, Q., Wang, J., 2024. [Integrating physical model and image simulations to correct topographic effects on surface reflectance](https://doi.org/10.1016/j.isprsjprs.2024.04.017). ISPRS Journal of Photogrammetry and Remote Sensing 211, 356–371. https://doi.org/10.1016/j.isprsjprs.2024.04.017
 
 * Lin, S., Li, L., Liu, S., Gao, G., Zhao, X., Chen, L., Qi, J., Shen, Q., Huang, H., 2024. [Stratified burn severity assessment by integrating spaceborne spectral and waveform attributes in Great Xing’an Mountain](https://doi.org/10.1016/j.rse.2024.114152). Remote Sensing of Environment 307, 114152. https://doi.org/10.1016/j.rse.2024.114152
