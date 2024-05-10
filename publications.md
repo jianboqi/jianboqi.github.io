@@ -5,6 +5,8 @@ permalink: /publications/
 sectionid: page_publications
 ---
 
+* Ouyang, L., Qi, J., Wang, Q., Jia, K., Cao, B., Zhao, W., 2024. [MART3D: A Multilayer Heterogeneous 3D Radiative Transfer Framework for Characterizing Forest Disturbances. Forests 15, 824](https://doi.org/10.3390/f15050824). https://doi.org/10.3390/f15050824
+
 * Zhao, X., Qi, J., Yu, Z., Yuan, L., Huang, H., 2024. [Fine-Scale Quantification of Absorbed Photosynthetically Active Radiation (APAR) in Plantation Forests with 3D Radiative Transfer Modeling and LiDAR Data](https://doi.org/10.34133/plantphenomics.0166). Plant Phenomics 6, 0166. https://doi.org/10.34133/plantphenomics.0166
 
 * Luo, Y., Xie, D., Qi, J., Zhou, K., Yan, G., Mu, X., 2023. [LESS LiDAR: A Full-Waveform and Discrete-Return Multispectral LiDAR Simulator Based on Ray Tracing Algorithm](https://doi.org/10.3390/rs15184529). Remote Sensing 15, 4529. https://doi.org/10.3390/rs15184529
