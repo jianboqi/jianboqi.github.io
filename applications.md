@@ -62,8 +62,6 @@ LESS facilitates the aforementioned applications by providing remote sensing obs
 <br/>
 
 #### Selected applications
-#### 1. Simulating flux incident and leaving a surface
-![image](https://github.com/jianboqi/jianboqi.github.io/assets/1770654/69c480cf-9c94-498f-aff3-591abd662ce3)
 
 
 #### Selected image demos
