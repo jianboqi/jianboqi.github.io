@@ -35,6 +35,8 @@ sectionid: page_publications
 
 ###### 2024
 
+* Lei, L., Li, Z., Yang, H., Hoey, T.B., Wu, J., Xu, B., Yang, X., Feng, H., Yang, G., 2024. [A Two-Stage Leaf–Stem Separation Model for Maize With High Planting Density With Terrestrial, Backpack, and UAV-Based Laser Scanning](https://doi.org/10.1109/TGRS.2024.3398135). IEEE Trans. Geosci. Remote Sens. 62, 1–19.
+
 * Geng, J., Roujean, J.-L., Kuusk, A., Pang, Y., Tu, L., Zhang, T., Xu, J., Chen, J.M., 2024. [A universal canopy gap fraction model for forests with various tree distributions based on Nilson’s models considering directional overlaps among crowns](https://doi.org/10.1016/j.agrformet.2024.110026). Agricultural and Forest Meteorology 352, 110026. https://doi.org/10.1016/j.agrformet.2024.110026
 
 * Yu, W., Huang, H., Liu, Q., Wang, J., 2024. [Integrating physical model and image simulations to correct topographic effects on surface reflectance](https://doi.org/10.1016/j.isprsjprs.2024.04.017). ISPRS Journal of Photogrammetry and Remote Sensing 211, 356–371. https://doi.org/10.1016/j.isprsjprs.2024.04.017
