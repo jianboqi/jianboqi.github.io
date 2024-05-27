@@ -63,6 +63,7 @@ LESS facilitates the aforementioned applications by providing remote sensing obs
 
 #### Selected applications
 <hr>
+
 ##### 1. Simulating FPAR of maize field with different growing stages.
 This application employs LESS to analyze the total Fraction of Absorbed Photosynthetically Active Radiation (FPAR) across various growth stages of a maize field. The three-dimensional models of the maize are constructed using the 'MaizeGenerator' plugin, which can be found under the 'Tools' and 'LESS Plugins' sections.
 
