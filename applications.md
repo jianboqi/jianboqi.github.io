@@ -74,7 +74,7 @@ This application puts a virtual plane at different heights within the scene, and
 incident flux and outgoing flux of the surface. If the surface is descrbied with tirangle mesh, this module can also records the flux for each triangle.
 This is particularly useful when you want know how much energy are traversing a surface. Please note that the surface can be abitarry shapes, not limited to a plane, e.g., it can be a 3D bounding box around a particualr object.
 
-<img src="/img/content/flux_measure.tif" height="300" />
+<img src="/img/content/flux_measure.gif" height="300" />
 
 #### Selected image demos
 <hr>
