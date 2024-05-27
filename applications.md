@@ -69,6 +69,13 @@ This application employs LESS to analyze the total Fraction of Absorbed Photosyn
 The photon tracing sensor is utilized to simulate the three-dimensional distribution of Photosynthetically Active Radiation (PAR). The total FPAR is then calculated as the cumulative value of all the PAR absorbed by each leaf.
 <img src="/img/content/maize.gif" height="300" />
 
+#### 2. Simulating incident/leaving flux of a surface within a scene
+This application puts a virtual plane at different heights within the scene, and by using photon tracing module of LESS, It can record the
+incident flux and outgoing flux of the surface. If the surface is descrbied with tirangle mesh, this module can also records the flux for each triangle.
+This is particularly useful when you want know how much energy are traversing a surface. Please note that the surface can be abitarry shapes, not limited to a plane, e.g., it can be a 3D bounding box around a particualr object.
+
+<img src="/img/content/flux_measure.tif" height="300" />
+
 #### Selected image demos
 <hr>
 
