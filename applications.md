@@ -63,6 +63,8 @@ LESS facilitates the aforementioned applications by providing remote sensing obs
 
 #### Selected applications
 
+##### 1. Simulating FPAR of maize field with different growing stages.
+<img src="/img/content/maize.gif" height="375" />
 
 #### Selected image demos
 <hr>
