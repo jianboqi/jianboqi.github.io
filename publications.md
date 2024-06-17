@@ -5,6 +5,8 @@ permalink: /publications/
 sectionid: page_publications
 ---
 
+* He, S., Qi, J., Wang, D., Yan, K., Huang, H., 2024. [Estimation of canopy photon recollision probability from airborne laser scanning](https://doi.org/10.1016/j.rse.2024.114264). Remote Sensing of Environment. 311, 114264. https://doi.org/10.1016/j.rse.2024.114264
+
 * Ouyang, L., Qi, J., Wang, Q., Jia, K., Cao, B., Zhao, W., 2024. [MART3D: A Multilayer Heterogeneous 3D Radiative Transfer Framework for Characterizing Forest Disturbances.](https://doi.org/10.3390/f15050824). Forests 15, 824.
 
 * Zhao, X., Qi, J., Yu, Z., Yuan, L., Huang, H., 2024. [Fine-Scale Quantification of Absorbed Photosynthetically Active Radiation (APAR) in Plantation Forests with 3D Radiative Transfer Modeling and LiDAR Data](https://doi.org/10.34133/plantphenomics.0166). Plant Phenomics 6, 0166. https://doi.org/10.34133/plantphenomics.0166
