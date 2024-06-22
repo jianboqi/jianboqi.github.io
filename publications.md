@@ -37,6 +37,8 @@ sectionid: page_publications
 
 ###### 2024
 
+* Zhao, D., Xu, T., Henke, M., Yang, H., Zhang, C., Cheng, J., Yang, G., 2024. [A method to rapidly construct 3D canopy scenes for maize and their spectral response evaluation](https://doi.org/10.1016/j.compag.2024.109138). Comput. Electron. Agric. 224, 109138. https://doi.org/10.1016/j.compag.2024.109138
+
 * Lei, L., Li, Z., Yang, H., Hoey, T.B., Wu, J., Xu, B., Yang, X., Feng, H., Yang, G., 2024. [A Two-Stage Leaf–Stem Separation Model for Maize With High Planting Density With Terrestrial, Backpack, and UAV-Based Laser Scanning](https://doi.org/10.1109/TGRS.2024.3398135). IEEE Trans. Geosci. Remote Sens. 62, 1–19.
 
 * Geng, J., Roujean, J.-L., Kuusk, A., Pang, Y., Tu, L., Zhang, T., Xu, J., Chen, J.M., 2024. [A universal canopy gap fraction model for forests with various tree distributions based on Nilson’s models considering directional overlaps among crowns](https://doi.org/10.1016/j.agrformet.2024.110026). Agricultural and Forest Meteorology 352, 110026. https://doi.org/10.1016/j.agrformet.2024.110026
