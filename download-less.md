@@ -14,6 +14,12 @@ If you have problems under Windows,please refer to [problems under windows](http
 <br>
 <br>
 
+>#### Notice:
+>Dear all,
+>We are thinking to hold an online LESS training workshop in English, as raised by some users, which enables us to have a direct communication regarding some specific problems may encounter during the use of LESS.
+> We are preparing this workshop now, if you are intertested in this workshop, please contact me by jianboqi@126.com. 
+
+
 ### 2024-04-26 (version 2.1.5-2024-04-26):
 **Windows**:<a href="https://drive.google.com/drive/folders/1JeV4XfI8cIztB3kx27AP-1rlX8IvYkHO?usp=share_link" target="_blank">LESS-2.1.5-2024-04-26-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1WoFUrZ2bMRkDDuTWVqq8Fg?pwd=a75y" target="_blank">LESS-2.1.5-2024-04-26-win64</a>)
 
