@@ -37,6 +37,8 @@ sectionid: page_publications
 
 ###### 2024
 
+* Chen, S., Xiao, P., Zhang, X., Liu, H., Wang, Y., Sun, L., Yin, G., 2024. [Improved Snow-Covered Forest Bidirectional Reflectance Model Incorporating Canopy-Intercepted Snow and Atmospheric Effects](https://doi.org/10.1109/TGRS.2024.3427818). IEEE Trans. Geosci. Remote Sens. 1–1. https://doi.org/10.1109/TGRS.2024.3427818
+
 * Zhao, D., Xu, T., Henke, M., Yang, H., Zhang, C., Cheng, J., Yang, G., 2024. [A method to rapidly construct 3D canopy scenes for maize and their spectral response evaluation](https://doi.org/10.1016/j.compag.2024.109138). Comput. Electron. Agric. 224, 109138. https://doi.org/10.1016/j.compag.2024.109138
 
 * Lei, L., Li, Z., Yang, H., Hoey, T.B., Wu, J., Xu, B., Yang, X., Feng, H., Yang, G., 2024. [A Two-Stage Leaf–Stem Separation Model for Maize With High Planting Density With Terrestrial, Backpack, and UAV-Based Laser Scanning](https://doi.org/10.1109/TGRS.2024.3398135). IEEE Trans. Geosci. Remote Sens. 62, 1–19.
