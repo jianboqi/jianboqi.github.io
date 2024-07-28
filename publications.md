@@ -37,6 +37,10 @@ sectionid: page_publications
 
 ###### 2024
 
+* Hong, C., Li, D., Han, L., Du, X., Chen, S., Qi, J., Wang, C., Zhou, X., Qin, B., Jiang, H., Jia, K., Su, Z., 2024. [Simulation and Analysis of Bidirectional Reflection Factors of Southern Evergreen Fruit Trees Based on 3D Radiative Transfer Model](https://doi.org/10.3390/horticulturae10080790). Horticulturae 10, 790. https://doi.org/10.3390/horticulturae10080790
+  
+* Jiang, Y., Cheng, Z., Yang, G., Zhao, D., Zhang, C., Xu, B., Feng, H., Feng, Z., Ren, L., Zhang, Y., Yang, H., 2024. [Fine-Scale Quantification of the Effect of Maize Tassel on Canopy Reflectance with 3D Radiative Transfer Modeling](https://doi.org/10.3390/rs16152721). Remote Sens. 16, 2721. 
+
 * Xian, Y., Wang, T., Du, Y., Letu, H., Qi, J., Li, D., 2024. [A dataset of topographic correction coefficients for shortwave downward radiation over the Pan-Third Pole](https://doi.org/10.1038/s41597-024-03616-2). Sci. Data 11, 779. https://doi.org/10.1038/s41597-024-03616-2
 
 * Chen, S., Xiao, P., Zhang, X., Liu, H., Wang, Y., Sun, L., Yin, G., 2024. [Improved Snow-Covered Forest Bidirectional Reflectance Model Incorporating Canopy-Intercepted Snow and Atmospheric Effects](https://doi.org/10.1109/TGRS.2024.3427818). IEEE Trans. Geosci. Remote Sens. 1–1. https://doi.org/10.1109/TGRS.2024.3427818
