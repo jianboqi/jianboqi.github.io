@@ -37,6 +37,10 @@ sectionid: page_publications
 
 ###### 2024
 
+* Ma, Y., He, T., McVicar, T.R., Liang, S., Liu, T., Peng, W., Song, D.-X., Tian, F., 2024. [Quantifying how topography impacts vegetation indices at various spatial and temporal scales]( https://doi.org/10.1016/j.rse.2024.114311). Remote Sensing of Environment 312, 114311. https://doi.org/10.1016/j.rse.2024.114311
+
+* Wang, G., Jiang, L., Pan, F., Cui, H., Zhang, S., 2024. [Modeling the top-of-atmosphere radiance of alpine snow with topographic effects explicitly solved](https://doi.org/10.1016/j.isprsjprs.2024.07.017). ISPRS Journal of Photogrammetry and Remote Sensing 216, 109–125. https://doi.org/10.1016/j.isprsjprs.2024.07.017
+
 * Hong, C., Li, D., Han, L., Du, X., Chen, S., Qi, J., Wang, C., Zhou, X., Qin, B., Jiang, H., Jia, K., Su, Z., 2024. [Simulation and Analysis of Bidirectional Reflection Factors of Southern Evergreen Fruit Trees Based on 3D Radiative Transfer Model](https://doi.org/10.3390/horticulturae10080790). Horticulturae 10, 790. https://doi.org/10.3390/horticulturae10080790
   
 * Jiang, Y., Cheng, Z., Yang, G., Zhao, D., Zhang, C., Xu, B., Feng, H., Feng, Z., Ren, L., Zhang, Y., Yang, H., 2024. [Fine-Scale Quantification of the Effect of Maize Tassel on Canopy Reflectance with 3D Radiative Transfer Modeling](https://doi.org/10.3390/rs16152721). Remote Sens. 16, 2721. 
