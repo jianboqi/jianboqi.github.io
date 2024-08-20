@@ -13,7 +13,20 @@ sectionid: page_publications
     content: "Contents";
     font-weight: bold;
 }
-
+// Using numbers instead of bullets for listing
+#markdown-toc ul {
+    list-style: none;
+}
+  
+#markdown-toc {
+    border: 1px solid #aaa;
+    padding: 1.5em;
+    list-style: none;
+    display: inline-block;
+}
+#markdown-toc li ul{
+    list-style: none;
+}
 
 </style>
 
@@ -54,7 +67,7 @@ sectionid: page_publications
 
 ### Publications and reasearches that have used LESS
 
-###### 2024
+#### 2024
 
 * Ma, Y., He, T., McVicar, T.R., Liang, S., Liu, T., Peng, W., Song, D.-X., Tian, F., 2024. [Quantifying how topography impacts vegetation indices at various spatial and temporal scales]( https://doi.org/10.1016/j.rse.2024.114311). Remote Sensing of Environment 312, 114311. https://doi.org/10.1016/j.rse.2024.114311
 
@@ -98,7 +111,7 @@ sectionid: page_publications
 
 * Ran, Y., Song, S., Hou, X., Chen, Y., Chen, Z., Gong, W., 2024. [Multi-echo hyperspectral reflectance extraction method based on full waveform hyperspectral LiDA](https://doi.org/10.1016/j.isprsjprs.2023.11.019)R. ISPRS Journal of Photogrammetry and Remote Sensing 207, 43–56. https://doi.org/10.1016/j.isprsjprs.2023.11.019
 
-###### 2023
+#### 2023
 
 * Lei, L., Li, Z., Yang, G., Yang, H., 2023. [High-Throughput Extraction of the Distributions of Leaf Base and Inclination Angles of Maize in the Field. IEEE Transactions on Geoscience and Remote Sensing 61, 1–28](https://doi.org/10.1109/TGRS.2023.3332869). https://doi.org/10.1109/TGRS.2023.3332869
 
@@ -138,7 +151,7 @@ sectionid: page_publications
 
 * 张腾, 游冬琴, 闻建光, 唐勇, 2023. [二向反射遥感反演最优角度采样方法研究](http://www.rsta.ac.cn/CN/10.11873/j.issn.1004-0323.2023.1.0066). 遥感技术与应用 38, 66–77. https://doi.org/10.11873/j.issn.1004-0323.2023.1.0066
 
-###### 2022
+#### 2022
 
 * Tong, Y., Jiao, Z., Zhang, X., Yin, S., Guo, J., 2022. [An Improved Method for Estimating Clumping Index by Digital Hemispheric Photography With Field Measurements](https://ieeexplore.ieee.org/abstract/document/9926131). IEEE Geoscience and Remote Sensing Letters 19, 1–5. https://doi.org/10.1109/LGRS.2022.3216274
 
@@ -162,7 +175,7 @@ sectionid: page_publications
 
 * Bian, Z., Wu, S., Roujean, J.-L., Cao, B., Li, H., Yin, G., Du, Y., Xiao, Q., Liu, Q., 2022. [A TIR forest reflectance and transmittance (FRT) model for directional temperatures with structural and thermal stratification](https://www.sciencedirect.com/science/article/abs/pii/S0034425721004697). Remote Sens. Environ. 268, 112749. 
 
-###### 2021
+#### 2021
 
 * Li, W., Mu, X., 2021. [Using fractal dimension to correct clumping effect in leaf area index measurement by digital cover photography](https://doi.org/10.1016/j.agrformet.2021.108695). Agricultural and Forest Meteorology. 311, 108695. 
 
@@ -182,7 +195,7 @@ sectionid: page_publications
 
 * 许月, 谢东辉, 漆建波, 阎广建, 穆西晗, 张吴明, 20210526. [基于计算机模拟模型LESS的落叶松林木质元素影响分析](http://www.jors.cn/jrs/ch/reader/view_abstract.aspx?file_no=202105009&flag=1). 遥感学报 25, 1138–1151. 
 
-###### 2020
+#### 2020
 
 * Pu, J., Yan, K., Zhou, G., Lei, Y., Zhu, Y., Guo, D., Li, H., Xu, L., Knyazikhin, Y., Myneni, R.B., 2020. [Evaluation of the MODIS LAI/FPAR Algorithm Based on 3D-RTM Simulations: A Case Study of Grassland. Remote Sensing 12, 3391](https://www.mdpi.com/2072-4292/12/20/3391). https://doi.org/10.3390/rs12203391
 
@@ -190,10 +203,10 @@ sectionid: page_publications
 
 * Yan, G., Chu, Q., Tong, Y., Mu, X., Qi, J., Zhou, Y., Liu, Y., Wang, T., Xie, D., Zhang, W. and Yan, K., 2020. [An Operational Method for Validating the Downward Shortwave Radiation Over Rugged Terrains](https://ieeexplore.ieee.org/abstract/document/9102394). IEEE Transactions on Geoscience and Remote Sensing.
 
-###### 2019
+#### 2019
 * Chen, S., Liu, L., Zhang, X., Liu, X., Chen, X., Qian, X., Xu, Y., Xie, D., 2019. [Retrieval of the Fraction of Radiation Absorbed by Photosynthetic Components (FAPARgreen) for Forest using a Triple-Source Leaf-Wood-Soil Layer Approach](https://www.mdpi.com/2072-4292/11/21/2471). Remote Sensing 11, 2471. https://doi.org/10.3390/rs11212471
 
 * Jiao, Z.-H., Ren, H., Mu, X., Zhao, J., Wang, T., Dong, J., n.d. [Evaluation of Four Sky View Factor Algorithms using Digital Surface and Elevation Model Data](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018EA000475?af=R). Earth and Space Science. https://doi.org/10.1029/2018EA000475
 
-###### 2018
+#### 2018
 * Li, L., Mu, X., Macfarlane, C., Song, W., Chen, J., Yan, K. and Yan, G., 2018. [A half-Gaussian fitting method for estimating fractional vegetation cover of corn crops using unmanned aerial vehicle images](https://www.researchgate.net/publication/326827159_A_half-Gaussian_fitting_method_for_estimating_fractional_vegetation_cover_of_corn_crops_using_unmanned_aerial_vehicle_images). Agricultural and Forest Meteorology, 262, pp.379-390.
