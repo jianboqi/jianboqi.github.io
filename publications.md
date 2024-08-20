@@ -4,6 +4,36 @@ layout: page
 permalink: /publications/
 sectionid: page_publications
 ---
+<br/>
+**Table of contents:**
+
+<style>
+  // Adding 'Contents' headline to the TOC
+#markdown-toc::before {
+    content: "Contents";
+    font-weight: bold;
+}
+
+// Using numbers instead of bullets for listing
+#markdown-toc ul {
+    list-style: none;
+}
+  
+#markdown-toc {
+    border: 1px solid #aaa;
+    padding: 1.5em;
+    list-style: none;
+    display: inline-block;
+}
+#markdown-toc li ul{
+    list-style: none;
+}
+</style>
+
+ * Do not remove this line (it will not be displayed)
+{:toc}
+
+<br/>
 
 * He, S., Qi, J., Wang, D., Yan, K., Huang, H., 2024. [Estimation of canopy photon recollision probability from airborne laser scanning](https://doi.org/10.1016/j.rse.2024.114264). Remote Sensing of Environment. 311, 114264. https://doi.org/10.1016/j.rse.2024.114264
 
