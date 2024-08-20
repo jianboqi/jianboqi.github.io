@@ -69,6 +69,8 @@ sectionid: page_publications
 
 #### 2024
 
+* Zhao, D., Yang, H., Yang, G., Yu, F., Zhang, C., Chen, R., Tang, A., Zhang, W., Yang, C., Xu, T., 2024. [Estimation of Maize Biomass at Multi-Growing Stage Using Stem and Leaf Separation Strategies with 3D Radiative Transfer Model and CNN Transfer Learning](https://doi.org/10.3390/rs16163000). Remote Sens. 16, 3000. 
+
 * Ma, Y., He, T., McVicar, T.R., Liang, S., Liu, T., Peng, W., Song, D.-X., Tian, F., 2024. [Quantifying how topography impacts vegetation indices at various spatial and temporal scales]( https://doi.org/10.1016/j.rse.2024.114311). Remote Sensing of Environment 312, 114311. https://doi.org/10.1016/j.rse.2024.114311
 
 * Wang, G., Jiang, L., Pan, F., Cui, H., Zhang, S., 2024. [Modeling the top-of-atmosphere radiance of alpine snow with topographic effects explicitly solved](https://doi.org/10.1016/j.isprsjprs.2024.07.017). ISPRS Journal of Photogrammetry and Remote Sensing 216, 109–125. https://doi.org/10.1016/j.isprsjprs.2024.07.017
