@@ -69,6 +69,8 @@ sectionid: page_publications
 
 #### 2024
 
+* Wu, Z., Zheng, X., Ding, Y., Tao, Z., Sun, Y., Li, B., Chen, Xinmeng, Zhao, J., Liu, Y., Chen, Xinyu, Li, X., 2024. [A Method for Retrieving Maize Fractional Vegetation Cover by Combining 3D Radiative Transfer Model and Transfer Learning](https://ieeexplore.ieee.org/abstract/document/10648810). IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing 1–27. 
+
 * Zhao, D., Yang, H., Yang, G., Yu, F., Zhang, C., Chen, R., Tang, A., Zhang, W., Yang, C., Xu, T., 2024. [Estimation of Maize Biomass at Multi-Growing Stage Using Stem and Leaf Separation Strategies with 3D Radiative Transfer Model and CNN Transfer Learning](https://doi.org/10.3390/rs16163000). Remote Sens. 16, 3000. 
 
 * Ma, Y., He, T., McVicar, T.R., Liang, S., Liu, T., Peng, W., Song, D.-X., Tian, F., 2024. [Quantifying how topography impacts vegetation indices at various spatial and temporal scales]( https://doi.org/10.1016/j.rse.2024.114311). Remote Sensing of Environment 312, 114311. https://doi.org/10.1016/j.rse.2024.114311
