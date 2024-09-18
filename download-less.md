@@ -14,6 +14,14 @@ If you have problems under Windows,please refer to [problems under windows](http
 <br>
 <br>
 
+### LESS-2.1.6 (2024.9.19):
+**Windows**:<a href="https://drive.google.com/drive/folders/1JeV4XfI8cIztB3kx27AP-1rlX8IvYkHO?usp=share_link" target="_blank">LESS-2.1.6-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1WoFUrZ2bMRkDDuTWVqq8Fg?pwd=a75y" target="_blank">LESS-2.1.6-win64</a>)
+* From version 2.1.6 (2024.9.19), we have changed a bit the version scheme. The version of LESS is named by VERSION NUMBER (e.g., LESS-2.1.6) + DATE (e.g., 2024-07-09). Before now, if you want to update LESS, you must redownload the whole LESS installers and reinstall it. Up to now, from version 2.1.6, we have added a functions to update LESS through patch, which means that for some small bug fix, you need not to download the LESS, you can use the [Help][Update] to get a patch to update LESS. We release new LESS on this website when VERSION NUMBER is changed, i.e., you only need to download LESS when VERSION NUMBER is changed. For the DATE, you can get updated through the  [Help][Update].
+* This version also added a bug report tool to help to report bugs to us. It can be accessed by [Help][Contact] when you meet problems. This tool can help you to upload necessary files and log infomation to us.
+* 从2.1.6版本起，我们增加了一个在线更新LESS的功能。LESS每个版本的命名仍然是`版本号（例如LESS-2.1.6）`+`日期（例如2024-07-09）`，以后该网站仅提供大版本更新，即当我们修改版本号时，你仍然需要从该网站下载LESS进行重新安装更新，但是一些小的修复或者更新将通过patch的形式，即在【Help】【Update】菜单处进行更新，通过这种方式更新会修改LESS版本的日期。
+* 在新的版本中，我们还增加了一个bug提交功能，通过[Help][Contact]菜单，你可以提交当前模拟工程的文件和日志，当你提交之后，我们将收到你的反馈，并通过邮件联系你。
+
+
 ### 2024-07-19 (version 2.1.5-2024-07-19):
 **Windows**:<a href="https://drive.google.com/drive/folders/1JeV4XfI8cIztB3kx27AP-1rlX8IvYkHO?usp=share_link" target="_blank">LESS-2.1.5-2024-07-19-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1WoFUrZ2bMRkDDuTWVqq8Fg?pwd=a75y" target="_blank">LESS-2.1.5-2024-07-19-win64</a>)
 * This is a regular update version which has fixed several bugs. E.g., reading OBJ files with textures, inputting albedo maps.
