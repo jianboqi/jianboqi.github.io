@@ -69,6 +69,8 @@ sectionid: page_publications
 
 #### 2024
 
+* Yan, G., Xie, T., Hu, X., Cheng, S., Jiang, H., Hu, R., Li, F., Mu, X., Xie, D., 2024. [Estimating the Leaf Area of Urban Individual Trees From Single-Scan Terrestrial Laser Scanner Based on Slant Leaf Area Index](https://doi.org/10.1109/TGRS.2024.3435004). IEEE Trans. Geosci. Remote Sensing 62, 1–16.
+
 * Wu, Z., Zheng, X., Ding, Y., Tao, Z., Sun, Y., Li, B., Chen, Xinmeng, Zhao, J., Liu, Y., Chen, Xinyu, Li, X., 2024. [A Method for Retrieving Maize Fractional Vegetation Cover by Combining 3D Radiative Transfer Model and Transfer Learning](https://ieeexplore.ieee.org/abstract/document/10648810). IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing 1–27. 
 
 * Zhao, D., Yang, H., Yang, G., Yu, F., Zhang, C., Chen, R., Tang, A., Zhang, W., Yang, C., Xu, T., 2024. [Estimation of Maize Biomass at Multi-Growing Stage Using Stem and Leaf Separation Strategies with 3D Radiative Transfer Model and CNN Transfer Learning](https://doi.org/10.3390/rs16163000). Remote Sens. 16, 3000. 
