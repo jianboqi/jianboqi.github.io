@@ -56,7 +56,7 @@ A model science team with members from several institutions has been formed, dur
 <div style="display: inline-block;width: 320px;height: 150px;">
 <table style="border-collapse: collapse;">
   <tr>
-    <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
+    <td style="text-align: left; border: none; width:100px;"><img src="http://lessrt.org/img/content/wjf.jpg" style="width: 100px; display: block; margin: 0 auto;"></td>
      <td style="width: 200px; border: none;">
        <b>Jifan Wei (魏继繁)</b>
        <ul style="padding-left:5px;">
