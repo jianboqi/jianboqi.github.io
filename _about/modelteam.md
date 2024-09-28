@@ -68,6 +68,36 @@ A model science team with members from several institutions has been formed, dur
 </table>
 </div>
 
+<div style="display: inline-block;width: 320px;height: 150px;">
+<table style="border-collapse: collapse;">
+  <tr>
+    <td style="text-align: left; border: none; width:100px;"><img src="http://lessrt.org/img/content/ljx.jpg" style="width: 100px; display: block; margin: 0 auto;"></td>
+     <td style="width: 200px; border: none;">
+       <b>Jiaxi Liu (刘佳锡)</b>
+       <ul style="padding-left:5px;">
+        <li>2024 Master student, BNU</li>
+        <li>3D cloudy atmosphere radiative transfer modeling</li>
+        </ul>
+     </td>
+  </tr>
+</table>
+</div>
+
+<div style="display: inline-block;width: 320px;height: 150px;">
+<table style="border-collapse: collapse;">
+  <tr>
+    <td style="text-align: left; border: none; width:100px;"><img src="http://lessrt.org/img/content/gzj.jpg" style="width: 100px; display: block; margin: 0 auto;"></td>
+     <td style="width: 200px; border: none;">
+       <b>Zhaojie Guo (郭肇捷)</b>
+       <ul style="padding-left:5px;">
+        <li>2024 Master student, BNU</li>
+        <li>Forest dynamics and carbon simulation</li>
+        </ul>
+     </td>
+  </tr>
+</table>
+</div>
+
 ##### Model application
 <div style="display: inline-block;width: 320px;height: 150px;">
 <table style="border-collapse: collapse;">
@@ -116,7 +146,7 @@ A model science team with members from several institutions has been formed, dur
 <div style="display: inline-block;width: 320px;height: 150px;">
 <table style="border-collapse: collapse;">
   <tr>
-    <td style="text-align: left; border: none; width:100px;"><img src="" style="width: 100px; display: block; margin: 0 auto;"></td>
+    <td style="text-align: left; border: none; width:100px;"><img src="http://lessrt.org/img/content/zhangyan.png" style="width: 100px; display: block; margin: 0 auto;"></td>
      <td style="width: 200px; border: none;">
        <b>Yan Zhang (张妍)</b>
        <ul style="padding-left:5px;">
