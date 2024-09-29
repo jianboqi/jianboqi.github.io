@@ -69,6 +69,8 @@ sectionid: page_publications
 
 #### 2024
 
+* Han, Y., Wen, J., You, D., Xiao, Q., Hao, D., Tang, Y., Piao, S., Liu, G., Liu, Q., 2024. [Modeling Diurnal Variation of Land Surface Albedo over Rugged Terrain](https://doi.org/10.1109/TGRS.2024.3466951). IEEE Trans. Geosci. Remote Sens. 1–1. 
+
 * 尚可, 晏磊, 张飞舟, 褚君浩, 杨彬, 刘思远, Kevin TANSEY, 贾秀萍, Oleg DUBOVIK, 张子晗, 李飞, 2024. 从BRDF到BPDF:遥感反演基础模型的演进初探. 中国科学:信息科学 54, 2001–2020.
 
 * Yan, G., Xie, T., Hu, X., Cheng, S., Jiang, H., Hu, R., Li, F., Mu, X., Xie, D., 2024. [Estimating the Leaf Area of Urban Individual Trees From Single-Scan Terrestrial Laser Scanner Based on Slant Leaf Area Index](https://doi.org/10.1109/TGRS.2024.3435004). IEEE Trans. Geosci. Remote Sensing 62, 1–16.
