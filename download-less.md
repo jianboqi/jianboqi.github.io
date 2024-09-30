@@ -14,6 +14,11 @@ If you have problems under Windows,please refer to [problems under windows](http
 <br>
 <br>
 
+### When using LESS in your work, please cite:
+```bibtex
+Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W., Mu, X., Norford, L.K., 2019b. LESS: LargE-Scale remote sensing data and image simulation framework over heterogeneous 3D scenes. Remote Sensing of Environment 221, 695–706. https://doi.org/10.1016/j.rse.2018.11.036
+```
+
 ### LESS-2.1.6 (2024.9.19):
 **Windows**:<a href="https://drive.google.com/drive/folders/1JeV4XfI8cIztB3kx27AP-1rlX8IvYkHO?usp=share_link" target="_blank">LESS-2.1.6-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1WoFUrZ2bMRkDDuTWVqq8Fg?pwd=a75y" target="_blank">LESS-2.1.6-win64</a>)
 * From version 2.1.6 (2024.9.19), we have changed a bit the version scheme. The version of LESS is named by VERSION NUMBER (e.g., LESS-2.1.6) + DATE (e.g., 2024-07-09). Before now, if you want to update LESS, you must redownload the whole LESS installers and reinstall it. Up to now, from version 2.1.6, we have added a functions to update LESS through patch, which means that for some small bug fix, you need not to download the LESS, you can use the [Help][Update] to get a patch to update LESS. We release new LESS on this website when VERSION NUMBER is changed, i.e., you only need to download LESS when VERSION NUMBER is changed. For the DATE, you can get updated through the  [Help][Update].
