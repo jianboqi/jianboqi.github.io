@@ -14,7 +14,7 @@ If you have problems under Windows,please refer to [problems under windows](http
 <br>
 <br>
 
-### When using LESS in your work, please cite:
+##### When using LESS in your work, please cite:
 ```bibtex
 Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W., Mu, X., Norford, L.K., 2019b. LESS: LargE-Scale remote sensing data and image simulation framework over heterogeneous 3D scenes. Remote Sensing of Environment 221, 695–706. https://doi.org/10.1016/j.rse.2018.11.036
 ```
