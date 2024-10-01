@@ -37,6 +37,8 @@ sectionid: page_publications
 
 ### Publications by LESS members
 
+* Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W., Mu, X., Norford, L.K., 2019. [LESS: LargE-Scale remote sensing data and image simulation framework over heterogeneous 3D scenes](https://www.sciencedirect.com/science/article/pii/S0034425718305443?via%3Dihub). Remote Sensing of Environment. 221, 695–706. https://doi.org/10.1016/j.rse.2018.11.036
+
 * He, S., Qi, J., Wang, D., Yan, K., Huang, H., 2024. [Estimation of canopy photon recollision probability from airborne laser scanning](https://doi.org/10.1016/j.rse.2024.114264). Remote Sensing of Environment. 311, 114264. https://doi.org/10.1016/j.rse.2024.114264
 
 * Ouyang, L., Qi, J., Wang, Q., Jia, K., Cao, B., Zhao, W., 2024. [MART3D: A Multilayer Heterogeneous 3D Radiative Transfer Framework for Characterizing Forest Disturbances.](https://doi.org/10.3390/f15050824). Forests 15, 824.
@@ -47,7 +49,6 @@ sectionid: page_publications
 
 * Zhao, X., Qi, J., Xu, H., Yu, Z., Yuan, L., Chen, Y., Huang, H., 2023. [Evaluating the potential of airborne hyperspectral LiDAR for assessing forest insects and diseases with 3D Radiative Transfer Modeling](https://doi.org/10.1016/j.rse.2023.113759). Remote Sensing of Environment. 297, 113759.
 
-
 * 叶雨洋, 漆建波, 曹颖, 蒋靖怡, 2023. [基于LESS模型的异质植被冠层光合有效辐射吸收比与植被指数的关系研究](http://www.rsta.ac.cn/CN/10.11873/j.issn.1004-0323.2023.1.0051). 遥感技术与应用 38, 51–65. https://doi.org/10.11873/j.issn.1004-0323.2023.1.0051
 
 * Zhou, K., Xie, D., Qi, J., Zhang, Z., Bo, X., Yan, G., Mu, X., 2023. [Explicitly Reconstructing RAMI-V Scenes for Accurate 3-Dimensional Radiative Transfer Simulation Using the LESS Model](https://spj.science.org/doi/10.34133/remotesensing.0033). Journal of Remote Sensing 3, 0033. https://doi.org/10.34133/remotesensing.0033
@@ -57,8 +58,6 @@ sectionid: page_publications
 * Qi, J., Jiang, J., Zhou, K., Xie, D., Huang, H., 2023. [Fast and Accurate Simulation of Canopy Reflectance under Wavelength-Dependent Optical Properties Using a Semi-Empirical 3D Radiative Transfer Model](https://spj.science.org/doi/10.34133/remotesensing.0017). Journal of Remote Sensing 0017. https://doi.org/10.34133/remotesensing.0017
 
 * Qi, J., Xie, D., Jiang, J., Huang, H., 2022. [3D radiative transfer modeling of structurally complex forest canopies through a lightweight boundary-based description of leaf clusters](https://www.sciencedirect.com/science/article/abs/pii/S0034425722004072). Remote Sensing of Environment. 283, 113301. https://doi.org/10.1016/j.rse.2022.113301
-
-* Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W., Mu, X., Norford, L.K., 2019. [LESS: LargE-Scale remote sensing data and image simulation framework over heterogeneous 3D scenes](https://www.sciencedirect.com/science/article/pii/S0034425718305443?via%3Dihub). Remote Sensing of Environment. 221, 695–706. https://doi.org/10.1016/j.rse.2018.11.036
 
 * Qi, J., Xie, D., Guo, D. and Yan, G., 2017. <a href="https://www.researchgate.net/publication/320392804_A_Large-Scale_Emulation_System_for_Realistic_Three-Dimensional_3-D_Forest_Simulation">A Large-Scale Emulation System for Realistic Three-Dimensional (3-D) Forest Simulation </a>. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 10(11), pp.4834-4843.
 
