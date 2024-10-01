@@ -69,6 +69,8 @@ sectionid: page_publications
 
 #### 2024
 
+* Mu, X., Yang, Y., Xu, H., Guo, Y., Lai, Y., McVicar, T.R., Xie, D., Yan, G., 2024. [Improvement of NDVI mixture model for fractional vegetation cover estimation with consideration of shaded vegetation and soil components](https://doi.org/10.1016/j.rse.2024.114409). Remote Sens. Environ. 314, 114409. https://doi.org/10.1016/j.rse.2024.114409
+
 * Han, Y., Wen, J., You, D., Xiao, Q., Hao, D., Tang, Y., Piao, S., Liu, G., Liu, Q., 2024. [Modeling Diurnal Variation of Land Surface Albedo over Rugged Terrain](https://doi.org/10.1109/TGRS.2024.3466951). IEEE Trans. Geosci. Remote Sens. 1–1. 
 
 * 尚可, 晏磊, 张飞舟, 褚君浩, 杨彬, 刘思远, Kevin TANSEY, 贾秀萍, Oleg DUBOVIK, 张子晗, 李飞, 2024. 从BRDF到BPDF:遥感反演基础模型的演进初探. 中国科学:信息科学 54, 2001–2020.
