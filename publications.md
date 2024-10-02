@@ -37,7 +37,7 @@ sectionid: page_publications
 
 ### Publications by LESS members
 
-* Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W., Mu, X., Norford, L.K., 2019. [LESS: LargE-Scale remote sensing data and image simulation framework over heterogeneous 3D scenes](https://www.sciencedirect.com/science/article/pii/S0034425718305443?via%3Dihub). Remote Sensing of Environment. 221, 695–706. https://doi.org/10.1016/j.rse.2018.11.036
+* Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W., Mu, X., Norford, L.K., 2019. **[LESS: LargE-Scale remote sensing data and image simulation framework over heterogeneous 3D scenes](https://www.sciencedirect.com/science/article/pii/S0034425718305443?via%3Dihub)**. Remote Sensing of Environment. 221, 695–706. https://doi.org/10.1016/j.rse.2018.11.036
 
 * He, S., Qi, J., Wang, D., Yan, K., Huang, H., 2024. [Estimation of canopy photon recollision probability from airborne laser scanning](https://doi.org/10.1016/j.rse.2024.114264). Remote Sensing of Environment. 311, 114264. https://doi.org/10.1016/j.rse.2024.114264
 
