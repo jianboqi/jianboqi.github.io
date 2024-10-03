@@ -68,6 +68,8 @@ sectionid: page_publications
 
 #### 2024
 
+* Jiang, Y., Zhang, Z., He, H., Zhang, X., Feng, F., Xu, C., Zhang, M., Lafortezza, R., 2024. [Research on Leaf Area Index Inversion Based on LESS 3D Radiative Transfer Model and Machine Learning Algorithms](https://doi.org/10.3390/rs16193627). Remote Sens. 16, 3627. https://doi.org/10.3390/rs16193627
+
 * Mu, X., Yang, Y., Xu, H., Guo, Y., Lai, Y., McVicar, T.R., Xie, D., Yan, G., 2024. [Improvement of NDVI mixture model for fractional vegetation cover estimation with consideration of shaded vegetation and soil components](https://doi.org/10.1016/j.rse.2024.114409). Remote Sens. Environ. 314, 114409. https://doi.org/10.1016/j.rse.2024.114409
 
 * Han, Y., Wen, J., You, D., Xiao, Q., Hao, D., Tang, Y., Piao, S., Liu, G., Liu, Q., 2024. [Modeling Diurnal Variation of Land Surface Albedo over Rugged Terrain](https://doi.org/10.1109/TGRS.2024.3466951). IEEE Trans. Geosci. Remote Sens. 1–1. 
