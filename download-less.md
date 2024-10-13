@@ -18,6 +18,13 @@ If you have problems under Windows,please refer to [problems under windows](http
 ```bibtex
 Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W., Mu, X., Norford, L.K., 2019b. LESS: LargE-Scale remote sensing data and image simulation framework over heterogeneous 3D scenes. Remote Sensing of Environment 221, 695–706. https://doi.org/10.1016/j.rse.2018.11.036
 ```
+### LESS-2.1.7 (2024.10.13):
+**Windows**:<a href="https://drive.google.com/drive/folders/1JeV4XfI8cIztB3kx27AP-1rlX8IvYkHO?usp=share_link" target="_blank">LESS-2.1.7-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1WoFUrZ2bMRkDDuTWVqq8Fg?pwd=a75y" target="_blank">LESS-2.1.7-win64</a>)
+* A new Plugin named `GenerateSlantedMesh` has been added, which genrate simple terrain with slopes.
+* We have modified the strategy to processing meshes to avoid a double copy of OBJ files, which saves a lot of disk when simulation project have a large number of OBJ files.
+* Some bugs have been fixed.
+* 新版本中我们增加了一个`GenerateSlantedMesh`插件，该插件可以产生不同朝向和坡度下的单坡面地形。
+* 我们该改变了处理OBJ文件的策略，避免了模拟过程中重复复制OBJ文件到运行目录，减少了储存空间的使用，提高了加载效率。
 
 ### LESS-2.1.6 (2024.9.19):
 **Windows**:<a href="https://drive.google.com/drive/folders/1JeV4XfI8cIztB3kx27AP-1rlX8IvYkHO?usp=share_link" target="_blank">LESS-2.1.6-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1WoFUrZ2bMRkDDuTWVqq8Fg?pwd=a75y" target="_blank">LESS-2.1.6-win64</a>)
