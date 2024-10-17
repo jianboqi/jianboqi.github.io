@@ -39,6 +39,8 @@ sectionid: page_publications
 
 * **Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W., Mu, X., Norford, L.K., 2019. [LESS: LargE-Scale remote sensing data and image simulation framework over heterogeneous 3D scenes](https://www.sciencedirect.com/science/article/pii/S0034425718305443?via%3Dihub). Remote Sensing of Environment. 221, 695–706. https://doi.org/10.1016/j.rse.2018.11.036**
 
+* Luo, Y., Xie, D., Qi, J., Yan, G., Mu, X., 2024. [Simulating High-Resolution Sun-Induced Chlorophyll Fluorescence Image of Three-Dimensional Canopy Based on Photon Mapping](https://doi.org/10.3390/rs16203783). Remote Sensing 16, 3783. https://doi.org/10.3390/rs16203783
+
 * He, S., Qi, J., Wang, D., Yan, K., Huang, H., 2024. [Estimation of canopy photon recollision probability from airborne laser scanning](https://doi.org/10.1016/j.rse.2024.114264). Remote Sensing of Environment. 311, 114264. https://doi.org/10.1016/j.rse.2024.114264
 
 * Ouyang, L., Qi, J., Wang, Q., Jia, K., Cao, B., Zhao, W., 2024. [MART3D: A Multilayer Heterogeneous 3D Radiative Transfer Framework for Characterizing Forest Disturbances.](https://doi.org/10.3390/f15050824). Forests 15, 824.
