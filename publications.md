@@ -105,6 +105,20 @@ sectionid: page_publications
 
 <table style="border-collapse: collapse;margin-bottom:20px;margin-top:20px;">
   <tr>
+    <td style="text-align: left; border: none; width:200px;"><img src="http://lessrt.org/img/content/semiless.png" style="width: 150px; display: block; margin: 0 auto;"></td>
+     <td style="width: 100%; border: none;">
+       <ul style="padding-left:10px;list-style-type: none;color:#545E6C;">
+        <li><h5>Fast and Accurate Simulation of Canopy Reflectance under Wavelength-Dependent Optical Properties Using a Semi-Empirical 3D Radiative Transfer Model</h5></li>
+        <li>Qi, J., Jiang, J., Zhou, K., Xie, D., Huang, H.</li>
+        <li>Journal of Remote Sensing, 2022</li>
+        <li><span class="badge badge-secondary badge-pill"><a href="https://spj.science.org/doi/10.34133/remotesensing.0017" class="text-white" target="_blank">Paper</a></span>, <span class="badge badge-secondary badge-pill"><a href="https://lessrt.org/download-less/" class="text-white" target="_blank">Code</a></span></li>
+        </ul>
+     </td>
+  </tr>
+</table>
+
+<table style="border-collapse: collapse;margin-bottom:20px;margin-top:20px;">
+  <tr>
     <td style="text-align: left; border: none; width:200px;"><img src="http://lessrt.org/img/content/pthoery.png" style="width: 150px; display: block; margin: 0 auto;"></td>
      <td style="width: 100%; border: none;">
        <ul style="padding-left:10px;list-style-type: none;color:#545E6C;">
