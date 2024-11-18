@@ -42,7 +42,7 @@ sectionid: page_publications
     <td style="text-align: left; border: none; width:200px;"><img src="http://lessrt.org/img/content/less.png" style="width: 150px; display: block; margin: 0 auto;"></td>
      <td style="width: 100%; border: none;">
        <ul style="padding-left:5px;list-style-type: none;">
-        <li><h2>LESS: LargE-Scale remote sensing data and image simulation framework over heterogeneous 3D scenes</h2></li>
+        <li><h4>LESS: LargE-Scale remote sensing data and image simulation framework over heterogeneous 3D scenes</h4></li>
         <li>Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W., Mu, X., Norford, L.K.</li>
         <li>Remote Sensing of environment</li>
         <li>Paper, Code</li>
