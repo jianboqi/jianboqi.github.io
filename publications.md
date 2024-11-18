@@ -39,6 +39,8 @@ sectionid: page_publications
 
 * **Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W., Mu, X., Norford, L.K., 2019. [LESS: LargE-Scale remote sensing data and image simulation framework over heterogeneous 3D scenes](https://www.sciencedirect.com/science/article/pii/S0034425718305443?via%3Dihub). Remote Sensing of Environment. 221, 695–706. https://doi.org/10.1016/j.rse.2018.11.036**
 
+* Yu, Z., Qi, J., Liu, S., Zhao, X., Huang, H., 2024. [Evaluating forest aboveground biomass estimation model using simulated ALS point cloud from an individual-based forest model and 3D radiative transfer model across continents](https://doi.org/10.1016/j.jenvman.2024.123287). Journal of Environmental Management 372, 123287. https://doi.org/10.1016/j.jenvman.2024.123287
+
 * Jin, D., Qi, J., Borges Gonçalves, N., Wei, J., Huang, H., Pan, Y., 2024. [Automated tree crown labeling with 3D radiative transfer modelling achieves human comparable performances for tree segmentation in semi-arid landscapes](https://doi.org/10.1016/j.jag.2024.104235). International Journal of Applied Earth Observation and Geoinformation 134, 104235. https://doi.org/10.1016/j.jag.2024.104235
 
 * Luo, Y., Xie, D., Qi, J., Yan, G., Mu, X., 2024. [Simulating High-Resolution Sun-Induced Chlorophyll Fluorescence Image of Three-Dimensional Canopy Based on Photon Mapping](https://doi.org/10.3390/rs16203783). Remote Sensing 16, 3783. https://doi.org/10.3390/rs16203783
