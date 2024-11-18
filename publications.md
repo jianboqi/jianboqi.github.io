@@ -61,7 +61,7 @@ sectionid: page_publications
 
 ### Publications by LESS members
 
-<table style="border-collapse: collapse;">
+<table style="border-collapse: collapse;border-bottom:20px;">
   <tr>
     <td style="text-align: left; border: none; width:200px;"><img src="http://lessrt.org/img/content/less.png" style="width: 150px; display: block; margin: 0 auto;"></td>
      <td style="width: 100%; border: none;">
@@ -74,7 +74,6 @@ sectionid: page_publications
      </td>
   </tr>
 </table>
-<br/>
 
 * Yu, Z., Qi, J., Liu, S., Zhao, X., Huang, H., 2024. [Evaluating forest aboveground biomass estimation model using simulated ALS point cloud from an individual-based forest model and 3D radiative transfer model across continents](https://doi.org/10.1016/j.jenvman.2024.123287). Journal of Environmental Management 372, 123287. https://doi.org/10.1016/j.jenvman.2024.123287
 
