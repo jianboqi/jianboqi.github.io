@@ -75,6 +75,20 @@ sectionid: page_publications
   </tr>
 </table>
 
+<table style="border-collapse: collapse;border-bottom:20px;">
+  <tr>
+    <td style="text-align: left; border: none; width:200px;"><img src="http://lessrt.org/img/content/3dcluster.png" style="width: 150px; display: block; margin: 0 auto;"></td>
+     <td style="width: 100%; border: none;">
+       <ul style="padding-left:10px;list-style-type: none;color:#545E6C;">
+        <li><h5>3D radiative transfer modeling of structurally complex forest canopies through a lightweight boundary-based description of leaf clusters</h5></li>
+        <li>Qi, J., Xie, D., Jiang, J., Huang, H.</li>
+        <li>Remote Sensing of environment, 2022</li>
+        <li><span class="badge badge-secondary badge-pill"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0034425722004072" class="text-white" target="_blank">Paper</a></span>, <span class="badge badge-secondary badge-pill"><a href="https://lessrt.org/download-less/" class="text-white" target="_blank">Code</a></span></li>
+        </ul>
+     </td>
+  </tr>
+</table>
+
 * Yu, Z., Qi, J., Liu, S., Zhao, X., Huang, H., 2024. [Evaluating forest aboveground biomass estimation model using simulated ALS point cloud from an individual-based forest model and 3D radiative transfer model across continents](https://doi.org/10.1016/j.jenvman.2024.123287). Journal of Environmental Management 372, 123287. https://doi.org/10.1016/j.jenvman.2024.123287
 
 * Jin, D., Qi, J., Borges Gonçalves, N., Wei, J., Huang, H., Pan, Y., 2024. [Automated tree crown labeling with 3D radiative transfer modelling achieves human comparable performances for tree segmentation in semi-arid landscapes](https://doi.org/10.1016/j.jag.2024.104235). International Journal of Applied Earth Observation and Geoinformation 134, 104235. https://doi.org/10.1016/j.jag.2024.104235
@@ -98,8 +112,6 @@ sectionid: page_publications
 * Gao, G., Qi, J., Lin, S., Hu, R., Huang, H., 2023. [Estimating plant area density of individual trees from discrete airborne laser scanning data using intensity information and path length distribution](https://www.sciencedirect.com/science/article/pii/S1569843223001036). International Journal of Applied Earth Observation and Geoinformation 118, 103281. https://doi.org/10.1016/j.jag.2023.103281
 
 * Qi, J., Jiang, J., Zhou, K., Xie, D., Huang, H., 2023. [Fast and Accurate Simulation of Canopy Reflectance under Wavelength-Dependent Optical Properties Using a Semi-Empirical 3D Radiative Transfer Model](https://spj.science.org/doi/10.34133/remotesensing.0017). Journal of Remote Sensing 0017. https://doi.org/10.34133/remotesensing.0017
-
-* Qi, J., Xie, D., Jiang, J., Huang, H., 2022. [3D radiative transfer modeling of structurally complex forest canopies through a lightweight boundary-based description of leaf clusters](https://www.sciencedirect.com/science/article/abs/pii/S0034425722004072). Remote Sensing of Environment. 283, 113301. https://doi.org/10.1016/j.rse.2022.113301
 
 * Qi, J., Xie, D., Guo, D. and Yan, G., 2017. <a href="https://www.researchgate.net/publication/320392804_A_Large-Scale_Emulation_System_for_Realistic_Three-Dimensional_3-D_Forest_Simulation">A Large-Scale Emulation System for Realistic Three-Dimensional (3-D) Forest Simulation </a>. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 10(11), pp.4834-4843.
 
