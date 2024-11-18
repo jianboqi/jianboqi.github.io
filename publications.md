@@ -68,7 +68,7 @@ sectionid: page_publications
        <ul style="padding-left:10px;list-style-type: none;color:#545E6C;">
         <li><h5>LESS: LargE-Scale remote sensing data and image simulation framework over heterogeneous 3D scenes</h5></li>
         <li>Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W., Mu, X., Norford, L.K.</li>
-        <li>Remote Sensing of environment</li>
+        <li>Remote Sensing of environment, 2019</li>
         <li><span class="badge badge-secondary badge-pill"><a href="https://www.sciencedirect.com/science/article/pii/S0034425718305443" class="text-white" target="_blank">Paper</a></span>, <span class="badge badge-secondary badge-pill"><a href="https://lessrt.org/download-less/" class="text-white" target="_blank">Code</a></span></li>
         </ul>
      </td>
