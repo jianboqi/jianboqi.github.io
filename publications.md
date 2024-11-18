@@ -61,7 +61,7 @@ sectionid: page_publications
 
 ### Publications by LESS members
 
-<table style="border-collapse: collapse;border-bottom:20px;">
+<table style="border-collapse: collapse;border-bottom:40px;border-top:40px;">
   <tr>
     <td style="text-align: left; border: none; width:200px;"><img src="http://lessrt.org/img/content/less.png" style="width: 150px; display: block; margin: 0 auto;"></td>
      <td style="width: 100%; border: none;">
@@ -75,7 +75,7 @@ sectionid: page_publications
   </tr>
 </table>
 
-<table style="border-collapse: collapse;border-bottom:20px;">
+<table style="border-collapse: collapse;border-bottom:40px;border-top:40px;">
   <tr>
     <td style="text-align: left; border: none; width:200px;"><img src="http://lessrt.org/img/content/3dcluster.png" style="width: 150px; display: block; margin: 0 auto;"></td>
      <td style="width: 100%; border: none;">
