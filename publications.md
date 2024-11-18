@@ -69,11 +69,12 @@ sectionid: page_publications
         <li><h5>LESS: LargE-Scale remote sensing data and image simulation framework over heterogeneous 3D scenes</h5></li>
         <li>Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W., Mu, X., Norford, L.K.</li>
         <li>Remote Sensing of environment</li>
-        <li><span class="badge badge-secondary badge-pill"><a href="research/wavefiber_3d.html" class="text-white">Paper</a></span>, <span class="badge badge-secondary badge-pill"><a href="research/wavefiber_3d.html" class="text-white">Code</a></span></li>
+        <li><span class="badge badge-secondary badge-pill"><a href="https://www.sciencedirect.com/science/article/pii/S0034425718305443" class="text-white">Paper</a></span>, <span class="badge badge-secondary badge-pill"><a href="https://lessrt.org/download-less/" class="text-white">Code</a></span></li>
         </ul>
      </td>
   </tr>
 </table>
+<br/>
 
 * **Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W., Mu, X., Norford, L.K., 2019. [LESS: LargE-Scale remote sensing data and image simulation framework over heterogeneous 3D scenes](https://www.sciencedirect.com/science/article/pii/S0034425718305443?via%3Dihub). Remote Sensing of Environment. 221, 695–706. https://doi.org/10.1016/j.rse.2018.11.036**
 
