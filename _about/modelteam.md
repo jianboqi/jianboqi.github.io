@@ -12,11 +12,11 @@ A model science team with members from several institutions has been formed, dur
   <tr>
     <td style="text-align: left; border: none; width:100px;"><img src="http://lessrt.org/img/content/qijb.jpg" style="width: 100px; display: block; margin: 0 auto;"></td>
      <td style="width: 400px; border: none;">
-       <ul style="padding-left:5px;">
-        <li>Associate Professor from Faculty of Geographical Science, Beijing Normal University, China</li>
-        <li>The founder, primary developer, maintainer, and model trainer of LESS.</li>
-        <li>Focus on 3D radiative transfer modeling, 3D LiDAR data processing and parameter retrieval, developed the popular LiDAR ground filtering algorithm: <a  href="https://github.com/jianboqi/CSF" target="_blank">Cloth Simulation Filter (CSF)</a>.</li>
-         <li>Email: jianboqi@bnu.edu.cn</li>
+       <ul style="padding-left:5px;list-style-type: none;">
+        <li><h2>LESS: LargE-Scale remote sensing data and image simulation framework over heterogeneous 3D scenes</h2></li>
+        <li>Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W., Mu, X., Norford, L.K.</li>
+        <li>Remote Sensing of environment</li>
+        <li>Paper, Code</li>
         </ul>
      </td>
   </tr>
