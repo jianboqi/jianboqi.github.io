@@ -27,6 +27,27 @@ sectionid: page_publications
 #markdown-toc li ul{
     list-style: none;
 }
+.badge-secondary {
+    color: #fff;
+    background-color: #2f9833;
+}
+.badge-pill {
+    padding-right: .6em;
+    padding-left: .6em;
+    border-radius: 10rem;
+}
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
 
 </style>
 
@@ -45,7 +66,7 @@ sectionid: page_publications
         <li><h5>LESS: LargE-Scale remote sensing data and image simulation framework over heterogeneous 3D scenes</h5></li>
         <li>Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W., Mu, X., Norford, L.K.</li>
         <li>Remote Sensing of environment</li>
-        <li>Paper, Code</li>
+        <li><span class="badge badge-secondary badge-pill"><a href="research/wavefiber_3d.html" class="text-white">Paper</a></span>, <span class="badge badge-secondary badge-pill"><a href="research/wavefiber_3d.html" class="text-white">Code</a></span></li>
         </ul>
      </td>
   </tr>
