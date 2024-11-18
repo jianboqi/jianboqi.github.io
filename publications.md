@@ -117,6 +117,21 @@ sectionid: page_publications
   </tr>
 </table>
 
+<table style="border-collapse: collapse;margin-bottom:20px;margin-top:20px;">
+  <tr>
+    <td style="text-align: left; border: none; width:200px;"><img src="http://lessrt.org/img/content/finefpar.png" style="width: 150px; display: block; margin: 0 auto;"></td>
+     <td style="width: 100%; border: none;">
+       <ul style="padding-left:10px;list-style-type: none;color:#545E6C;">
+        <li><h5>Fine-Scale Quantification of Absorbed Photosynthetically Active Radiation (APAR) in Plantation Forests with 3D Radiative Transfer Modeling and LiDAR Data</h5></li>
+        <li>Zhao, X., Qi, J., Yu, Z., Yuan, L., Huang, H.</li>
+        <li>Plant Phenomics, 2024</li>
+        <li><span class="badge badge-secondary badge-pill"><a href="https://doi.org/10.34133/plantphenomics.0166" class="text-white" target="_blank">Paper</a></span>, <span class="badge badge-secondary badge-pill"><a href="https://lessrt.org/download-less/" class="text-white" target="_blank">Code</a></span></li>
+        </ul>
+     </td>
+  </tr>
+</table>
+
+
 * Yu, Z., Qi, J., Liu, S., Zhao, X., Huang, H., 2024. [Evaluating forest aboveground biomass estimation model using simulated ALS point cloud from an individual-based forest model and 3D radiative transfer model across continents](https://doi.org/10.1016/j.jenvman.2024.123287). Journal of Environmental Management 372, 123287. https://doi.org/10.1016/j.jenvman.2024.123287
 
 * Jin, D., Qi, J., Borges Gonçalves, N., Wei, J., Huang, H., Pan, Y., 2024. [Automated tree crown labeling with 3D radiative transfer modelling achieves human comparable performances for tree segmentation in semi-arid landscapes](https://doi.org/10.1016/j.jag.2024.104235). International Journal of Applied Earth Observation and Geoinformation 134, 104235. https://doi.org/10.1016/j.jag.2024.104235
@@ -125,7 +140,6 @@ sectionid: page_publications
 
 * Ouyang, L., Qi, J., Wang, Q., Jia, K., Cao, B., Zhao, W., 2024. [MART3D: A Multilayer Heterogeneous 3D Radiative Transfer Framework for Characterizing Forest Disturbances.](https://doi.org/10.3390/f15050824). Forests 15, 824.
 
-* Zhao, X., Qi, J., Yu, Z., Yuan, L., Huang, H., 2024. [Fine-Scale Quantification of Absorbed Photosynthetically Active Radiation (APAR) in Plantation Forests with 3D Radiative Transfer Modeling and LiDAR Data](https://doi.org/10.34133/plantphenomics.0166). Plant Phenomics 6, 0166. https://doi.org/10.34133/plantphenomics.0166
 
 * Luo, Y., Xie, D., Qi, J., Zhou, K., Yan, G., Mu, X., 2023. [LESS LiDAR: A Full-Waveform and Discrete-Return Multispectral LiDAR Simulator Based on Ray Tracing Algorithm](https://doi.org/10.3390/rs15184529). Remote Sensing 15, 4529. https://doi.org/10.3390/rs15184529
 
