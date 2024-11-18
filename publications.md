@@ -39,7 +39,7 @@ sectionid: page_publications
 
 <table style="border-collapse: collapse;">
   <tr>
-    <td style="text-align: left; border: none; width:100px;"><img src="http://lessrt.org/img/content/qijb.jpg" style="width: 200px; display: block; margin: 0 auto;"></td>
+    <td style="text-align: left; border: none; width:200px;"><img src="http://lessrt.org/img/content/qijb.jpg" style="width: 200px; display: block; margin: 0 auto;"></td>
      <td style="width: 800px; border: none;">
        <ul style="padding-left:5px;list-style-type: none;">
         <li><h2>LESS: LargE-Scale remote sensing data and image simulation framework over heterogeneous 3D scenes</h2></li>
