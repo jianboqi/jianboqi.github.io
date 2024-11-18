@@ -37,6 +37,20 @@ sectionid: page_publications
 
 ### Publications by LESS members
 
+<table style="border-collapse: collapse;">
+  <tr>
+    <td style="text-align: left; border: none; width:100px;"><img src="http://lessrt.org/img/content/qijb.jpg" style="width: 100px; display: block; margin: 0 auto;"></td>
+     <td style="width: 400px; border: none;">
+       <ul style="padding-left:5px;list-style-type: none;">
+        <li><h2>LESS: LargE-Scale remote sensing data and image simulation framework over heterogeneous 3D scenes</h2></li>
+        <li>Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W., Mu, X., Norford, L.K.</li>
+        <li>Remote Sensing of environment</li>
+        <li>Paper, Code</li>
+        </ul>
+     </td>
+  </tr>
+</table>
+
 * **Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W., Mu, X., Norford, L.K., 2019. [LESS: LargE-Scale remote sensing data and image simulation framework over heterogeneous 3D scenes](https://www.sciencedirect.com/science/article/pii/S0034425718305443?via%3Dihub). Remote Sensing of Environment. 221, 695–706. https://doi.org/10.1016/j.rse.2018.11.036**
 
 * Yu, Z., Qi, J., Liu, S., Zhao, X., Huang, H., 2024. [Evaluating forest aboveground biomass estimation model using simulated ALS point cloud from an individual-based forest model and 3D radiative transfer model across continents](https://doi.org/10.1016/j.jenvman.2024.123287). Journal of Environmental Management 372, 123287. https://doi.org/10.1016/j.jenvman.2024.123287
