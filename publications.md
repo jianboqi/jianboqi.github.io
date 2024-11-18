@@ -185,7 +185,6 @@ sectionid: page_publications
 
 * Gao, G., Qi, J., Lin, S., Hu, R., Huang, H., 2023. [Estimating plant area density of individual trees from discrete airborne laser scanning data using intensity information and path length distribution](https://www.sciencedirect.com/science/article/pii/S1569843223001036). International Journal of Applied Earth Observation and Geoinformation 118, 103281. https://doi.org/10.1016/j.jag.2023.103281
 
-* Qi, J., Jiang, J., Zhou, K., Xie, D., Huang, H., 2023. [Fast and Accurate Simulation of Canopy Reflectance under Wavelength-Dependent Optical Properties Using a Semi-Empirical 3D Radiative Transfer Model](https://spj.science.org/doi/10.34133/remotesensing.0017). Journal of Remote Sensing 0017. https://doi.org/10.34133/remotesensing.0017
 
 * Qi, J., Xie, D., Guo, D. and Yan, G., 2017. <a href="https://www.researchgate.net/publication/320392804_A_Large-Scale_Emulation_System_for_Realistic_Three-Dimensional_3-D_Forest_Simulation">A Large-Scale Emulation System for Realistic Three-Dimensional (3-D) Forest Simulation </a>. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 10(11), pp.4834-4843.
 
