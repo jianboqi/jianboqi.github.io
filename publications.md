@@ -39,14 +39,17 @@ sectionid: page_publications
 .badge {
     display: inline-block;
     padding: .25em .4em;
-    font-size: 75%;
-    font-weight: 700;
+    font-size: 85%;
+    font-weight: 800;
     line-height: 1;
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
     border-radius: .25rem;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.text-white {
+    color: #fff !important;
 }
 
 </style>
