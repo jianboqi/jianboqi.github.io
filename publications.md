@@ -59,7 +59,7 @@ sectionid: page_publications
 
 <br/>
 
-### Publications by LESS members
+### Publications related to LESS by LESS team members
 
 <table style="border-collapse: collapse;margin-bottom:20px;margin-top:20px;">
   <tr>
