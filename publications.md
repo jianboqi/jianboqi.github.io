@@ -173,6 +173,20 @@ sectionid: page_publications
   </tr>
 </table>
 
+<table style="border-collapse: collapse;margin-bottom:20px;margin-top:20px;">
+  <tr>
+    <td style="text-align: left; border: none; width:200px;"><img src="http://lessrt.org/img/content/finescale-retrieve.png" style="width: 150px; display: block; margin: 0 auto;"></td>
+     <td style="width: 100%; border: none;">
+       <ul style="padding-left:10px;list-style-type: none;color:#545E6C;">
+        <li><h5>Fine-scale retrieval of leaf chlorophyll content using a semi-empirically accelerated 3D radiative transfer model</h5></li>
+        <li>Zhao, X., Qi, J., Jiang, J., Liu, S., Xu, H., Lin, S., Yu, Z., Li, L., Huang, H.</li>
+        <li>International Journal of Applied Earth Observation and Geoinformation, 2024</li>
+        <li><span class="badge badge-secondary badge-pill"><a href="[https://doi.org/10.1016/j.jenvman.2024.123287](https://www.sciencedirect.com/science/article/pii/S1569843224006411)" class="text-white" target="_blank">Paper</a></span>, <span class="badge badge-secondary badge-pill"><a href="https://lessrt.org/download-less/" class="text-white" target="_blank">Code</a></span></li>
+        </ul>
+     </td>
+  </tr>
+</table>
+
 * Luo, Y., Xie, D., Qi, J., Yan, G., Mu, X., 2024. [Simulating High-Resolution Sun-Induced Chlorophyll Fluorescence Image of Three-Dimensional Canopy Based on Photon Mapping](https://doi.org/10.3390/rs16203783). Remote Sensing 16, 3783. https://doi.org/10.3390/rs16203783
 
 * Ouyang, L., Qi, J., Wang, Q., Jia, K., Cao, B., Zhao, W., 2024. [MART3D: A Multilayer Heterogeneous 3D Radiative Transfer Framework for Characterizing Forest Disturbances.](https://doi.org/10.3390/f15050824). Forests 15, 824.
