@@ -18,7 +18,7 @@ If you have problems under Windows,please refer to [problems under windows](http
 ```bibtex
 Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W., Mu, X., Norford, L.K., 2019b. LESS: LargE-Scale remote sensing data and image simulation framework over heterogeneous 3D scenes. Remote Sensing of Environment 221, 695–706. https://doi.org/10.1016/j.rse.2018.11.036
 ```
-<iframe width="640px" height="480px" src="https://forms.office.com/r/ML6Rs1ghAQ?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+##### If you want to get news of LESS, please subscribe: [Subscribe](https://forms.office.com/r/ML6Rs1ghAQ)
 
 ### LESS-2.1.7 (2024.10.13):
 **Windows**:<a href="https://drive.google.com/drive/folders/1JeV4XfI8cIztB3kx27AP-1rlX8IvYkHO?usp=share_link" target="_blank">LESS-2.1.7-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1WoFUrZ2bMRkDDuTWVqq8Fg?pwd=a75y" target="_blank">LESS-2.1.7-win64</a>)
