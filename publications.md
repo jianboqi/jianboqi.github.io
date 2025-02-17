@@ -207,6 +207,13 @@ sectionid: page_publications
 
 ### Publications and reasearches that have used LESS
 
+#### 2025
+* Frey, J., Schindler, Z., McClatchy, P., Morhart, C., Larysch, E., Seifert, T., 2025. [The 3D reconstruction of wood and leaves from terrestrial laser scanning – a case study on PAR measurements below a solitary Malus domestica tree]( https://doi.org/10.14214/sf.24027). Silva Fenn 59.
+
+* Xu, H., Huai, Y., Zhao, X., Meng, Q., Nie, X., Li, B., Lu, H., 2025. [SK-TreePCN: Skeleton-Embedded Transformer Model for Point Cloud Completion of Individual Trees from Simulated to Real Data](https://doi.org/10.3390/rs17040656). Remote Sensing 17, 656.
+
+* Lin, X., Li, A., Bian, J., Zhang, Z., Nan, X., Chen, L., Bai, Y., Deng, Y., Li, S., 2025. [Investigating the contribution of understory to radiative transfer simulations through reconstructing 3-D realistic temperate broadleaf forest scenes based on multi-platform laser scanning](https://doi.org/10.1016/j.srs.2025.100196). Science of Remote Sensing 11, 100196. 
+
 #### 2024
 
 * Oswald, D., Pourreza, A., Chakraborty, M., Khalsa, S.D.S., Brown, P.H., 2024. [3D radiative transfer modeling of almond canopy for nitrogen estimation by hyperspectral imaging](https://doi.org/10.1007/s11119-024-10207-z). Precision Agric 26, 12. 
