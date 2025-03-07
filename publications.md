@@ -189,7 +189,7 @@ sectionid: page_publications
 
 <table style="border-collapse: collapse;margin-bottom:20px;margin-top:20px;">
   <tr>
-    <td style="text-align: left; border: none; width:200px;"><img src="http://lessrt.org/img/content/individualtree_params.png" style="width: 150px; display: block; margin: 0 auto;"></td>
+    <td style="text-align: left; border: none; width:200px;"><img src="http://lessrt.org/img/content/individualtree_params.jpg" style="width: 150px; display: block; margin: 0 auto;"></td>
      <td style="width: 100%; border: none;">
        <ul style="padding-left:10px;list-style-type: none;color:#545E6C;">
         <li><h5>Seeing into individual trees: Tree-specific retrieval of tree-level traits using 3D radiative transfer model and spatial adjacency constraint from UAV multispectral imagery</h5></li>
