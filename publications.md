@@ -208,6 +208,14 @@ sectionid: page_publications
 ### Publications and reasearches that have used LESS
 
 #### 2025
+* Lai, Y., Mu, X., Fan, D., Zou, J., Xie, D., Yan, G., 2025. [Methodology comparison for correcting woody component effects in leaf area index calculations from digital cover images in broadleaf forests](https://doi.org/10.1016/j.rse.2025.114659). Remote Sensing of Environment 321, 114659. https://doi.org/10.1016/j.rse.2025.114659
+
+* Zhang, H., Zhao, D., Guo, Z., Guo, S., Bai, Q., Cao, H., Feng, S., Yu, F., Xu, T., 2025. [Estimation of chlorophyll content in rice canopy leaves using 3D radiative transfer modeling and unmanned aerial hyperspectral images](https://doi.org/10.1186/s13007-025-01346-z). Plant Methods 21, 26. https://doi.org/10.1186/s13007-025-01346-z
+
+* Zhao, D., Yang, G., Xu, T., Yu, F., Zhang, C., Cheng, Z., Ren, L., Yang, H., 2025. [Dynamic Maize True Leaf Area Index Retrieval with KGCNN and TL and Integrated 3D Radiative Transfer Modeling for Crop Phenotyping](https://doi.org/10.1016/j.plaphe.2025.100004). Plant Phenomics 100004. https://doi.org/10.1016/j.plaphe.2025.100004
+
+* Zhang, C., Chen, Z., Chen, R., Zhang, W., Zhao, D., Yang, G., Xu, B., Feng, H., Yang, H., 2025. [Retrieving the chlorophyll content of individual apple trees by reducing canopy shadow impact via a 3D radiative transfer model and UAV multispectral imagery](https://doi.org/10.1016/j.plaphe.2025.100015). Plant Phenomics 100015. https://doi.org/10.1016/j.plaphe.2025.100015
+
 * Frey, J., Schindler, Z., McClatchy, P., Morhart, C., Larysch, E., Seifert, T., 2025. [The 3D reconstruction of wood and leaves from terrestrial laser scanning – a case study on PAR measurements below a solitary Malus domestica tree]( https://doi.org/10.14214/sf.24027). Silva Fenn 59.
 
 * Xu, H., Huai, Y., Zhao, X., Meng, Q., Nie, X., Li, B., Lu, H., 2025. [SK-TreePCN: Skeleton-Embedded Transformer Model for Point Cloud Completion of Individual Trees from Simulated to Real Data](https://doi.org/10.3390/rs17040656). Remote Sensing 17, 656.
