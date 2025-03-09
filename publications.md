@@ -224,6 +224,9 @@ sectionid: page_publications
 ### Publications and reasearches that have used LESS
 
 #### 2025
+
+* Han, D., Zhang, P., Liu, C., Liu, W., Bo, Z., Lin, Q., 2025. [RaySHapke: A Bayesian Inversion Analysis of Lunar Surface Parameters Utilizing the Hapke Model Based on the Raytracing Shadowing Function](https://doi.org/10.1109/TGRS.2025.3547908). IEEE Trans. Geosci. Remote Sensing 1–1. https://doi.org/10.1109/TGRS.2025.3547908
+
 * Lai, Y., Mu, X., Fan, D., Zou, J., Xie, D., Yan, G., 2025. [Methodology comparison for correcting woody component effects in leaf area index calculations from digital cover images in broadleaf forests](https://doi.org/10.1016/j.rse.2025.114659). Remote Sensing of Environment 321, 114659. https://doi.org/10.1016/j.rse.2025.114659
 
 * Zhang, H., Zhao, D., Guo, Z., Guo, S., Bai, Q., Cao, H., Feng, S., Yu, F., Xu, T., 2025. [Estimation of chlorophyll content in rice canopy leaves using 3D radiative transfer modeling and unmanned aerial hyperspectral images](https://doi.org/10.1186/s13007-025-01346-z). Plant Methods 21, 26. https://doi.org/10.1186/s13007-025-01346-z
