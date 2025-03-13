@@ -225,6 +225,8 @@ sectionid: page_publications
 
 #### 2025
 
+* Liang, D., Cao, B., Wang, Q., Qi, J., Jia, K., Zhao, W., Yan, K., 2025. [A New Remote Sensing Index for the Detection of Multi-Type Forest Anomalies Based on Sentinel-2 Imagery](https://doi.org/10.3390/f16030497). Forests 16, 497. https://doi.org/10.3390/f16030497
+
 * Han, D., Zhang, P., Liu, C., Liu, W., Bo, Z., Lin, Q., 2025. [RaySHapke: A Bayesian Inversion Analysis of Lunar Surface Parameters Utilizing the Hapke Model Based on the Raytracing Shadowing Function](https://doi.org/10.1109/TGRS.2025.3547908). IEEE Trans. Geosci. Remote Sensing 1–1. https://doi.org/10.1109/TGRS.2025.3547908
 
 * Lai, Y., Mu, X., Fan, D., Zou, J., Xie, D., Yan, G., 2025. [Methodology comparison for correcting woody component effects in leaf area index calculations from digital cover images in broadleaf forests](https://doi.org/10.1016/j.rse.2025.114659). Remote Sensing of Environment 321, 114659. https://doi.org/10.1016/j.rse.2025.114659
