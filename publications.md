@@ -225,6 +225,8 @@ sectionid: page_publications
 
 #### 2025
 
+* Liu, W., Batelaan, O., Bruce, D., Wang, J., Gutierrez, H., Wang, H., Keegan-Treloar, R., Gou, J., Keane, R., Thompson, J., Guan, H., 2025. [Integrating the Maximum Entropy Production model and airborne imagery for understorey evapotranspiration mapping](https://doi.org/10.1016/j.jhydrol.2025.133076). Journal of Hydrology 133076. https://doi.org/10.1016/j.jhydrol.2025.133076
+
 * Liang, D., Cao, B., Wang, Q., Qi, J., Jia, K., Zhao, W., Yan, K., 2025. [A New Remote Sensing Index for the Detection of Multi-Type Forest Anomalies Based on Sentinel-2 Imagery](https://doi.org/10.3390/f16030497). Forests 16, 497. https://doi.org/10.3390/f16030497
 
 * Han, D., Zhang, P., Liu, C., Liu, W., Bo, Z., Lin, Q., 2025. [RaySHapke: A Bayesian Inversion Analysis of Lunar Surface Parameters Utilizing the Hapke Model Based on the Raytracing Shadowing Function](https://doi.org/10.1109/TGRS.2025.3547908). IEEE Trans. Geosci. Remote Sensing 1–1. https://doi.org/10.1109/TGRS.2025.3547908
