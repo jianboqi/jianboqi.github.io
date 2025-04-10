@@ -225,6 +225,8 @@ sectionid: page_publications
 
 #### 2025
 
+* Han, Y., Wen, J., You, D., Xiao, Q., Liu, G., Tang, Y., Piao, S., Zhao, N., Liu, Q., 2025. [Impacts of Topography on Daily Mean Albedo Estimation Over Snow-free Rugged Terrain](https://doi.org/10.1109/LGRS.2025.3555608). IEEE Geoscience and Remote Sensing Letters 1–1. https://doi.org/10.1109/LGRS.2025.3555608
+
 * Liu, W., Batelaan, O., Bruce, D., Wang, J., Gutierrez, H., Wang, H., Keegan-Treloar, R., Gou, J., Keane, R., Thompson, J., Guan, H., 2025. [Integrating the Maximum Entropy Production model and airborne imagery for understorey evapotranspiration mapping](https://doi.org/10.1016/j.jhydrol.2025.133076). Journal of Hydrology 133076. https://doi.org/10.1016/j.jhydrol.2025.133076
 
 * Liang, D., Cao, B., Wang, Q., Qi, J., Jia, K., Zhao, W., Yan, K., 2025. [A New Remote Sensing Index for the Detection of Multi-Type Forest Anomalies Based on Sentinel-2 Imagery](https://doi.org/10.3390/f16030497). Forests 16, 497. https://doi.org/10.3390/f16030497
