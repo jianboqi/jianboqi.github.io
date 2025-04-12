@@ -20,6 +20,25 @@ Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W.
 ```
 ##### If you want to get news of LESS, please subscribe by email: [Subscribe](https://forms.office.com/r/ML6Rs1ghAQ)
 
+### LESS-2.1.8 (2025.04.12):
+**Windows**:<a href="https://drive.google.com/drive/folders/1JeV4XfI8cIztB3kx27AP-1rlX8IvYkHO?usp=share_link" target="_blank">LESS-2.1.8-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1WoFUrZ2bMRkDDuTWVqq8Fg?pwd=a75y" target="_blank">LESS-2.1.8-win64</a>)
+* In the new version, the ALS2LESS tool has been upgraded. It now supports individual trees that have been pre-segmented. In the las file, different individual trees are distinguished by the treeID field.
+* The LiDAR simulation module has significantly improved the efficiency of generating pulses and added a batch processing method for TLS simulation.
+* A mobile LiDAR simulation plugin has been added, which can generate the trajectory of mobile LiDAR.
+* A forestry inventory plugin has been added, which can automatically extract tree height, diameter at breast height, and other information from forest scenes.
+* A plugin named ReconstructTreeFromPointCloud has been added for reconstructing tree structures from terrestrial/SLAM LiDAR. It can take the segmented point cloud of individual trees as input, automatically extract the trunk to generate an obj file, and create a canopy envelope.
+* The AutoGUI function with a graphical interface has been added. This allows users to control interface parameters by entering Python scripts in the interface. It enables script-based modification of some parameters, facilitating batch processing.
+The model has been coupled with the Farquar model and others, adding a photosynthesis module that can simulate three-dimensional light distribution and photosynthesis.
+* 新版本中，对于ALS2LESS工具进行了升级，目前支持预先分割好的单木，在las文件中，通过treeID字段来区分不同的单木。
+* 激光雷达模拟模块，大幅提高了生成pulse的效率，以及增加了TLS模拟时，激光雷达批处理方式。
+* 添加了一个移动激光雷达模拟插件，可以生成移动激光雷达的路径
+* 添加了一个forestryinventory插件，可以对森林场景自动提取树高，胸径等信息。
+* 添加了从地基/SLAM激光雷达重建树木结构的插件ReconstructTreeFromPointCloud，可以输入单木分割好之后的点云，自动提取树干生成obj文件，并生成树冠外包络。
+* 增加了图形界面的AutoGUI功能，即通过在界面输入Python 脚本的方式来控制界面的参数，可以对一些参数进行脚本化修改，方便批处理。
+* 耦合Farquar等模型，增加了光合作用模块，可以实现三维光分布、光合作用的模拟。
+  
+
+
 ### LESS-2.1.7 (2024.10.13):
 **Windows**:<a href="https://drive.google.com/drive/folders/1JeV4XfI8cIztB3kx27AP-1rlX8IvYkHO?usp=share_link" target="_blank">LESS-2.1.7-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1WoFUrZ2bMRkDDuTWVqq8Fg?pwd=a75y" target="_blank">LESS-2.1.7-win64</a>)
 * A new Plugin named `GenerateSlantedMesh` has been added, which genrate simple terrain with slopes.
