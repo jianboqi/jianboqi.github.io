@@ -32,8 +32,10 @@ Bilibili: [LESS三维辐射传输模型实践教程](https://www.bilibili.com/vi
 </figure>
 
 ### Other Documents
-[2023年第二届植被三维辐射传输模型研讨会暨LESS模型应用学习班-练习文档及材料](https://pan.baidu.com/s/1bjuA82egPU2GKq3WWT_YRg?pwd=uq0e)
-[2024年第三届三维辐射传输模型暑期班-练习文档及材料](https://pan.baidu.com/s/1aI6LJ2SgpnrYZjC2GzWvBw?pwd=61p2)
+| Files |
+| ------ |
+| [2023年第二届植被三维辐射传输模型研讨会暨LESS模型应用学习班-练习文档及材料](https://pan.baidu.com/s/1bjuA82egPU2GKq3WWT_YRg?pwd=uq0e) | 
+| [2024年第三届三维辐射传输模型暑期班-练习文档及材料](https://pan.baidu.com/s/1aI6LJ2SgpnrYZjC2GzWvBw?pwd=61p2)|
 
 {::comment}
 ### LESS Example Document
