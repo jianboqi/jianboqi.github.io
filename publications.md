@@ -225,6 +225,12 @@ sectionid: page_publications
 
 #### 2025
 
+* He, Y., Zeng, Y., Hao, D., Shabanov, N.V., Huang, J., Yin, G., Biriukova, K., Lu, W., Gao, Y., Celesti, M., Xu, B., Gao, S., Migliavacca, M., Li, J., Rossini, M., 2025. [Combining geometric-optical and spectral invariants theories for modeling canopy fluorescence anisotropy](https://doi.org/10.1016/j.rse.2025.114716). Remote Sens. Environ. 323, 114716. https://doi.org/10.1016/j.rse.2025.114716
+  
+* Li, X., Sun, Z., Lu, S., Omasa, K., 2025. [Combination of Spectral Angle Cosine and Band Depth Can Reduce the Specular Reflection Effects in Leaf Biochemical Parameters Estimation From Multiangular Hyperspectral Data](https://doi.org/10.1109/TGRS.2025.3580105). IEEE Trans. Geosci. Remote Sens. 63, 1–17. https://doi.org/10.1109/TGRS.2025.3580105
+  
+* Ma, Y., Liang, S., Peng, W., He, T., Ma, H., Chen, Y., Li, W., Xu, J., Guan, S., 2025. [A universal physically-based topographic correction framework for high-resolution optical satellite data](https://doi.org/10.1016/j.isprsjprs.2025.05.027). ISPRS J. Photogramm. Remote Sens. 227, 459–480. https://doi.org/10.1016/j.isprsjprs.2025.05.027
+
 * Han, Y., Wen, J., You, D., Xiao, Q., Liu, G., Tang, Y., Piao, S., Zhao, N., Liu, Q., 2025. [Impacts of Topography on Daily Mean Albedo Estimation Over Snow-free Rugged Terrain](https://doi.org/10.1109/LGRS.2025.3555608). IEEE Geoscience and Remote Sensing Letters 1–1. https://doi.org/10.1109/LGRS.2025.3555608
 
 * Liu, W., Batelaan, O., Bruce, D., Wang, J., Gutierrez, H., Wang, H., Keegan-Treloar, R., Gou, J., Keane, R., Thompson, J., Guan, H., 2025. [Integrating the Maximum Entropy Production model and airborne imagery for understorey evapotranspiration mapping](https://doi.org/10.1016/j.jhydrol.2025.133076). Journal of Hydrology 133076. https://doi.org/10.1016/j.jhydrol.2025.133076
