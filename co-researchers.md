@@ -6,3 +6,5 @@ sectionid: page_co_researchers
 published: true
 ---
 LESS team has engaged in collaborative research with many researchers from a wide range of disciplines, carrying out extensive joint work on extending the functionality of the LESS model, exploring its applications, and developing related plug-ins.
+
+(researchers to be added...)
