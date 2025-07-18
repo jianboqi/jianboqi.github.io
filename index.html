@@ -75,11 +75,11 @@ published: true
             This process is often referred to as "forward simulation or modeling". Unlike other 1D models, LESS does not rely on assumptions that abstract the canopy as homogeneous layers. Instead, it employs explicitly described structures to represent landscape elements, even down to the detailed structures of individual leaves or shoots. Consequently, LESS is renowned for its precision. Since the ray tracing technique utilized by LESS simulates light scattering at each ray-object intersection point based on fundamental physical laws (e.g., Lambertian reflection), simulations conducted by models like LESS are sometimes termed "first principle" simulations.
             
             In summary, LESS yields considerably accurate results for light scattering within complex landscapes, facilitating various applications such as forest parameter retrieval, comprehension of remote sensing mechanisms, and sensor instrument design.
-             * Light scattering within a forest canopy:
+             1. Light scattering within a forest canopy:
             <img src="http://lessrt.org/img/content/scattering.jpg" width="500"/>
             <br/>
             
-             * The diagram of LESS's functionality:
+             2. The diagram of LESS's functionality:
             <img src="http://lessrt.org/img/content/lessequation.jpg" width="600"/>
             <br/>
             
@@ -87,7 +87,7 @@ published: true
             <hr>
             LESS facilitates the aforementioned applications by providing remote sensing observations alongside corresponding "ground truth" measurements. For instance, consider the retrieval of vegetation parameters from canopy reflectance, a fundamental goal in forest remote sensing. To establish a retrieval model, it is imperative to understand the relationship between reflectance and vegetation parameters. While field measurements can offer such insights, they are often laborious and site-specific. Alternatively, employing 3D simulations with LESS serves as an economical alternative. By utilizing the simulated reflectance alongside the ground truth parameters provided by LESS (refer to the figure below), we can establish a regression model or machine learning algorithm. Subsequently, real remote sensing reflectance can be inputted into this model to estimate vegetation parameters. Finally, field measurements can be utilized to validate the accuracy of the model.
             
-             * LESS provides remote sensing observations and the corresponding "ground truth" measurements:
+             3. LESS provides remote sensing observations and the corresponding "ground truth" measurements:
             <img src="http://lessrt.org/img/content/lessapp.jpg" width="600"/>
             
             <br/>
