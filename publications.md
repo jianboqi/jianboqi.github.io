@@ -225,6 +225,8 @@ sectionid: page_publications
 
 #### 2025
 
+* Guo, T., Li, W., Disney, M., Wang, Y., Zheng, H., Zhou, D., Jiang, C., Tian, Y., Cheng, T., Zhu, Y., Cao, W., Yao, X., 2025. [Assessing sampling design and voxel size in estimating wheat green area index with measured and simulated TLS data](https://doi.org/10.1109/TGRS.2025.3589113). IEEE Transactions on Geoscience and Remote Sensing 1–1. https://doi.org/10.1109/TGRS.2025.3589113
+
 * He, Y., Zeng, Y., Hao, D., Shabanov, N.V., Huang, J., Yin, G., Biriukova, K., Lu, W., Gao, Y., Celesti, M., Xu, B., Gao, S., Migliavacca, M., Li, J., Rossini, M., 2025. [Combining geometric-optical and spectral invariants theories for modeling canopy fluorescence anisotropy](https://doi.org/10.1016/j.rse.2025.114716). Remote Sens. Environ. 323, 114716. https://doi.org/10.1016/j.rse.2025.114716
   
 * Li, X., Sun, Z., Lu, S., Omasa, K., 2025. [Combination of Spectral Angle Cosine and Band Depth Can Reduce the Specular Reflection Effects in Leaf Biochemical Parameters Estimation From Multiangular Hyperspectral Data](https://doi.org/10.1109/TGRS.2025.3580105). IEEE Trans. Geosci. Remote Sens. 63, 1–17. https://doi.org/10.1109/TGRS.2025.3580105
