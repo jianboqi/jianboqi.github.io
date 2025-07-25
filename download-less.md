@@ -28,7 +28,7 @@ Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W.
 * 新版本中，增加了一个Python代码编辑器LESS PyCodeEditor,在编辑器中可以直接编辑和运行python代码，以更方便地使用LESS的功能。同时，该编辑器提供了一个默认的less对象，基于该对象可以实现对GUI图形界面的参数的控制，以方便利用代码进行批处理和模拟。
 * 增加了一个新的单木重建插件，利用该插件，可以实现对单木点云重建单木三维结构，输出OBJ文件。
 * 增加了一个从shapefile文件生成建筑物三维场景的插件。
-<img width="600" height="380" alt="codeeditor" src="https://github.com/user-attachments/assets/181064b0-fe06-48f7-9f26-fc06f075f78a" />
+<div><img width="600" height="380" alt="codeeditor" src="https://github.com/user-attachments/assets/181064b0-fe06-48f7-9f26-fc06f075f78a" /></div>
 
 ### LESS-2.1.8 (2025.04.12):
 **Windows**:<a href="https://drive.google.com/drive/folders/1JeV4XfI8cIztB3kx27AP-1rlX8IvYkHO?usp=share_link" target="_blank">LESS-2.1.8-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1WoFUrZ2bMRkDDuTWVqq8Fg?pwd=a75y" target="_blank">LESS-2.1.8-win64</a>)
