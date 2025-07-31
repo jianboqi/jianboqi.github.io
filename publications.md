@@ -225,6 +225,8 @@ sectionid: page_publications
 
 #### 2025
 
+* Zhang, X., Wang, Yifei, Ye, F., Peng, Z., Fu, T., Wang, Z., Wu, Y., Wang, Yue, Jiao, Z., Zhang, H., 2025. [Accuracy Evaluation of Fine-scale BRDF Archetype Inversion Considering Vegetation Structure Clustering Based on the LESS 3D Simulations at Forest Scenes](https://doi.org/10.1109/TGRS.2025.3592713). IEEE Transactions on Geoscience and Remote Sensing 1–1. 
+
 * Guo, Y., Li, S., Tang, H., He, Z., 2025. [True Leaf Area Index Retrieval using Terrestrial LiDAR for Broadleaf Trees via Novel Multi-Inclined-Planes Method](https://doi.org/10.1109/JSTARS.2025.3591398). IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing 1–14. 
 
 * Liu, G., Wen, J., You, D., Tang, Y., Han, Y., Li, Q., 2025. [Impacts of DEM Geolocation Bias on Multiscale Validation of Land Surface Albedo Over Rugged Terrain](https://doi.org/10.1109/LGRS.2025.3581880). IEEE Geoscience and Remote Sensing Letters 22, 1–5. 
