@@ -12,6 +12,33 @@ published: true
     </div>
 </div>
 
+<!-- 跑马灯通知条 start -->
+<style>
+  .marquee-wrap {
+    width: 100%;
+    overflow: hidden;          /* 隐藏溢出部分 */
+    background: #c80000;       /* 红色背景 */
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 40px;
+    position: relative;        /* 方便定位 */
+  }
+  .marquee-wrap span {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
+    padding-left: 100%;        /* 从右侧开始 */
+  }
+  @keyframes marquee {
+    0%   { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+  }
+</style>
+
+<div class="marquee-wrap">
+  <span>通知：LESS 已发布全新版本，欢迎下载体验！</span>
+</div>
+<!-- 跑马灯通知条 end -->
 
 <div class="container">
 
