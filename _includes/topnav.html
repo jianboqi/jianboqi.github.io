@@ -10,6 +10,17 @@
   border-radius: 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
+/* 子菜单文字默认黑色 */
+.navbar-nav .dropdown-menu > li > a {
+  color: #000;
+}
+
+/* 子菜单项悬停：背景绿 + 字白 */
+.navbar-nav .dropdown-menu > li > a:hover,
+.navbar-nav .dropdown-menu > li > a:focus {
+  background-color: #4caf50;
+  color: #fff;
+}
 </style>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container navbar-container">
@@ -32,9 +43,9 @@
                 <li {% if page.sectionid=='page_publications' %} class="active" {% endif %}><a href="{{ "/publications/" | prepend: site.baseurl }}">Publications</a></li>
                 <li {% if page.sectionid=='blog' %} class="active" {% endif %}><a href="{{ "/allnews" | prepend: site.baseurl }}">News</a></li>
                 <li {% if page.sectionid=='page_co_researchers' %} class="active" {% endif %}><a href="{{ "/co-researchers/" | prepend: site.baseurl }}">Co-Researchers</a></li>
-                <li class="dropdown"><a href="#" class="dropdown-toggle">About Us</a>
+                <li {% if page.sectionid=='about' %} class="active" {% endif %} class="dropdown"><a href="#" class="dropdown-toggle">About Us</a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ "/about/" | prepend: site.baseurl }}">Model Team</a></li>
+                        <li><a href="{{ "/about/modelteam/" | prepend: site.baseurl }}">Model Team</a></li>
                         <li><a href="{{ "/about/co-researchers/" | prepend: site.baseurl }}">Co-Researchers</a></li>
                   </ul>
                 </li>
