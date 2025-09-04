@@ -1,4 +1,4 @@
 ---
 title: Contributors
-permalink: /about/Contributors/
+permalink: /about/contributors/
 ---
