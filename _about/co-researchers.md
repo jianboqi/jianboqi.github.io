@@ -1,4 +1,4 @@
 ---
-title: Co-Researchers
-permalink: /about/co-researchers/
+title: Contributors
+permalink: /about/contributors/
 ---
