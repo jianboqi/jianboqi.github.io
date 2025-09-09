@@ -225,6 +225,8 @@ sectionid: page_publications
 
 #### 2025
 
+* Cheng, J., Wang, J., Zhao, D., Duan, F., Wu, Q., Lai, Y., Qi, J., Xiong, S., Qiao, H., Ma, X., Yang, H., Yang, G., 2025. [Exploring the depth of the maize canopy LAI detected by spectroscopy Based on simulations and in situ measurements](https://doi.org/10.1016/j.plaphe.2025.100100). Plant Phenomics 100100. https://doi.org/10.1016/j.plaphe.2025.100100
+
 * Zhang, W., Yang, G., Qi, J., Chen, R., Zhang, C., Xu, B., Wu, B., Su, X., Zhao, C., 2025. [The impacts of tree shape, disease distribution and observation geometry on the performances of disease spectral indices of apple trees](https://doi.org/10.1016/j.rse.2025.114953). Remote Sensing of Environment 329, 114953. https://doi.org/10.1016/j.rse.2025.114953
 
 
