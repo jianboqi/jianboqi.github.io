@@ -21,7 +21,10 @@ Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W.
 ##### If you want to get news of LESS, please subscribe by email: [Subscribe](https://forms.office.com/r/ML6Rs1ghAQ)
 
 ### LESS-2.1.8 (2025.07.25):
-**Windows**:<a href="https://drive.google.com/drive/folders/1JeV4XfI8cIztB3kx27AP-1rlX8IvYkHO?usp=share_link" target="_blank">LESS-2.1.8-2025-07-25-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1WoFUrZ2bMRkDDuTWVqq8Fg?pwd=a75y" target="_blank">LESS-2.1.8-2025-07-25-win64</a>), Direct download link (all versions, including patch updates): <a href="http://59.110.115.114/downloads" target="_blank">LESS Publisher</a>
+**Windows**:<a href="https://drive.google.com/drive/folders/1JeV4XfI8cIztB3kx27AP-1rlX8IvYkHO?usp=share_link" target="_blank">LESS-2.1.8-2025-07-25-win64</a>. (百度网盘下载：<a href="https://pan.baidu.com/s/1WoFUrZ2bMRkDDuTWVqq8Fg?pwd=a75y" target="_blank">LESS-2.1.8-2025-07-25-win64</a>)
+
+**Direct download link** (all versions, including linux ubuntu, and patch updates): <a href="http://59.110.115.114/downloads" target="_blank">LESS Publisher</a>
+
 * In the new version, A new LESS PyCodeEditor has been added, this editor can be used to edit Python code for doing simulations. It also provides an 'less' object, allowing users to use this object to manipulate the parameters of the GUI, which means users can modify the parameters of the GUI using python code. This features benefits the batch processing.
 * A new plugin named ReconstructTreeFromPointCloud has been added, this new plugin allows users to reconstruct tree object from single tree point cloud (from ALS, UVA lidar, and TLS lidar)
 * A new plugin to generate 3D scenes from urban buiding shapefile.
