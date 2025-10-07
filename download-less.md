@@ -25,6 +25,8 @@ Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W.
 
 **Direct download link** (all versions, including linux ubuntu, and patch updates): <a href="http://59.110.115.114/downloads" target="_blank">LESS Publisher</a>
 
+**Docker images**: Search `lessrt/less-jupyter` in the docker hub to use docker image of LESS, it provides jupyter notebook interface (no GUI).
+
 * In the new version, A new LESS PyCodeEditor has been added, this editor can be used to edit Python code for doing simulations. It also provides an 'less' object, allowing users to use this object to manipulate the parameters of the GUI, which means users can modify the parameters of the GUI using python code. This features benefits the batch processing.
 * A new plugin named ReconstructTreeFromPointCloud has been added, this new plugin allows users to reconstruct tree object from single tree point cloud (from ALS, UVA lidar, and TLS lidar)
 * A new plugin to generate 3D scenes from urban buiding shapefile.
