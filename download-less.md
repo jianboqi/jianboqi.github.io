@@ -27,7 +27,7 @@ Qi, J., Xie, D., Yin, T., Yan, G., Gastellu-Etchegorry, J.-P., Li, L., Zhang, W.
 
 **Docker images**: Search `lessrt/less-jupyter` in the docker hub to use docker image of LESS, it provides jupyter notebook interface (no GUI).
 
-* In the new version, A new LESS PyCodeEditor has been added, this editor can be used to edit Python code for doing simulations. It also provides an 'less' object, allowing users to use this object to manipulate the parameters of the GUI, which means users can modify the parameters of the GUI using python code. This features benefits the batch processing.
+* In the new version, A new LESS PyCodeEditor has been added, this editor is used to edit Python code for doing simulations. It also provides an 'less' object, allowing users to use this object to manipulate the parameters of the GUI, which means users can modify the parameters of the GUI using python code. This features benefits the batch processing.
 * A new plugin named ReconstructTreeFromPointCloud has been added, this new plugin allows users to reconstruct tree object from single tree point cloud (from ALS, UVA lidar, and TLS lidar)
 * A new plugin to generate 3D scenes from urban buiding shapefile.
 * 新版本中，增加了一个Python代码编辑器LESS PyCodeEditor,在编辑器中可以直接编辑和运行python代码，以更方便地使用LESS的功能。同时，该编辑器提供了一个默认的less对象，基于该对象可以实现对GUI图形界面的参数的控制，以方便利用代码进行批处理和模拟。
