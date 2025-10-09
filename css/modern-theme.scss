@@ -1,0 +1,412 @@
+---
+# 现代风格主题样式文件
+---
+@charset "utf-8";
+
+// 导入现有样式
+@import "main.scss";
+
+// 自定义变量
+$primary-color: #2c3e50;
+$secondary-color: #3498db;
+$accent-color: #e74c3c;
+$text-color: #333333;
+$text-light: #666666;
+$background-color: #ffffff;
+$card-bg: #f9f9f9;
+$transition-speed: 0.3s;
+
+// 全局样式覆盖
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $text-color;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+// 导航栏美化
+.navbar-default {
+  background-color: $primary-color;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all $transition-speed ease;
+}
+
+.navbar-default:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: all $transition-speed ease;
+}
+
+.navbar-brand:hover {
+  transform: translateY(-2px);
+}
+
+.navbar-nav li a {
+  font-weight: 500;
+  position: relative;
+  transition: all $transition-speed ease;
+}
+
+.navbar-nav li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: $secondary-color;
+  transition: all $transition-speed ease;
+}
+
+.navbar-nav li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.navbar-nav .active a {
+  background-color: transparent !important;
+}
+
+.navbar-nav .active a::after {
+  width: 100%;
+  left: 0;
+  background-color: $accent-color;
+}
+
+// 下拉菜单美化
+.dropdown-menu {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
+
+.dropdown-menu > li > a {
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: all $transition-speed ease;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: $secondary-color !important;
+  color: white !important;
+  transform: translateX(5px);
+}
+
+// Hero区域美化
+.header-container {
+  background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.95)), url('../img/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding: 120px 0;
+  text-align: center;
+  margin-top: -70px;
+  border-bottom: 3px solid $secondary-color;
+}
+
+.header-container .container {
+  max-width: 900px;
+}
+
+.header-container h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: -0.5px;
+}
+
+.header-container p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.header-container a.btn {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  background-color: $accent-color;
+  border-color: $accent-color;
+  transition: all $transition-speed ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+}
+
+.header-container a.btn:hover {
+  background-color: #c0392b;
+  border-color: #c0392b;
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(231, 76, 60, 0.5);
+}
+
+// 内容区域样式
+.container {
+  max-width: 1200px;
+  padding: 20px 0;
+}
+
+.row {
+  margin-bottom: 40px;
+}
+
+h2.header-light {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: $primary-color;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+h2.header-light::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background-color: $secondary-color;
+}
+
+blockquote {
+  border-left: 4px solid $secondary-color;
+  background-color: $card-bg;
+  padding: 20px;
+  border-radius: 0 6px 6px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+// 卡片样式
+.col-sm-4 {
+  transition: all $transition-speed ease;
+}
+
+.col-sm-4:hover {
+  transform: translateY(-10px);
+}
+
+.col-sm-4 h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: $primary-color;
+  margin: 20px 0 15px 0;
+}
+
+.col-sm-4 p {
+  color: $text-light;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.col-sm-4 img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  transition: all $transition-speed ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.col-sm-4:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.15);
+}
+
+// 视频容器样式
+iframe {
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all $transition-speed ease;
+}
+
+iframe:hover {
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.15);
+}
+
+// 分隔线样式
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, $secondary-color, transparent);
+  margin: 50px 0;
+}
+
+// 页脚样式
+.footer {
+  background-color: $primary-color;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+// 按钮通用样式
+.btn {
+  transition: all $transition-speed ease;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+// 响应式设计优化
+@media (max-width: 768px) {
+  .header-container {
+    padding: 100px 0 80px;
+  }
+  
+  .header-container h1 {
+    font-size: 2.5rem;
+  }
+  
+  .header-container p {
+    font-size: 1rem;
+  }
+  
+  .col-sm-4 {
+    margin-bottom: 30px;
+  }
+  
+  .navbar-nav {
+    margin-left: 0;
+    background-color: $primary-color;
+  }
+  
+  .navbar-nav li a::after {
+    display: none;
+  }
+  
+  h2.header-light {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container h1 {
+    font-size: 2rem;
+  }
+  
+  .header-container p {
+    font-size: 0.95rem;
+  }
+  
+  .header-container a.btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+// 动画效果
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+// 滚动效果
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+// 通知条样式
+.marquee-wrap {
+  background: linear-gradient(90deg, $accent-color, #e67e22);
+  color: white;
+  padding: 10px 0;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+.marquee-wrap span {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+  padding-left: 100%;
+}
+
+.marquee-wrap:hover span {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+// 表单样式
+.form-control {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  transition: all $transition-speed ease;
+}
+
+.form-control:focus {
+  border-color: $secondary-color;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.25);
+  outline: none;
+}
+
+// 列表组样式
+.list-group-item {
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all $transition-speed ease;
+}
+
+.list-group-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.list-group-item.active {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+}
